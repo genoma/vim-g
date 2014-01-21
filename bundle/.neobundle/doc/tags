@@ -299,6 +299,7 @@ airline-writing-extensions	airline.txt	/*airline-writing-extensions*
 airline.txt	airline.txt	/*airline.txt*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
 before	solarized.txt	/*before*
+cs	surround.txt	/*cs*
 csscomb-about	csscomb.txt	/*csscomb-about*
 csscomb-contents	csscomb.txt	/*csscomb-contents*
 csscomb-custom-sort-order	csscomb.txt	/*csscomb-custom-sort-order*
@@ -331,6 +332,7 @@ delimitMateSmartMatchpairs	delimitMate.txt	/*delimitMateSmartMatchpairs*
 delimitMateSmartQuotes	delimitMate.txt	/*delimitMateSmartQuotes*
 delimitMateSyntax	delimitMate.txt	/*delimitMateSyntax*
 delimitMateTodo	delimitMate.txt	/*delimitMateTodo*
+ds	surround.txt	/*ds*
 emmet	emmet.txt	/*emmet*
 emmet-balance-tag-inward	emmet.txt	/*emmet-balance-tag-inward*
 emmet-balance-tag-outward	emmet.txt	/*emmet-balance-tag-outward*
@@ -451,6 +453,8 @@ g:vimproc#popen2_commands	vimproc.txt	/*g:vimproc#popen2_commands*
 g:vimproc_dll_path	vimproc.txt	/*g:vimproc_dll_path*
 g:vimproc_password_pattern	vimproc.txt	/*g:vimproc_password_pattern*
 g:vimproc_popen2_commands	vimproc.txt	/*g:vimproc_popen2_commands*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 indent-guides	indent_guides.txt	/*indent-guides*
 indent-guides-about	indent_guides.txt	/*indent-guides-about*
 indent-guides-changelog	indent_guides.txt	/*indent-guides-changelog*
@@ -631,6 +635,13 @@ solarized-options	solarized.txt	/*solarized-options*
 solarized-term	solarized.txt	/*solarized-term*
 solarized-togglebg	solarized.txt	/*solarized-togglebg*
 solarized.vim	solarized.txt	/*solarized.vim*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 toggle-background	solarized.txt	/*toggle-background*
 toggle-bg	solarized.txt	/*toggle-bg*
 togglebg	solarized.txt	/*togglebg*
@@ -638,7 +649,9 @@ unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
 urxvt	solarized.txt	/*urxvt*
+vS	surround.txt	/*vS*
 v_<C-Y>,	emmet.txt	/*v_<C-Y>,*
+vgS	surround.txt	/*vgS*
 vim-colors-solarized	solarized.txt	/*vim-colors-solarized*
 vimproc	vimproc.txt	/*vimproc*
 vimproc#cmd#system()	vimproc.txt	/*vimproc#cmd#system()*
@@ -680,3 +693,7 @@ vimproc-tips-pseudo-devices	vimproc.txt	/*vimproc-tips-pseudo-devices*
 vimproc-variables	vimproc.txt	/*vimproc-variables*
 vimproc.txt	vimproc.txt	/*vimproc.txt*
 without	solarized.txt	/*without*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*

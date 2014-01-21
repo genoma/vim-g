@@ -26,6 +26,7 @@ NeoBundle 'wakatime/vim-wakatime'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
