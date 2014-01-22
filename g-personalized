@@ -25,3 +25,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=lightgray ctermbg=ligh
 " NeocCompleCache settings
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
+
+" NoMatchParen
+let loaded_matchparen = 0
