@@ -7,18 +7,17 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'rking/ag.vim'
-"NeoBundle 'bling/vim-airline'
 NeoBundle 'csscomb/csscomb-for-vim'
 NeoBundle 'wakatime/vim-wakatime'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

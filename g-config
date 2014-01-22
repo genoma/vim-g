@@ -16,21 +16,14 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-" command W w !sudo tee % > /dev/null
-
 " Be iMproved
 set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized Light
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme tomorrow-night
 
 " Relative Numbers
 set relativenumber
@@ -227,9 +220,10 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remap VIM 0 to first non-blank character
+" Remap VIM 0\$ to first non-blank character
 map 0 ^
 map $ g_
+
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
   exe "normal mz"

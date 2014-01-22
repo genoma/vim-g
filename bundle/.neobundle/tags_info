@@ -7,8 +7,8 @@ neocomplete.vim
 nerdcommenter
 nerdtree
 vim-coffee-script
-vim-colors-solarized
 vim-indent-guides
 vim-surround
+vim-tomorrow-theme
 vim-wakatime
 vimproc
