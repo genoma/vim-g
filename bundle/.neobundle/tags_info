@@ -6,7 +6,6 @@ neobundle.vim
 neocomplete.vim
 nerdcommenter
 nerdtree
-vim-airline
 vim-coffee-script
 vim-colors-solarized
 vim-indent-guides

@@ -1,15 +1,8 @@
 if has('vim_starting')
-    set nocompatible               " Be iMproved
-
-    " Required:
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-
-" Required:
 call neobundle#rc(expand('~/.vim/bundle/'))
-
 " Let NeoBundle manage NeoBundle
-" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
@@ -19,7 +12,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'bling/vim-airline'
+"NeoBundle 'bling/vim-airline'
 NeoBundle 'csscomb/csscomb-for-vim'
 NeoBundle 'wakatime/vim-wakatime'
 NeoBundle 'Raimondi/delimitMate'
