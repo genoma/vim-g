@@ -8,9 +8,6 @@ colorscheme solarized
 :set relativenumber
 :set number
 
-" No Wrapping
-:set nowrap
-
 " NERDTree settings
 nmap <leader>n :NERDTreeToggle<cr>
 
