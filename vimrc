@@ -18,6 +18,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimshell.vim'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

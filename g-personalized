@@ -90,3 +90,8 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 " let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" Unite
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
+nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
