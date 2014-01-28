@@ -20,6 +20,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'jayflo/vim-skip'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

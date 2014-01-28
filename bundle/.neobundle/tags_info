@@ -8,7 +8,9 @@ nerdcommenter
 nerdtree
 unite.vim
 vim-coffee-script
+vim-easymotion
 vim-indent-guides
+vim-skip
 vim-surround
 vim-tomorrow-theme
 vim-wakatime
