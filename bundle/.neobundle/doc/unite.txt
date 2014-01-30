@@ -254,7 +254,6 @@ More advanced configuration example:
 	function! s:unite_my_settings()"{{{
 	  " Overwrite settings.
 
-	  nmap <buffer> <ESC>      <Plug>(unite_exit)
 	  imap <buffer> jj      <Plug>(unite_insert_leave)
 	  "imap <buffer> <C-w>     <Plug>(unite_delete_backward_path)
 
@@ -325,6 +324,9 @@ COMMANDS 					*unite-commands*
 		spaces. The list of candidates (the matches found in the source
 		by your filter string) will be ordered in the same order that
 		you specify the {sources}.
+
+		If {sources} are empty, you can input source name and args
+		manually.
 
 		For example:
 
@@ -785,9 +787,11 @@ g:unite_source_line_search_word_highlight
 
 g:unite_source_alias_aliases			*g:unite_source_alias_aliases*
 		Set |unite-source-alias| settings.  This variable is
-		dictionary.  The key is an alias source name, and the value is
-		a dictionary with following attributes.  Alias sources are
-		copies of original sources.
+		dictionary.  The key is an alias source name, and
+		the value is a dictionary with following attributes.  Alias
+		sources are copies of original sources.
+		If the value items are string, they will be used as base
+		source name.
 
 		source			(String)	(Required)
 		Base source name.
@@ -805,6 +809,7 @@ g:unite_source_alias_aliases			*g:unite_source_alias_aliases*
 		      \     'source': 'file_rec',
 		      \     'args': '~/',
 		      \   },
+		      \   'b' : 'buffer',
 		      \ }
 <
 		The default value is "{}".
