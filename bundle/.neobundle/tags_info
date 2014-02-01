@@ -4,8 +4,6 @@ delimitMate
 emmet-vim
 neobundle.vim
 neocomplete.vim
-neosnippet
-neosnippet-snippets
 nerdcommenter
 nerdtree
 unite.vim
