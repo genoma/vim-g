@@ -6,7 +6,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'mattn/emmet-vim'
@@ -21,7 +20,6 @@ NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 't9md/vim-choosewin'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

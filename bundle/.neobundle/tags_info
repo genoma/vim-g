@@ -6,13 +6,11 @@ neobundle.vim
 neocomplete.vim
 nerdcommenter
 unite.vim
-vim-choosewin
 vim-coffee-script
 vim-easymotion
 vim-indent-guides
 vim-surround
 vim-tomorrow-theme
 vim-wakatime
-vimfiler.vim
 vimproc
 vimshell.vim

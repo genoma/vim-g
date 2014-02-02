@@ -164,13 +164,8 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
 nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 
-" VimFiler
-let g:vimfiler_as_default_explorer = 1
-nmap <leader>n :VimFilerExplorer<cr>
 
-" Like Textmate icons.
-let g:vimfiler_tree_leaf_icon = ' '
-let g:vimfiler_tree_opened_icon = '▾'
-let g:vimfiler_tree_closed_icon = '▸'
-let g:vimfiler_file_icon = '-'
-let g:vimfiler_marked_file_icon = '*'
+" Netrw
+
+map <leader>n :Explore<cr>
+set autochdir
