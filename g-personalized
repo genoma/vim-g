@@ -76,7 +76,7 @@ function Entities()
 endfunction
 
 " NERDTree settings
-nmap <leader>n :NERDTreeToggle<cr>
+"nmap <leader>n :NERDTreeToggle<cr>
 
 " Indent Guides settings
 let g:indent_guides_enable_on_vim_startup = 1
@@ -111,16 +111,15 @@ let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 2
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-let g:neocomplete#enable_cursor_hold_i = 1
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
     \ 'vimshell' : $HOME.'/.vimshell_hist',
     \ 'scheme' : $HOME.'/.gosh_completions'
         \ }
-
+let g:neocomplete#ctags_command = "/usr/local/bin/ctags"
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
@@ -149,21 +148,6 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 " Close popup by <Space>.
 " inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
 
-" Enable omni completion.
-autocmd FileType css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown,smarty,php setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript,coffee setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" Enable heavy omni completion.
-"if !exists('g:neocomplete#sources#omni#input_patterns')
-  "let g:neocomplete#sources#omni#input_patterns = {}
-"endif
-"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 " let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
@@ -172,3 +156,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
 nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
+
+" VimFiler
+let g:vimfiler_as_default_explorer = 1
+nmap <leader>n :VimFilerExplorer<cr>
