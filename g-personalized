@@ -1,126 +1,74 @@
-" Remap
+" {{{Remap for faster write and close
 command WQ wq
 command Wq wq
 command W w
 command Q q
+"}}}
 
+" {{{Force filetype
 au BufRead,BufNewFile *.tpl set filetype=smarty.html
 au BufRead,BufNewFile *.scss set filetype=scss.css
 au BufRead,BufNewFile *.sass set filetype=sass.css
+"}}}
 
-" HTML Entities
-command Entities :call Entities()
-function Entities()
-  silent s/À/\&Agrave;/eg
-  silent s/Á/\&Aacute;/eg
-  silent s/Â/\&Acirc;/eg
-  silent s/Ã/\&Atilde;/eg
-  silent s/Ä/\&Auml;/eg
-  silent s/Å/\&Aring;/eg
-  silent s/Æ/\&AElig;/eg
-  silent s/Ç/\&Ccedil;/eg
-  silent s/È/\&Egrave;/eg
-  silent s/É/\&Eacute;/eg
-  silent s/Ê/\&Ecirc;/eg
-  silent s/Ë/\&Euml;/eg
-  silent s/Ì/\&Igrave;/eg
-  silent s/Í/\&Iacute;/eg
-  silent s/Î/\&Icirc;/eg
-  silent s/Ï/\&Iuml;/eg
-  silent s/Ð/\&ETH;/eg
-  silent s/Ñ/\&Ntilde;/eg
-  silent s/Ò/\&Ograve;/eg
-  silent s/Ó/\&Oacute;/eg
-  silent s/Ô/\&Ocirc;/eg
-  silent s/Õ/\&Otilde;/eg
-  silent s/Ö/\&Ouml;/eg
-  silent s/Ø/\&Oslash;/eg
-  silent s/Ù/\&Ugrave;/eg
-  silent s/Ú/\&Uacute;/eg
-  silent s/Û/\&Ucirc;/eg
-  silent s/Ü/\&Uuml;/eg
-  silent s/Ý/\&Yacute;/eg
-  silent s/Þ/\&THORN;/eg
-  silent s/ß/\&szlig;/eg
-  silent s/à/\&agrave;/eg
-  silent s/á/\&aacute;/eg
-  silent s/â/\&acirc;/eg
-  silent s/ã/\&atilde;/eg
-  silent s/ä/\&auml;/eg
-  silent s/å/\&aring;/eg
-  silent s/æ/\&aelig;/eg
-  silent s/ç/\&ccedil;/eg
-  silent s/è/\&egrave;/eg
-  silent s/é/\&eacute;/eg
-  silent s/ê/\&ecirc;/eg
-  silent s/ë/\&euml;/eg
-  silent s/ì/\&igrave;/eg
-  silent s/í/\&iacute;/eg
-  silent s/î/\&icirc;/eg
-  silent s/ï/\&iuml;/eg
-  silent s/ð/\&eth;/eg
-  silent s/ñ/\&ntilde;/eg
-  silent s/ò/\&ograve;/eg
-  silent s/ó/\&oacute;/eg
-  silent s/ô/\&ocirc;/eg
-  silent s/õ/\&otilde;/eg
-  silent s/ö/\&ouml;/eg
-  silent s/ø/\&oslash;/eg
-  silent s/ù/\&ugrave;/eg
-  silent s/ú/\&uacute;/eg
-  silent s/û/\&ucirc;/eg
-  silent s/ü/\&uuml;/eg
-  silent s/ý/\&yacute;/eg
-  silent s/þ/\&thorn;/eg
-  silent s/ÿ/\&yuml;/eg
-endfunction
-
-" NERDTree settings
-"nmap <leader>n :NERDTreeToggle<cr>
-
-" Indent Guides settings
+" {{{Indent Guides settings
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=237 ctermbg=237
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=240 ctermbg=240
+"}}}
 
-" NeocCompleCache settings
+" {{{Fold Method Marker
+set foldmethod=marker
+"}}}
+
+" {{{NeocCompleCache settings
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
+"}}}
 
-" NoMatchParen
+" {{{NoMatchParen
 let loaded_matchparen = 0
+"}}}
 
+" {{{Convert Spaces from 4 to 2
 function! ConvertSpaces()
   setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
   %retab! " Convert the 4 space indents to tabs
   setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
   %retab  " Convert all tabs to 2 space indents
 endfunction
-
 nmap <Leader>,c :call ConvertSpaces()<CR>
+"}}}
 
+" {{{NEOCOMPLETE
 
-" NEOCOMPLETE
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 let g:neocomplete#max_list = 20
+
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
+
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
+
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
     \ 'vimshell' : $HOME.'/.vimshell_hist',
     \ 'scheme' : $HOME.'/.gosh_completions'
         \ }
+
+" Ctacs
 let g:neocomplete#ctags_command = "/usr/local/bin/ctags"
+
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
@@ -132,15 +80,19 @@ inoremap <expr><C-g>     neocomplete#undo_completion()
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 
 " Recommended key-mappings.
+
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+
 function! s:my_cr_function()
   " return neocomplete#close_popup()<CR>
   " For no inserting <CR> key.
    return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 endfunction
+
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
@@ -158,14 +110,15 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
+"}}}
 
-
-" Unite
+" {{{UNITE
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
 nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
+"}}}
 
-
-" Netrw
+" {{{NETRW
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
+"}}}
