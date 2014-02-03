@@ -106,6 +106,7 @@ nmap <Leader>,c :call ConvertSpaces()<CR>
 " NEOCOMPLETE
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
+let g:neocomplete#max_list = 20
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
@@ -166,6 +167,5 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 
 
 " Netrw
-
-map <leader>n :Explore<cr>
-set autochdir
+map <silent><leader>n :Explore<cr>
+map <silent><leader>,n :Vexplore<cr>

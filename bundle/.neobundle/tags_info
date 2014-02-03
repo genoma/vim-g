@@ -11,6 +11,5 @@ vim-easymotion
 vim-indent-guides
 vim-surround
 vim-tomorrow-theme
-vim-wakatime
 vimproc
 vimshell.vim
