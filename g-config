@@ -18,6 +18,11 @@ let g:mapleader = ","
 
 " Be iMproved
 set nocompatible
+
+" Better Syntax Highlight
+autocmd BufEnter * :syntax sync fromstart
+let c_minlines = 500
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
