@@ -6,6 +6,7 @@ neobundle.vim
 neocomplete.vim
 nerdcommenter
 unite.vim
+vim-airline
 vim-coffee-script
 vim-easymotion
 vim-indent-guides

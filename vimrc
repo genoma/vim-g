@@ -19,6 +19,7 @@ NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'bling/vim-airline'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
