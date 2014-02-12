@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/jenoma/.vim'
-let g:netrw_dirhist_2='/Users/jenoma/Documents/work/alluvionati'
-let g:netrw_dirhist_3='/Users/jenoma/Documents/work/alluvionati/wp-content/themes/foremilia'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/jenoma'
+let g:netrw_dirhist_2='/Users/jenoma/.vim'
+let g:netrw_dirhist_3='/Users/jenoma'
+let g:netrw_dirhist_4='/Users/jenoma/Documents/work/cg_mail_accept'

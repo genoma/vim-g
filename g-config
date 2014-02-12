@@ -27,8 +27,8 @@ let c_minlines = 500
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized Light
-set background=dark
-colorscheme tomorrow-night
+set background=light
+colorscheme Tomorrow
 
 " Relative Numbers
 set relativenumber
@@ -220,15 +220,6 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 " Remap VIM 0\$ to first non-blank character
 map 0 ^
 map $ g_
-
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
-"func! DeleteTrailingWS()
-  "exe "normal mz"
-  "%s/\s\+$//ge
-  "exe "normal `z"
-"endfunc
-
-"autocmd BufWrite * :call DeleteTrailingWS()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

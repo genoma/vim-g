@@ -7,6 +7,7 @@ emmet-vim
 neobundle.vim
 neocomplete.vim
 nerdcommenter
+syntastic
 unite.vim
 vim-airline
 vim-better-whitespace

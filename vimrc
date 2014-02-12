@@ -24,6 +24,8 @@ NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'coot/EnchantedVim'
 NeoBundle 'coot/CRDispatcher'
 
+NeoBundle 'scrooloose/syntastic'
+
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
