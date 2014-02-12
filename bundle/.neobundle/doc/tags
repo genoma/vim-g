@@ -156,6 +156,7 @@
 <Plug>(easymotion-bd-e)	easymotion.txt	/*<Plug>(easymotion-bd-e)*
 <Plug>(easymotion-bd-el)	easymotion.txt	/*<Plug>(easymotion-bd-el)*
 <Plug>(easymotion-bd-f)	easymotion.txt	/*<Plug>(easymotion-bd-f)*
+<Plug>(easymotion-bd-fl)	easymotion.txt	/*<Plug>(easymotion-bd-fl)*
 <Plug>(easymotion-bd-jk)	easymotion.txt	/*<Plug>(easymotion-bd-jk)*
 <Plug>(easymotion-bd-n)	easymotion.txt	/*<Plug>(easymotion-bd-n)*
 <Plug>(easymotion-bd-t)	easymotion.txt	/*<Plug>(easymotion-bd-t)*
@@ -277,10 +278,15 @@
 <Plug>(vimshell_split_create)	vimshell.txt	/*<Plug>(vimshell_split_create)*
 <Plug>(vimshell_split_switch)	vimshell.txt	/*<Plug>(vimshell_split_switch)*
 <Plug>(vimshell_switch)	vimshell.txt	/*<Plug>(vimshell_switch)*
-EMCommandLineNoremap	easymotion.txt	/*EMCommandLineNoremap*
+CurrentLineWhitespaceOff	better-whitespace.txt	/*CurrentLineWhitespaceOff*
+DisableWhitespace	better-whitespace.txt	/*DisableWhitespace*
+EMCommandLineMap	easymotion.txt	/*EMCommandLineMap*
+EMCommandLineNoreMap	easymotion.txt	/*EMCommandLineNoreMap*
+EMCommandLineUnMap	easymotion.txt	/*EMCommandLineUnMap*
 EasyMotion_do_mapping	easymotion.txt	/*EasyMotion_do_mapping*
 EasyMotion_do_shade	easymotion.txt	/*EasyMotion_do_shade*
 EasyMotion_enter_jump_first	easymotion.txt	/*EasyMotion_enter_jump_first*
+EasyMotion_force_csapprox	easymotion.txt	/*EasyMotion_force_csapprox*
 EasyMotion_grouping	easymotion.txt	/*EasyMotion_grouping*
 EasyMotion_highlight	easymotion.txt	/*EasyMotion_highlight*
 EasyMotion_keys	easymotion.txt	/*EasyMotion_keys*
@@ -288,8 +294,10 @@ EasyMotion_leader_key	easymotion.txt	/*EasyMotion_leader_key*
 EasyMotion_prompt	easymotion.txt	/*EasyMotion_prompt*
 EasyMotion_smartcase	easymotion.txt	/*EasyMotion_smartcase*
 EasyMotion_smartsign	easymotion.txt	/*EasyMotion_smartsign*
+EasyMotion_space_jump_first	easymotion.txt	/*EasyMotion_space_jump_first*
 EasyMotion_use_migemo	easymotion.txt	/*EasyMotion_use_migemo*
 EasyMotion_use_upper	easymotion.txt	/*EasyMotion_use_upper*
+EnableWhitespace	better-whitespace.txt	/*EnableWhitespace*
 NERDComAbout	NERD_commenter.txt	/*NERDComAbout*
 NERDComAlignedComment	NERD_commenter.txt	/*NERDComAlignedComment*
 NERDComAltDelim	NERD_commenter.txt	/*NERDComAltDelim*
@@ -324,6 +332,9 @@ NERDComYankComment	NERD_commenter.txt	/*NERDComYankComment*
 NERDCommenter	NERD_commenter.txt	/*NERDCommenter*
 NERDCommenterContents	NERD_commenter.txt	/*NERDCommenterContents*
 NERD_commenter.txt	NERD_commenter.txt	/*NERD_commenter.txt*
+StripWhitespace	better-whitespace.txt	/*StripWhitespace*
+ToggleStripWhitespaceOnSave	better-whitespace.txt	/*ToggleStripWhitespaceOnSave*
+ToggleWhitespace	better-whitespace.txt	/*ToggleWhitespace*
 add_statusline_func	airline.txt	/*add_statusline_func*
 ag	ag.txt	/*ag*
 ag-mappings	ag.txt	/*ag-mappings*
@@ -368,6 +379,7 @@ airline-whitespace	airline.txt	/*airline-whitespace*
 airline-writing-extensions	airline.txt	/*airline-writing-extensions*
 airline.txt	airline.txt	/*airline.txt*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
+better-whitespace.txt	better-whitespace.txt	/*better-whitespace.txt*
 cs	surround.txt	/*cs*
 csscomb-about	csscomb.txt	/*csscomb-about*
 csscomb-contents	csscomb.txt	/*csscomb-contents*
@@ -461,6 +473,7 @@ g:EasyMotion_add_search_history	easymotion.txt	/*g:EasyMotion_add_search_history
 g:EasyMotion_do_mapping	easymotion.txt	/*g:EasyMotion_do_mapping*
 g:EasyMotion_do_shade	easymotion.txt	/*g:EasyMotion_do_shade*
 g:EasyMotion_enter_jump_first	easymotion.txt	/*g:EasyMotion_enter_jump_first*
+g:EasyMotion_force_csapprox	easymotion.txt	/*g:EasyMotion_force_csapprox*
 g:EasyMotion_grouping	easymotion.txt	/*g:EasyMotion_grouping*
 g:EasyMotion_inc_highlight	easymotion.txt	/*g:EasyMotion_inc_highlight*
 g:EasyMotion_keys	easymotion.txt	/*g:EasyMotion_keys*
@@ -471,6 +484,7 @@ g:EasyMotion_prompt	easymotion.txt	/*g:EasyMotion_prompt*
 g:EasyMotion_re_anywhere	easymotion.txt	/*g:EasyMotion_re_anywhere*
 g:EasyMotion_re_line_anywhere	easymotion.txt	/*g:EasyMotion_re_line_anywhere*
 g:EasyMotion_smartcase	easymotion.txt	/*g:EasyMotion_smartcase*
+g:EasyMotion_space_jump_first	easymotion.txt	/*g:EasyMotion_space_jump_first*
 g:EasyMotion_startofline	easymotion.txt	/*g:EasyMotion_startofline*
 g:EasyMotion_use_migemo	easymotion.txt	/*g:EasyMotion_use_migemo*
 g:EasyMotion_use_smartsign_ja	easymotion.txt	/*g:EasyMotion_use_smartsign_ja*
@@ -479,6 +493,7 @@ g:EasyMotion_use_upper	easymotion.txt	/*g:EasyMotion_use_upper*
 g:ag_apply_lmappings	ag.txt	/*g:ag_apply_lmappings*
 g:ag_apply_qmappings	ag.txt	/*g:ag_apply_qmappings*
 g:ag_lhandler	ag.txt	/*g:ag_lhandler*
+g:ag_mapping_message	ag.txt	/*g:ag_mapping_message*
 g:ag_qhandler	ag.txt	/*g:ag_qhandler*
 g:agformat	ag.txt	/*g:agformat*
 g:aghighlight	ag.txt	/*g:aghighlight*
@@ -982,7 +997,6 @@ unite-action-source-function	unite.txt	/*unite-action-source-function*
 unite-action-source-mapping	unite.txt	/*unite-action-source-mapping*
 unite-action-source-process	unite.txt	/*unite-action-source-process*
 unite-action-source-register	unite.txt	/*unite-action-source-register*
-unite-action-source-undo	unite.txt	/*unite-action-source-undo*
 unite-action-tab	unite.txt	/*unite-action-tab*
 unite-action-uri	unite.txt	/*unite-action-uri*
 unite-action-window	unite.txt	/*unite-action-window*
@@ -1169,9 +1183,9 @@ unite-source-output	unite.txt	/*unite-source-output*
 unite-source-process	unite.txt	/*unite-source-process*
 unite-source-register	unite.txt	/*unite-source-register*
 unite-source-runtimepath	unite.txt	/*unite-source-runtimepath*
+unite-source-script	unite.txt	/*unite-source-script*
 unite-source-source	unite.txt	/*unite-source-source*
 unite-source-tab	unite.txt	/*unite-source-tab*
-unite-source-undo	unite.txt	/*unite-source-undo*
 unite-source-vimgrep	unite.txt	/*unite-source-vimgrep*
 unite-source-window	unite.txt	/*unite-source-window*
 unite-sources	unite.txt	/*unite-sources*

@@ -122,3 +122,9 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
 "}}}
+
+let g:VeryMagicSubstitute = 1 
+let g:VeryMagicGlobal = 1 
+let g:VeryMagicVimGrep = 1
+let g:VeryMagicSearchArg = 1
+let g:VeryMagicEscapeBackslashesInSearchArg = 1

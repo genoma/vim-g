@@ -1,7 +1,8 @@
-*neobundle.txt*	Ultimate Vim package manager
+*neobundle.txt*	Next generation Vim package manager
 
 Version: 3.0
 Author : Shougo <Shougo.Matsu at gmail.com>
+         Copyright (C) 2010 http://github.com/gmarik
 License: MIT license  {{{
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
@@ -40,10 +41,21 @@ FAQ			|neobundle-faq|
 ==============================================================================
 INTRODUCTION					*neobundle-introduction*
 
-*neobundle* is the ultimate Vim package manager. This plugin is inspired by
-Vundle.vim (https://github.com/gmarik/vundle), but I added tons of features.
+*neobundle* is the next generation Vim package manager. This plugin is based on
+Vundle(https://github.com/gmarik/vundle), but I renamed and added tons of
+features.  Because, Vundle's author does not want to add huge features in
+Vundle.
 
-For example:
+Note: Neobundle is not stable plugin manager.  If you want to stable plugin
+manager, you should use Vundle plugin.  It is well works widely and more
+tested.  If you want to use extended features, you can use neobundle.
+
+Vundle features : Stable, simple, good for beginners
+neobundle features : Early development(may break compatibility), very complex,
+good for plugin power users(for example, 50+ plugins and over 1000 lines
+.vimrc, ...)
+
+neobundle features :
  * Uses |vimproc| if available
  * |unite.vim| interface
  * Revision lock
@@ -1265,15 +1277,22 @@ FAQ						*neobundle-faq*
 Q: What's the neobundle advantage for Vundle or other plugin management
 system?
 
-A:
-   1. improved command name(:Bundle vs :NeoBundle).
-   2. neobundle works if you set 'shellslash' in your .vimrc.
-   3. neobundle supports vimproc(asynchronous update/install).
-   4. neobundle supports unite.vim interface(update/install/search).
-   5. neobundle supports revision lock feature.
-   6. neobundle supports other VCS(Subversion/Git).
-   7. neobundle supports lazy initialization for optimizing startup time.
-   8. and so on...
+A: neobundle solves some problems in Vundle or other plugin management system.
+But you must know they are huge and complex features.
+
+   1. plugin prefixed command name(:Bundle vs :NeoBundle).
+   https://github.com/gmarik/Vundle.vim/issues/76
+   2. neobundle supports vimproc(asynchronous update/install).
+   https://github.com/gmarik/Vundle.vim/issues/259
+   3. neobundle supports unite.vim interface(update/install/search).
+   4. neobundle supports revision lock feature.
+   https://github.com/gmarik/Vundle.vim/issues/35
+   5. neobundle supports other VCS(Subversion/Git).
+   https://github.com/gmarik/Vundle.vim/pull/134
+   https://github.com/gmarik/Vundle.vim/pull/268
+   6. neobundle supports lazy initialization for optimizing startup time.
+   https://github.com/gmarik/Vundle.vim/issues/364
+   https://github.com/gmarik/Vundle.vim/pull/98
 
 Q: I want to manage the rsense Vim plugin using neobundle.
 

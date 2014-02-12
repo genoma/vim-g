@@ -20,6 +20,9 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'ntpeters/vim-better-whitespace'
+NeoBundle 'coot/EnchantedVim'
+NeoBundle 'coot/CRDispatcher'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

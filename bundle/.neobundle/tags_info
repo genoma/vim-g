@@ -1,3 +1,5 @@
+CRDispatcher
+EnchantedVim
 ag.vim
 csscomb-for-vim
 delimitMate
@@ -7,6 +9,7 @@ neocomplete.vim
 nerdcommenter
 unite.vim
 vim-airline
+vim-better-whitespace
 vim-coffee-script
 vim-easymotion
 vim-indent-guides

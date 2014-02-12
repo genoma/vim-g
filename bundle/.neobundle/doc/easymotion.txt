@@ -1,4 +1,4 @@
-*easymotion.txt*	Version 2.0  Last change:02 Feb 2014.
+*easymotion.txt*	Version 2.0  Last change:12 Feb 2014.
 
 
             ______                  __  ___       __  _
@@ -139,7 +139,7 @@ EasyMotion <Plug> table                                *easymotion-plug-table*
 
     More <Plug> Mapping Table         | (No assignment by default)
     ----------------------------------|---------------------------------
-    (<Plug>(easymotion-bd-f))         | See |<Plug>(easymotion-s)|
+    <Plug>(easymotion-bd-f)           | See |<Plug>(easymotion-s)|
     <Plug>(easymotion-bd-t)           | See |<Plug>(easymotion-bd-t)|
     <Plug>(easymotion-bd-w)           | See |<Plug>(easymotion-bd-w)|
     <Plug>(easymotion-bd-W)           | See |<Plug>(easymotion-bd-W)|
@@ -159,6 +159,7 @@ EasyMotion <Plug> table                                *easymotion-plug-table*
     <Plug>(easymotion-sl)             | See |<Plug>(easymotion-sl)|
     <Plug>(easymotion-fl)             | See |<Plug>(easymotion-fl)|
     <Plug>(easymotion-Fl)             | See |<Plug>(easymotion-Fl)|
+    <Plug>(easymotion-bd-fl)          | See |<Plug>(easymotion-sl)|
     <Plug>(easymotion-tl)             | See |<Plug>(easymotion-tl)|
     <Plug>(easymotion-Tl)             | See |<Plug>(easymotion-Tl)|
     <Plug>(easymotion-bd-tl)          | See |<Plug>(easymotion-bd-tl)|
@@ -177,6 +178,7 @@ EasyMotion <Plug> table                                *easymotion-plug-table*
     <Plug>(easymotion-s2)             | See |<Plug>(easymotion-s2)|
     <Plug>(easymotion-f2)             | See |<Plug>(easymotion-f2)|
     <Plug>(easymotion-F2)             | See |<Plug>(easymotion-F2)|
+    <Plug>(easymotion-bd-f2)          | See |<Plug>(easymotion-s2)|
     <Plug>(easymotion-t2)             | See |<Plug>(easymotion-t2)|
     <Plug>(easymotion-T2)             | See |<Plug>(easymotion-T2)|
     <Plug>(easymotion-bd-t2)          | See |<Plug>(easymotion-bd-t2)|
@@ -190,6 +192,7 @@ EasyMotion <Plug> table                                *easymotion-plug-table*
     <Plug>(easymotion-sn)             | See |<Plug>(easymotion-sn)|
     <Plug>(easymotion-fn)             | See |<Plug>(easymotion-fn)|
     <Plug>(easymotion-Fn)             | See |<Plug>(easymotion-Fn)|
+    <Plug>(easymotion-bd-fn)          | See |<Plug>(easymotion-sn)|
     <Plug>(easymotion-tn)             | See |<Plug>(easymotion-tn)|
     <Plug>(easymotion-Tn)             | See |<Plug>(easymotion-Tn)|
     <Plug>(easymotion-bd-tn)          | See |<Plug>(easymotion-bd-tn)|
@@ -197,8 +200,10 @@ EasyMotion <Plug> table                                *easymotion-plug-table*
     <Plug>(easymotion-sln)            | See |<Plug>(easymotion-sln)|
     <Plug>(easymotion-fln)            | See |<Plug>(easymotion-fln)|
     <Plug>(easymotion-Fln)            | See |<Plug>(easymotion-Fln)|
+    <Plug>(easymotion-bd-fln)         | See |<Plug>(easymotion-sln)|
     <Plug>(easymotion-tln)            | See |<Plug>(easymotion-tln)|
     <Plug>(easymotion-Tln)            | See |<Plug>(easymotion-Tln)|
+    <Plug>(easymotion-bd-tln)         | See |<Plug>(easymotion-bd-tln)|
 
 
 ------------------------------------------------------------------------------
@@ -210,8 +215,8 @@ Bidirection ~
 
     Note: bd is short for bidirectional
 
-<Plug>(easymotion-s)                                  *<Plug>(easymotion-s)*
-                                    *<Plug>(easymotion-bd-f)* (doesn't exist)
+<Plug>(easymotion-s)                                    *<Plug>(easymotion-s)*
+                                                     *<Plug>(easymotion-bd-f)*
                 Find {char} to bidirection(forward and backward at the same
                 time.) See |f| & |F|.
 
@@ -289,6 +294,8 @@ Repeat ~
             nmap <Leader>; <Plug>(easymotion-next)
             nmap <Leader>, <Plug>(easymotion-prev)
 <
+        This feature is partly inspired by and based on vim-sneak. vim-sneak
+        can be downloaded here: https://github.com/justinmk/vim-sneak
 
 EasyMotion dot repeat~
                                     *easymotion-dotrepeat* *easymotion-textobjct*
@@ -359,6 +366,7 @@ Within line motion ~
                                                        *easymotion-within-line*
 
 <Plug>(easymotion-sl)                                   *<Plug>(easymotion-sl)*
+                                                     *<Plug>(easymotion-bd-fl)*
                 This function is same as |<Plug>(easymotion-s)|, except range
                 is within current cursor line.
 
@@ -459,7 +467,8 @@ Example:
     omap <Leader>z <Plug>(easymotion-sn)
 <
 If you like typing two or above characters as target similar to vim-smalls or
-vim-sneak, |EasyMotion| also provide this feature. With above keymapping,
+vim-seek/vim-sneak, |EasyMotion| also provide this feature. With above
+keymapping,
 
     Invoke EasyMotion by two character:
 
@@ -498,6 +507,8 @@ Find Motion Command Line~
 
         https://github.com/osyo-manga/vim-over
 
+        Library: https://github.com/osyo-manga/vital-over
+
     Note: These settings are experimental. They could be changed in the near
     future.
 
@@ -509,19 +520,24 @@ Find Motion Command Line~
     ----------------------- |----------------------------------------------
     <CR>                    | Execute EasyMotion.
     <ESC> or <C-c>          | Cancel
-    <Right>                 | Cursor right
-    <Left>                  | Cursor left
-    <Home> or <C-b>         | cursor to beginning of command-line
+    <Right> or <C-f>        | Cursor right
+    <Left> or <C-b>         | Cursor left
+    <Home> or <C-a>         | cursor to beginning of command-line
     <End> or <C-e>          | cursor to end of command-line
     <BS>  or <C-h>          | Delete one character
+    <C-d>                   | Delete one character at the cursor pos
     <C-w>                   | Delete the word before the cursor
     <C-u>                   | Delete all entered characters before the cursor
-    <Up>                    | Recall older (previous) search from history
-    <Down>                  | Recall more recent (next) search from history
+    <Up> or <C-p>           | Recall older (previous) search from history
+    <Down> or <C-n>         | Recall more recent (next) search from history
+    <C-r> {0-9a-z"%#:-=.}   | Insert Register. See |c_Ctrl-R|
+    <C-r><C-w>              | Insert the Word under cursor
+    <C-r><C-a>              | Insert the |WORD| under cursor
+    <C-r><C-f>              | Insert the Filename under cursor
     ------------------------|---------------------------------------
     <Over>(paste)           | Paste yanked text to the command line
                             |   Default: <C-v>
-    <Over>(buffer-complete) | Completion of buffer text Default: <C-d>
+    <Over>(buffer-complete) | Completion of buffer text Default: <C-l>
     *<Over>(em-scroll-f)*     | Scroll window forward & jump to the next match
                             |   Default: <Tab>
     *<Over>(em-scroll-b)*     | Scroll window backward & jump to previous match
@@ -532,21 +548,30 @@ Find Motion Command Line~
                             |   Default: <C-z>
 
     Customize Command Line Mappings~
-                                                         *EMCommandLineNoremap*
+                                                         *EMCommandLineNoreMap*
 
-    You can use |EMCommandLineNoremap| to customize find motion command line
-    key mappings by vimrc. This mapping is always no recursive mapping, so
-    you should map to not <Tab> but <Over>(em-scroll-f).
+    You can use |EMCommandLineNoreMap| (like |cnoremap|) to customize find motion
+    command line key mappings by vimrc. This mapping is always no recursive
+    mapping, so you should map to not <Tab> but |<Over>(em-scroll-f)|.
 
     Example:
 >
-    " EM is short for EasyMotion
-    EMCommandLineNoremap <C-;> <CR>
-    EMCommandLineNoremap <C-f> <Right>
-    EMCommandLineNoremap <C-b> <Left>
-    EMCommandLineNoremap <C-a> <Home>
-    EMCommandLineNoremap <C-l> <Over>(buffer-complete)
+    " == EM is short for EasyMotion
+    " Enter by <Space> to excute faster & easily
+    EMCommandLineNoreMap <Space> <CR>
+    EMCommandLineNoreMap <C-j> <Space>
+    " Enter by `;` to excute faster & easily
+    EMCommandLineNoreMap ; <CR>
+    EMCommandLineNoreMap <C-j> ;
+    " Buffer Completion with Ctrl-D
+    EMCommandLineNoreMap <C-d> <Over>(buffer-complete)
 <
+                                                             *EMCommandLineMap*
+                                                           *EMCommandLineUnMap*
+    EasyMotion also provide |EMCommandLineMap| (like |cmap|) and
+    |EMCommandLineUnMap| (like |cunmap|) command, but probably you don't need
+    these command because there is no case it require recursive mappings.
+
     Note(again): These settings, especially about keymappings are
     __EXPERIMENTAL__. They could be changed in the near future. However, it
     works well and so useful, so I release it.
@@ -581,15 +606,16 @@ See |easymotion-leader-key| and |mapleader| for details about the leader key.
 ==============================================================================
 Requirements                                          *easymotion-requirements*
 
-EasyMotion has been developed and tested in vim 7.3, but it should run without
-any problems in vim 7.2.
+EasyMotion needs at least vim 7.3 to run without problems.
+Active development and testing is done with vim 7.4 since the 2.0 release of
+EasyMotion.
 
 Vi-compatible mode must be disabled.
 
-Note: Now @haya14busa maintain EasyMotion in vim 7.4. If there is any
-problems, open an issue or pull requests are welcome.
+If there are any problems due to the vim version you use, feel free to open
+an issue on github!
 
-https://github.com/haya14busa/vim-easymotion/issues
+https://github.com/Lokaltog/vim-easymotion/issues
 
 ==============================================================================
 Configuration                                        *easymotion-configuration*
@@ -609,9 +635,25 @@ EasyMotion_keys                                               *EasyMotion_keys*
 
 Set the keys which will be used for motion targets. Add as many keys as you
 want. There's a lower chance that the motion targets will be grouped if many
-keys are available.
+keys are available. However, the most people are easier to type 2 keys than
+press shift and EasyMotion shows two labels at the same time, so it's maybe
+better to remove the keys which is hard to type. EasyMotion uses the last keys
+as a first of grouped targets if there are a lot of targets, so I recommend to
+set keys which is easier to type as last keys(like `f`,`j`,`;`).
 
-Default: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+Default: 'asdghklqwertyuiopzxcvbnmfj;'
+
+Example:
+>
+    " Lower a-z
+    let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
+    " a-z & A-Z
+    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    " a-z & A-Z & 0-9
+    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    " qwerty
+    'asdfghjkl;qwertyuiopzxcvbnm'
+<
 
 ------------------------------------------------------------------------------
 EasyMotion_do_shade                                       *EasyMotion_do_shade*
@@ -774,16 +816,20 @@ This feature is inspired by t9md's vim-smalls, which can be downloaded here:
 https://github.com/t9md/vim-smalls
 
 ------------------------------------------------------------------------------
- Jump to first match by Enter                     *EasyMotion_enter_jump_first*
+ Jump to first match by Enter or Space            *EasyMotion_enter_jump_first*
                                                 *g:EasyMotion_enter_jump_first*
+                                                  *EasyMotion_space_jump_first*
+                                                *g:EasyMotion_space_jump_first*
 
-Type Enter key and jump to first match (first letter of |g:EasyMotion_keys| ).
+Type Enter or Space key and jump to first match (first letter of
+|g:EasyMotion_keys| ).
 
 Set this option to 1 if you want to enable this feature.
 
 Example:
 >
     let g:EasyMotion_enter_jump_first = 1
+    let g:EasyMotion_space_jump_first = 1
 <
 Default: 0
 
@@ -910,6 +956,15 @@ There are two ways to override the default colors:
           hi link EasyMotionTarget2Second MatchParen
 <
 
+Use CSApprox                                        *EasyMotion_force_csapprox*
+                                                  *g:EasyMotion_force_csapprox*
+    if you install CSApprox & want to use gui color for EasyMotion, set this
+    option to 1.
+>
+    let g:EasyMotion_force_csapprox = 1
+<
+    Default: 0
+
 ------------------------------------------------------------------------------
 Custom mappings                                    *easymotion-custom-mappings*
 
@@ -971,7 +1026,7 @@ GitHub. Fork the source repository on GitHub and send a pull request if you
 have any code improvements.
 
 Author: Kim Silkebækken <kim.silkebaekken+vim@gmail.com>
-        haya14busa <hayabusa1419@gmail.com>
+        haya14busa <hayabusa1419@gmail.com> (since version 2.0)
 Source repository: https://github.com/Lokaltog/vim-easymotion
 
 
@@ -991,29 +1046,34 @@ Credits                                                    *easymotion-credits*
 - mattn: fix multibyte handling
 - yuex: fix visual mode selection bug (o command)
 
+and more!: https://github.com/Lokaltog/vim-easymotion/graphs/contributors
+
 EasyMotion is based on Bartlomiej Podolak's great PreciseJump script, which
 can be downloaded here:
 
 http://www.vim.org/scripts/script.php?script_id=3437
 
-Migemo feature:~
-
-Easymotion pseudo migemo function is based on rhysd(@Linda_pp)'s clever-f
-script, which can be downloaded here:
-
-https://github.com/rhysd/clever-f.vim
-
-Show uppercase letter and type it as lowercase:~
-This feature is inspired by t9md's vim-smalls, which can be downloaded here:
-
-https://github.com/t9md/vim-smalls
-
-Find motion command line: ~
-This feature is inspired by osyo-manga's vim-over script and actually
-EasyMotion use vim-over's command line library. vim-over can be downloaded
-here:
-
-https://github.com/osyo-manga/vim-over
+Special Thanks for other plugins and the authors:~
+Migemo feature:
+    - Author: rhysd(@Linda_pp)
+    - https://github.com/rhysd/clever-f.vim
+Show uppercase feature:
+    - Author: t9md
+    - https://github.com/t9md/vim-smalls
+Find motion command line:
+    - Author: osyo-manga
+    - https://github.com/osyo-manga/vim-over
+    - Library: https://github.com/osyo-manga/vital-over
+2-key find motion:
+    - Authors: goldfeld & justinmk
+    - https://github.com/goldfeld/vim-seek
+    - https://github.com/justinmk/vim-sneak
+Next/Previous motion:
+    - Author: justinmk
+    - https://github.com/justinmk/vim-sneak
+Dot repeat feature:
+    - Author: tpope
+    - https://github.com/tpope/vim-repeat
 
 ==============================================================================
 vim:tw=78:sw=4:ts=8:ft=help:norl:
