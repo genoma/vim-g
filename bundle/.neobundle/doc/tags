@@ -105,6 +105,7 @@
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleClean	neobundle.txt	/*:NeoBundleClean*
+:NeoBundleCount	neobundle.txt	/*:NeoBundleCount*
 :NeoBundleDirectInstall	neobundle.txt	/*:NeoBundleDirectInstall*
 :NeoBundleDisable	neobundle.txt	/*:NeoBundleDisable*
 :NeoBundleDocs	neobundle.txt	/*:NeoBundleDocs*
