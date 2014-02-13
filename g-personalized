@@ -123,13 +123,5 @@ map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
 " }}}
 
-" {{{ VeryMagic Settings
-let g:VeryMagicSubstitute = 1
-let g:VeryMagicGlobal = 1
-let g:VeryMagicVimGrep = 1
-let g:VeryMagicSearchArg = 1
-let g:VeryMagicEscapeBackslashesInSearchArg = 1
-" }}}
-
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
