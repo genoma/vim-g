@@ -23,6 +23,9 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'coot/EnchantedVim'
 NeoBundle 'coot/CRDispatcher'
+NeoBundle 'mattboehm/vim-accordion'
+NeoBundle 'mbbill/undotree'
+NeoBundle 'mhinz/vim-signify'
 
 NeoBundle 'scrooloose/syntastic'
 

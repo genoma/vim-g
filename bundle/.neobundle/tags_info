@@ -8,12 +8,15 @@ neobundle.vim
 neocomplete.vim
 nerdcommenter
 syntastic
+undotree
 unite.vim
+vim-accordion
 vim-airline
 vim-better-whitespace
 vim-coffee-script
 vim-easymotion
 vim-indent-guides
+vim-signify
 vim-surround
 vim-tomorrow-theme
 vimproc

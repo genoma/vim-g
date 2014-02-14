@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/jenoma/Documents/work/cg_form'
 let g:netrw_dirhist_2='/Users/jenoma/Documents/work/cg_form/scss'
 let g:netrw_dirhist_3='/Users/jenoma/Documents/work/cg_form'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/jenoma/Documents/work/cg_mail/examples'
 let g:netrw_dirhist_6='/Users/jenoma/Documents/work/cg_mail'
 let g:netrw_dirhist_7='/Users/jenoma/Documents/work/cg_mail/examples'
 let g:netrw_dirhist_8='/Users/jenoma/Documents/work/cg_mail'
+let g:netrw_dirhist_9='/Users/jenoma/.vim'

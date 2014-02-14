@@ -120,3 +120,7 @@ map <silent><leader>,n :Vexplore<cr>
 
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
+
+nnoremap <silent><leader>u  :UndotreeToggle<cr>
+
+
