@@ -16,6 +16,8 @@ vim-better-whitespace
 vim-coffee-script
 vim-easymotion
 vim-indent-guides
+vim-sensible
+vim-signature
 vim-signify
 vim-surround
 vim-tomorrow-theme
