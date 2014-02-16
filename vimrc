@@ -63,12 +63,6 @@ colorscheme Tomorrow
 set relativenumber
 set number
 
-" Turn on the WiLd menu
-set wildmenu
-
-"Always show current position
-set ruler
-
 " Height of the command bar
 set cmdheight=2
 
@@ -84,9 +78,6 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-" Makes search act like search in modern browsers
-set incsearch
-
 " For regular expressions turn magic on
 set magic
 
@@ -100,9 +91,6 @@ set foldcolumn=1
 " Use spaces instead of tabs
 set expandtab
 
-" Be smart when using tabs ;)
-set smarttab
-
 " 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
@@ -111,7 +99,6 @@ set tabstop=2
 set lbr
 set tw=500
 
-set ai "Auto indent
 set si "Smart indent
 set nowrap "Don't wrap lines
 
@@ -177,9 +164,6 @@ set noswapfile
 "}}}
 
 "{{{ Status line
-" Always show the status line
-set laststatus=2
-
 set statusline=   " clear the statusline for when vimrc is reloaded
 set statusline+=%-3.3n\                      " buffer number
 set statusline+=%f\                          " file name
@@ -332,6 +316,8 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 "}}}
 
 "{{{ Tim Pope Sensible.vim
+
+" Load Tim Pope Sensible before Tabline settings
 runtime! plugin/sensible.vim
 "}}}
 
