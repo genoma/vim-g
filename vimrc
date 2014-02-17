@@ -185,6 +185,10 @@ map <leader>pp :setlocal paste!<cr>
 
 " Fix Syntax Highlight
 autocmd BufEnter * :syntax sync fromstart
+
+" gv select the previously selected area, gv select the previously pasted area
+nnoremap gp `[v`]
+
 "}}}
 
 " {{{Remap for faster write and close
