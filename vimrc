@@ -21,13 +21,12 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
-"NeoBundle 'coot/EnchantedVim'
-"NeoBundle 'coot/CRDispatcher'
 NeoBundle 'mattboehm/vim-accordion'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-fugitive'
 
 NeoBundle 'scrooloose/syntastic'
 
@@ -171,6 +170,7 @@ set statusline+=%=                           " right align
 set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
 set statusline+=%b,0x%-8B\                   " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
+set statusline+=%{fugitive#statusline()}     " fugitive
 "}}}
 
 "{{{ Editing mappings

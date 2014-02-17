@@ -13,6 +13,7 @@ vim-airline
 vim-better-whitespace
 vim-coffee-script
 vim-easymotion
+vim-fugitive
 vim-indent-guides
 vim-sensible
 vim-signature
