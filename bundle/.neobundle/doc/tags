@@ -131,7 +131,7 @@
 :NeoBundleDirectInstall	neobundle.txt	/*:NeoBundleDirectInstall*
 :NeoBundleDisable	neobundle.txt	/*:NeoBundleDisable*
 :NeoBundleDocs	neobundle.txt	/*:NeoBundleDocs*
-:NeoBundleEditExtra	neobundle.txt	/*:NeoBundleEditExtra*
+:NeoBundleExtraEdit	neobundle.txt	/*:NeoBundleExtraEdit*
 :NeoBundleFetch	neobundle.txt	/*:NeoBundleFetch*
 :NeoBundleInstall	neobundle.txt	/*:NeoBundleInstall*
 :NeoBundleInstall!	neobundle.txt	/*:NeoBundleInstall!*
@@ -172,6 +172,7 @@
 :UniteWithCurrentDir	unite.txt	/*:UniteWithCurrentDir*
 :UniteWithCursorWord	unite.txt	/*:UniteWithCursorWord*
 :UniteWithInput	unite.txt	/*:UniteWithInput*
+:UniteWithProjectDir	unite.txt	/*:UniteWithProjectDir*
 :VimProcBang	vimproc.txt	/*:VimProcBang*
 :VimProcRead	vimproc.txt	/*:VimProcRead*
 :VimShell	vimshell.txt	/*:VimShell*
@@ -678,19 +679,7 @@ g:unite_quick_match_table	unite.txt	/*g:unite_quick_match_table*
 g:unite_source_alias_aliases	unite.txt	/*g:unite_source_alias_aliases*
 g:unite_source_bookmark_directory	unite.txt	/*g:unite_source_bookmark_directory*
 g:unite_source_buffer_time_format	unite.txt	/*g:unite_source_buffer_time_format*
-g:unite_source_directory_mru_file	unite.txt	/*g:unite_source_directory_mru_file*
-g:unite_source_directory_mru_filename_format	unite.txt	/*g:unite_source_directory_mru_filename_format*
-g:unite_source_directory_mru_ignore_pattern	unite.txt	/*g:unite_source_directory_mru_ignore_pattern*
-g:unite_source_directory_mru_limit	unite.txt	/*g:unite_source_directory_mru_limit*
-g:unite_source_directory_mru_long_limit	unite.txt	/*g:unite_source_directory_mru_long_limit*
-g:unite_source_directory_mru_time_format	unite.txt	/*g:unite_source_directory_mru_time_format*
 g:unite_source_file_ignore_pattern	unite.txt	/*g:unite_source_file_ignore_pattern*
-g:unite_source_file_mru_file	unite.txt	/*g:unite_source_file_mru_file*
-g:unite_source_file_mru_filename_format	unite.txt	/*g:unite_source_file_mru_filename_format*
-g:unite_source_file_mru_ignore_pattern	unite.txt	/*g:unite_source_file_mru_ignore_pattern*
-g:unite_source_file_mru_limit	unite.txt	/*g:unite_source_file_mru_limit*
-g:unite_source_file_mru_long_limit	unite.txt	/*g:unite_source_file_mru_long_limit*
-g:unite_source_file_mru_time_format	unite.txt	/*g:unite_source_file_mru_time_format*
 g:unite_source_file_rec_async_command	unite.txt	/*g:unite_source_file_rec_async_command*
 g:unite_source_file_rec_ignore_pattern	unite.txt	/*g:unite_source_file_rec_ignore_pattern*
 g:unite_source_file_rec_max_cache_files	unite.txt	/*g:unite_source_file_rec_max_cache_files*
@@ -712,8 +701,6 @@ g:unite_source_history_yank_limit	unite.txt	/*g:unite_source_history_yank_limit*
 g:unite_source_line_enable_highlight	unite.txt	/*g:unite_source_line_enable_highlight*
 g:unite_source_line_search_word_highlight	unite.txt	/*g:unite_source_line_search_word_highlight*
 g:unite_source_menu_menus	unite.txt	/*g:unite_source_menu_menus*
-g:unite_source_mru_do_validate	unite.txt	/*g:unite_source_mru_do_validate*
-g:unite_source_mru_update_interval	unite.txt	/*g:unite_source_mru_update_interval*
 g:unite_source_neobundle_install_max_processes	neobundle.txt	/*g:unite_source_neobundle_install_max_processes*
 g:unite_source_process_enable_confirm	unite.txt	/*g:unite_source_process_enable_confirm*
 g:unite_source_rec_async_command	unite.txt	/*g:unite_source_rec_async_command*
@@ -837,6 +824,8 @@ i_<Plug>(vimshell_push_current_line)	vimshell.txt	/*i_<Plug>(vimshell_push_curre
 i_<Plug>(vimshell_zsh_complete)	vimshell.txt	/*i_<Plug>(vimshell_zsh_complete)*
 i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
 i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
+i_vimshell_default_key_mappings	vimshell.txt	/*i_vimshell_default_key_mappings*
+i_vimshell_int_default_key_mappings	vimshell.txt	/*i_vimshell_int_default_key_mappings*
 indent-guides	indent_guides.txt	/*indent-guides*
 indent-guides-about	indent_guides.txt	/*indent-guides-about*
 indent-guides-changelog	indent_guides.txt	/*indent-guides-changelog*
@@ -1132,8 +1121,6 @@ unite-action-resolution-order	unite.txt	/*unite-action-resolution-order*
 unite-action-source	unite.txt	/*unite-action-source*
 unite-action-source-bookmark	unite.txt	/*unite-action-source-bookmark*
 unite-action-source-command	unite.txt	/*unite-action-source-command*
-unite-action-source-directory_mru	unite.txt	/*unite-action-source-directory_mru*
-unite-action-source-file_mru	unite.txt	/*unite-action-source-file_mru*
 unite-action-source-function	unite.txt	/*unite-action-source-function*
 unite-action-source-mapping	unite.txt	/*unite-action-source-mapping*
 unite-action-source-process	unite.txt	/*unite-action-source-process*
@@ -1267,6 +1254,7 @@ unite-options-winheight	unite.txt	/*unite-options-winheight*
 unite-options-winwidth	unite.txt	/*unite-options-winwidth*
 unite-options-wrap	unite.txt	/*unite-options-wrap*
 unite-source-alias	unite.txt	/*unite-source-alias*
+unite-source-arg-!	unite.txt	/*unite-source-arg-!*
 unite-source-attribute-action_table	unite.txt	/*unite-source-attribute-action_table*
 unite-source-attribute-alias_table	unite.txt	/*unite-source-attribute-alias_table*
 unite-source-attribute-async_gather_candidates	unite.txt	/*unite-source-attribute-async_gather_candidates*
@@ -1303,10 +1291,8 @@ unite-source-change	unite.txt	/*unite-source-change*
 unite-source-command	unite.txt	/*unite-source-command*
 unite-source-directory	unite.txt	/*unite-source-directory*
 unite-source-directory/new	unite.txt	/*unite-source-directory\/new*
-unite-source-directory_mru	unite.txt	/*unite-source-directory_mru*
 unite-source-file	unite.txt	/*unite-source-file*
 unite-source-file/new	unite.txt	/*unite-source-file\/new*
-unite-source-file_mru	unite.txt	/*unite-source-file_mru*
 unite-source-file_point	unite.txt	/*unite-source-file_point*
 unite-source-file_rec	unite.txt	/*unite-source-file_rec*
 unite-source-file_rec/async	unite.txt	/*unite-source-file_rec\/async*
@@ -1341,6 +1327,7 @@ v_<C-Y>,	emmet.txt	/*v_<C-Y>,*
 v_<Plug>(unite_toggle_selected_candidates)	unite.txt	/*v_<Plug>(unite_toggle_selected_candidates)*
 v_<Plug>(vimshell_select_next_prompt)	vimshell.txt	/*v_<Plug>(vimshell_select_next_prompt)*
 v_<Plug>(vimshell_select_previous_prompt)	vimshell.txt	/*v_<Plug>(vimshell_select_previous_prompt)*
+v_vimshell_default_key_mappings	vimshell.txt	/*v_vimshell_default_key_mappings*
 vgS	surround.txt	/*vgS*
 vimproc	vimproc.txt	/*vimproc*
 vimproc#cmd#system()	vimproc.txt	/*vimproc#cmd#system()*
@@ -1494,6 +1481,8 @@ vimshell-unite-sources	vimshell.txt	/*vimshell-unite-sources*
 vimshell-usage	vimshell.txt	/*vimshell-usage*
 vimshell-variables	vimshell.txt	/*vimshell-variables*
 vimshell.txt	vimshell.txt	/*vimshell.txt*
+vimshell_default_key_mappings	vimshell.txt	/*vimshell_default_key_mappings*
+vimshell_int_default_key_mappings	vimshell.txt	/*vimshell_int_default_key_mappings*
 yS	surround.txt	/*yS*
 ySS	surround.txt	/*ySS*
 ys	surround.txt	/*ys*

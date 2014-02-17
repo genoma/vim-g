@@ -21,8 +21,8 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'ntpeters/vim-better-whitespace'
-NeoBundle 'coot/EnchantedVim'
-NeoBundle 'coot/CRDispatcher'
+"NeoBundle 'coot/EnchantedVim'
+"NeoBundle 'coot/CRDispatcher'
 NeoBundle 'mattboehm/vim-accordion'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'mhinz/vim-signify'
@@ -47,7 +47,7 @@ NeoBundleCheck
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
 
-"{{{ Leader
+"{{{ Leader is ,
 let mapleader = ","
 let g:mapleader = ","
 "}}}
@@ -57,7 +57,6 @@ let g:mapleader = ","
 " Set Colorscheme
 set background=light
 colorscheme Tomorrow
-
 
 " Relative Numbers
 set relativenumber
@@ -180,7 +179,7 @@ map 0 ^
 map $ g_
 "}}}
 
-"{{{  Misc
+"{{{  Misc--> paste is <leader>pp
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
@@ -218,7 +217,7 @@ set foldmethod=marker
 let loaded_matchparen = 0
 "}}}
 
-" {{{Convert Spaces from 4 to 2
+" {{{Convert Spaces from 4 to 2 <leader>,c
 function! ConvertSpaces()
   setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
   %retab! " Convert the 4 space indents to tabs
