@@ -27,8 +27,7 @@ NeoBundle 'mhinz/vim-signify'
 NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-fugitive'
-
-NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tpope/vim-unimpaired'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -215,10 +214,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
 
 " {{{Fold Method Marker
 set foldmethod=marker
-"}}}
-
-" {{{NoMatchParen
-let loaded_matchparen = 0
 "}}}
 
 " {{{Convert Spaces from 4 to 2 <leader>,c

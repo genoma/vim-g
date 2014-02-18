@@ -20,5 +20,6 @@ vim-signature
 vim-signify
 vim-surround
 vim-tomorrow-theme
+vim-unimpaired
 vimproc
 vimshell.vim
