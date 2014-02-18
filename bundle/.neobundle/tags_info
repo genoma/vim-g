@@ -5,7 +5,6 @@ emmet-vim
 neobundle.vim
 neocomplete.vim
 nerdcommenter
-syntastic
 undotree
 unite.vim
 vim-accordion
