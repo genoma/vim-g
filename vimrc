@@ -28,6 +28,7 @@ NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'gcmt/wildfire.vim'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {

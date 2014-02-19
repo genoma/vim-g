@@ -385,6 +385,7 @@ ToggleWhitespace	better-whitespace.txt	/*ToggleWhitespace*
 [f	unimpaired.txt	/*[f*
 [l	unimpaired.txt	/*[l*
 [n	unimpaired.txt	/*[n*
+[ob	unimpaired.txt	/*[ob*
 [oc	unimpaired.txt	/*[oc*
 [od	unimpaired.txt	/*[od*
 [oh	unimpaired.txt	/*[oh*
@@ -418,6 +419,7 @@ ToggleWhitespace	better-whitespace.txt	/*ToggleWhitespace*
 ]f	unimpaired.txt	/*]f*
 ]l	unimpaired.txt	/*]l*
 ]n	unimpaired.txt	/*]n*
+]ob	unimpaired.txt	/*]ob*
 ]oc	unimpaired.txt	/*]oc*
 ]od	unimpaired.txt	/*]od*
 ]oh	unimpaired.txt	/*]oh*
@@ -497,6 +499,7 @@ airline-writing-extensions	airline.txt	/*airline-writing-extensions*
 airline.txt	airline.txt	/*airline.txt*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
 better-whitespace.txt	better-whitespace.txt	/*better-whitespace.txt*
+cob	unimpaired.txt	/*cob*
 coc	unimpaired.txt	/*coc*
 cod	unimpaired.txt	/*cod*
 coh	unimpaired.txt	/*coh*
@@ -651,6 +654,7 @@ fugitive-y_CTRL-G	fugitive.txt	/*fugitive-y_CTRL-G*
 fugitive-~	fugitive.txt	/*fugitive-~*
 fugitive.txt	fugitive.txt	/*fugitive.txt*
 g:EasyMotion_add_search_history	easymotion.txt	/*g:EasyMotion_add_search_history*
+g:EasyMotion_disable_two_key_combo	easymotion.txt	/*g:EasyMotion_disable_two_key_combo*
 g:EasyMotion_do_mapping	easymotion.txt	/*g:EasyMotion_do_mapping*
 g:EasyMotion_do_shade	easymotion.txt	/*g:EasyMotion_do_shade*
 g:EasyMotion_enter_jump_first	easymotion.txt	/*g:EasyMotion_enter_jump_first*
@@ -942,6 +946,7 @@ indent-guides-options	indent_guides.txt	/*indent-guides-options*
 indent-guides-terminal-vim	indent_guides.txt	/*indent-guides-terminal-vim*
 indent_guides.txt	indent_guides.txt	/*indent_guides.txt*
 neobundle	neobundle.txt	/*neobundle*
+neobundle#bundle()	neobundle.txt	/*neobundle#bundle()*
 neobundle#call_hook()	neobundle.txt	/*neobundle#call_hook()*
 neobundle#config()	neobundle.txt	/*neobundle#config()*
 neobundle#exists_not_installed_bundles()	neobundle.txt	/*neobundle#exists_not_installed_bundles()*
@@ -1578,6 +1583,14 @@ vimshell-variables	vimshell.txt	/*vimshell-variables*
 vimshell.txt	vimshell.txt	/*vimshell.txt*
 vimshell_default_key_mappings	vimshell.txt	/*vimshell_default_key_mappings*
 vimshell_int_default_key_mappings	vimshell.txt	/*vimshell_int_default_key_mappings*
+wildfire-about	wildfire.txt	/*wildfire-about*
+wildfire-advanced-setup	wildfire.txt	/*wildfire-advanced-setup*
+wildfire-contents	wildfire.txt	/*wildfire-contents*
+wildfire-intro	wildfire.txt	/*wildfire-intro*
+wildfire-license	wildfire.txt	/*wildfire-license*
+wildfire-usage	wildfire.txt	/*wildfire-usage*
+wildfire.txt	wildfire.txt	/*wildfire.txt*
+wildfire.vim	wildfire.txt	/*wildfire.vim*
 yA	unimpaired.txt	/*yA*
 yI	unimpaired.txt	/*yI*
 yO	unimpaired.txt	/*yO*
