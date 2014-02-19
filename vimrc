@@ -13,7 +13,6 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'csscomb/csscomb-for-vim'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'Shougo/unite.vim'
@@ -29,6 +28,7 @@ NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'gcmt/wildfire.vim'
+NeoBundle 'ervandew/supertab'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -192,10 +192,8 @@ nnoremap gp `[v`]
 "}}}
 
 " {{{Remap for faster write and close
-command WQ wq
-command Wq wq
-command W w
-command Q q
+cab W w
+cab Q q
 "}}}
 
 " {{{Force filetype
@@ -227,75 +225,6 @@ endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
 "}}}
 
-" {{{NEOCOMPLETE
-
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-let g:neocomplete#max_list = 20
-
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-" Define dictionary.
-let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
-
-" Ctacs
-let g:neocomplete#ctags_command = "/usr/local/bin/ctags"
-
-" Define keyword.
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
-
-" Recommended key-mappings.
-
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-
-function! s:my_cr_function()
-  " return neocomplete#close_popup()<CR>
-  " For no inserting <CR> key.
-   return pumvisible() ? neocomplete#close_popup() : "\<CR>"
-endfunction
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplete#close_popup()
-inoremap <expr><C-e>  neocomplete#cancel_popup()
-
-" Enable omni completion.
-autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown,smarty setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript,coffee setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-"}}}
-
 " {{{UNITE
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
@@ -311,6 +240,15 @@ map <silent><leader>,n :Vexplore<cr>
 nnoremap <silent><leader>u  :UndotreeToggle<cr>
 "}}}
 
+"imap <Tab> <C-P>
+"imap <leader>x <C-X><C-F>
+"set complete=.,b,u,]
+"set wildmode=longest,list:longest
+"set completeopt=menu,preview
+
+set omnifunc=syntaxcomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+
 "{{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
@@ -321,3 +259,4 @@ runtime! plugin/sensible.vim
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
 "}}}
+
