@@ -242,9 +242,9 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 
 "imap <Tab> <C-P>
 "imap <leader>x <C-X><C-F>
-"set complete=.,b,u,]
-"set wildmode=longest,list:longest
-"set completeopt=menu,preview
+set complete=.,b,u,]
+set wildmode=longest,list:longest
+set completeopt=menu,preview
 
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
