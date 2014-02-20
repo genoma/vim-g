@@ -240,14 +240,12 @@ map <silent><leader>,n :Vexplore<cr>
 nnoremap <silent><leader>u  :UndotreeToggle<cr>
 "}}}
 
-"imap <Tab> <C-P>
-"imap <leader>x <C-X><C-F>
+"{{{ Supertab
 set complete=.,b,u,]
-set wildmode=longest,list:longest
 set completeopt=menu,preview
-
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
+"}}}
 
 "{{{ Tim Pope Sensible.vim
 
