@@ -42,29 +42,30 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
-- kchmck/vim-coffee-script
-- scrooloose/nerdcommenter
-- mattn/emmet-vim
-- rking/ag.vim
-- csscomb/csscomb-for-vim
-- Raimondi/delimitMate
-- nathanaelkane/vim-indent-guides
-- tpope/vim-surround
-- chriskempson/vim-tomorrow-theme
-- Shougo/unite.vim
-- Shougo/vimshell.vim
-- Lokaltog/vim-easymotion
 - bling/vim-airline
-- ntpeters/vim-better-whitespace
+- chriskempson/vim-tomorrow-theme
+- csscomb/csscomb-for-vim
+- ervandew/supertab
+- gcmt/wildfire.vim
+- kchmck/vim-coffee-script
+- kshenoy/vim-signature
+- Lokaltog/vim-easymotion
 - mattboehm/vim-accordion
+- mattn/emmet-vim
 - mbbill/undotree
 - mhinz/vim-signify
-- kshenoy/vim-signature
-- tpope/vim-sensible
-- tpope/vim-fugitive
-- tpope/vim-unimpaired
-- gcmt/wildfire.vim
-- ervandew/supertab
+- nathanaelkane/vim-indent-guides
+- ntpeters/vim-better-whitespace
+- plasticboy/vim-markdown
+- Raimondi/delimitMate
+- rking/ag.vim
+- scrooloose/nerdcommenter
+- Shougo/unite.vim
 - Shougo/vimproc
+- Shougo/vimshell.vim
+- tpope/vim-fugitive
+- tpope/vim-sensible
+- tpope/vim-surround
+- tpope/vim-unimpaired
 
 ####Read carefully the vimrc for shortcuts and configurations.

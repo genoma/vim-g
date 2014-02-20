@@ -29,6 +29,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'ervandew/supertab'
+NeoBundle 'plasticboy/vim-markdown'
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -242,9 +243,14 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 
 "{{{ Supertab
 set complete=.,b,u,]
-set completeopt=menu,preview
+"set completeopt=menu,preview
+set completeopt=longest,menuone
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
+"}}}
+
+"{{{ Vim Markdown
+let g:vim_markdown_folding_disabled=1
 "}}}
 
 "{{{ Tim Pope Sensible.vim

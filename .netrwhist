@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/jenoma/Documents/work/commandguru_responsive'
-let g:netrw_dirhist_2='/Users/jenoma/Documents/work/commandguru_responsive/sass'
-let g:netrw_dirhist_3='/Users/jenoma/.vim'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jenoma/Documents/colonexplorer'
+let g:netrw_dirhist_2='/Users/jenoma/Documents/colonexplorer/templates'
+let g:netrw_dirhist_3='/Volumes/Agatha-Site/amollomanonmollo.com/wp-content/themes/foremilia'
+let g:netrw_dirhist_4='/Users/jenoma/.vim'
+let g:netrw_dirhist_5='/Volumes/Agatha-Site/amollomanonmollo.com/wp-content/themes/foremilia'
+let g:netrw_dirhist_6='/Users/jenoma/Documents/colonexplorer'
+let g:netrw_dirhist_7='/Users/jenoma/Documents/colonexplorer/templates'
+let g:netrw_dirhist_8='/Users/jenoma/.vim'

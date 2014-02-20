@@ -14,6 +14,7 @@ vim-coffee-script
 vim-easymotion
 vim-fugitive
 vim-indent-guides
+vim-markdown
 vim-sensible
 vim-signature
 vim-signify
