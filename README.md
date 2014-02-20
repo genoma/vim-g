@@ -3,12 +3,11 @@ g-vim (genoma's vim)
 
 Vim custom configuration built for interface web designers, with a small but functional set of plugins.
 
-The aim of this Vim setup is to be as functional as possible, using the built-in Vim plugins as **netrw** and **omni completion**.
-
+The aim of this Vim setup is to be as functional as possible, using the built-in Vim plugin **netrw**.
 
 # INFORMATIONS
 
-This setup has been tested with Vim compiled from source, latest iTerm2 nightly build and Homebrew on OSX.
+This setup has been tested with Vim compiled from source with **lua**, latest iTerm2 nightly build and Homebrew on OSX.
 
 ## BASIC STEPS
 
@@ -16,6 +15,7 @@ This setup has been tested with Vim compiled from source, latest iTerm2 nightly 
 Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions. Install **the_silver_searcher**
 
 `$ brew install the_silver_searcher`
+`$ brew install lua`
 
 ### VIM
 Clone the official repository
@@ -28,7 +28,7 @@ Clone the official repository
 
 Compile the source
 
-`$ ./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x`
+`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x --with-lua-prefix=/usr/local`
 
 `$ make && make install`
 
@@ -69,3 +69,25 @@ Link the vimrc to ~/.vimrc
 - tpope/vim-unimpaired
 
 ####Read carefully the vimrc for shortcuts and configurations.
+
+# LICENSE
+The MIT License (MIT)
+
+Copyright (c) 2014 Alessandro Vioni
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

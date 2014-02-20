@@ -3,8 +3,8 @@ csscomb-for-vim
 delimitMate
 emmet-vim
 neobundle.vim
+neocomplete.vim
 nerdcommenter
-supertab
 undotree
 unite.vim
 vim-accordion
