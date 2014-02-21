@@ -233,7 +233,8 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 "}}}
 
 "{{{ Neocomplete Settings
-	" Note: This option must set it in .vimrc(_vimrc).
+
+  " Note: This option must set it in .vimrc(_vimrc).
 	" NOT IN .gvimrc(_gvimrc)!
 	" Disable AutoComplPop.
 	let g:acp_enableAtStartup = 0
@@ -266,6 +267,7 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 	" <CR>: close popup and save indent.
 	inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 	function! s:my_cr_function()
+		"return neocomplete#close_popup() . "\<CR>"
 	  " For no inserting <CR> key.
     return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 	endfunction
@@ -290,7 +292,7 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 	"let g:neocomplete#enable_insert_char_pre = 1
 
 	" AutoComplPop like behavior.
-  "let g:neocomplete#enable_auto_select = 1
+	"let g:neocomplete#enable_auto_select = 1
 
 	" Shell like behavior(not recommended).
 	"set completeopt+=longest
@@ -299,9 +301,9 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 	"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
 
 	" Enable omni completion.
-	autocmd FileType css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
-	autocmd FileType html,markdown,tpl setlocal omnifunc=htmlcomplete#CompleteTags
-	autocmd FileType javascript,coffeescript setlocal omnifunc=javascriptcomplete#CompleteJS
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
@@ -312,6 +314,27 @@ nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
 	if !exists('g:neocomplete#force_omni_input_patterns')
 	  let g:neocomplete#force_omni_input_patterns = {}
 	endif
+  let g:neocomplete#sources#omni#input_patterns.php =
+  \ '[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+	"let g:neocomplete#sources#omni#input_patterns.c =
+	"\ '[^.[:digit:] *\t]\%(\.\|->\)\%(\h\w*\)\?'
+	"let g:neocomplete#sources#omni#input_patterns.cpp =
+	"\ '[^.[:digit:] *\t]\%(\.\|->\)\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+
+	" For perlomni.vim setting.
+	" https://github.com/c9s/perlomni.vim
+	"let g:neocomplete#sources#omni#input_patterns.perl =
+	"\ '[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+
+	" For smart TAB completion.
+	"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
+	"        \ <SID>check_back_space() ? "\<TAB>" :
+	"        \ neocomplete#start_manual_complete()
+	"  function! s:check_back_space() "{{{
+	"    let col = col('.') - 1
+	"    return !col || getline('.')[col - 1]  =~ '\s'
+	"  endfunction"}}}
+
   "}}}
 
 " {{{NETRW

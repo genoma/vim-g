@@ -3,6 +3,8 @@ g-vim (genoma's vim)
 
 Vim custom configuration built for interface web designers, with a small but functional set of plugins.
 
+_This is basically a backup of my own Vim configuration, you can use it, fork it, modify to your own tastes._
+
 The aim of this Vim setup is to be as functional as possible, using the built-in Vim plugin **netrw**.
 
 # INFORMATIONS
@@ -45,7 +47,6 @@ Link the vimrc to ~/.vimrc
 - bling/vim-airline
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
-- ervandew/supertab
 - gcmt/wildfire.vim
 - kchmck/vim-coffee-script
 - kshenoy/vim-signature
@@ -60,6 +61,7 @@ Link the vimrc to ~/.vimrc
 - Raimondi/delimitMate
 - rking/ag.vim
 - scrooloose/nerdcommenter
+- Shougo/neocomplete.vim
 - Shougo/unite.vim
 - Shougo/vimproc
 - Shougo/vimshell.vim
