@@ -1,9 +1,8 @@
-" Vundle
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundles:
+" My Bundles here:
 
 Bundle 'gmarik/vundle'
 
@@ -31,7 +30,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'ervandew/supertab'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
@@ -257,6 +255,12 @@ endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
 "}}}
 
+" {{{UNITE
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"nnoremap <leader>r :<C-u>Unite -start-insert file_rec/async:!<CR>
+"nnoremap <leader>f :<C-u>Unite -start-insert file<CR>
+"}}}
+
 " {{{NETRW
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
@@ -270,10 +274,6 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 let g:vim_markdown_folding_disabled=1
 "}}}
 
-"{{{ SuperTab
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-"}}}
-
 "{{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
@@ -284,3 +284,4 @@ runtime! plugin/sensible.vim
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
 "}}}
+

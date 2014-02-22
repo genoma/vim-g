@@ -1,12 +1,11 @@
+YouCompleteMe
 ag.vim
 csscomb-for-vim
 delimitMate
 emmet-vim
 neobundle.vim
-neocomplete.vim
 nerdcommenter
 undotree
-unite.vim
 vim-accordion
 vim-airline
 vim-better-whitespace
@@ -14,6 +13,7 @@ vim-coffee-script
 vim-easymotion
 vim-fugitive
 vim-indent-guides
+vim-less
 vim-markdown
 vim-sensible
 vim-signature
@@ -21,6 +21,4 @@ vim-signify
 vim-surround
 vim-tomorrow-theme
 vim-unimpaired
-vimproc
-vimshell.vim
 wildfire.vim
