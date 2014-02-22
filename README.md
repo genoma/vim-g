@@ -74,7 +74,7 @@ Compile it
 - plasticboy/vim-markdown
 - Raimondi/delimitMate
 - rking/ag.vim
-- scrooloose/nerdcommenter
+- tomtom/tcomment_vim
 - tpope/vim-fugitive
 - tpope/vim-sensible
 - tpope/vim-surround
