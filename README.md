@@ -1,4 +1,4 @@
-g-vim (genoma's vim)
+genomA-Vim (genoma's vim)
 =====
 
 ![genoma's vim](screen.png)
