@@ -42,12 +42,23 @@ Link the vimrc to ~/.vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
+Enter the YouCompleteMe directory inside bundle
+
+`cd ~/.vim/bundle/YouCompleteMe`
+
+Compile it
+
+`./install.sh`
+
 # PLUGINS
+
+- gmarik/vundle
 
 - bling/vim-airline
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
 - gcmt/wildfire.vim
+- groenewege/vim-less
 - kchmck/vim-coffee-script
 - kshenoy/vim-signature
 - Lokaltog/vim-easymotion
@@ -61,14 +72,13 @@ Link the vimrc to ~/.vimrc
 - Raimondi/delimitMate
 - rking/ag.vim
 - scrooloose/nerdcommenter
-- Shougo/neocomplete.vim
-- Shougo/unite.vim
-- Shougo/vimproc
-- Shougo/vimshell.vim
 - tpope/vim-fugitive
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
+
+- Valloric/YouCompleteMe
+- ervandew/supertab
 
 ####Read carefully the vimrc for shortcuts and configurations.
 
