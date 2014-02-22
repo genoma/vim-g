@@ -39,15 +39,20 @@ Compile the source
 
 `$ make && make install`
 
-Clone the repository in your home directory
+### Clone this repository and vundle in your home directory
 
 `git clone https://github.com/genoma/g-vim.git .vim`
+
+`$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
 
 Link the vimrc to ~/.vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
-Enter the YouCompleteMe directory inside bundle
+#### Start vim and launch 
+`:BundleInstall`
+
+#### Enter the YouCompleteMe directory inside bundle
 
 `cd ~/.vim/bundle/YouCompleteMe`
 
