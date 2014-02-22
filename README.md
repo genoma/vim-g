@@ -14,7 +14,9 @@ This setup has been tested with Vim compiled from source with **lua**, latest iT
 ## BASIC STEPS
 
 ### Homebrew
-Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions. Install **the_silver_searcher**
+Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
+
+Install **the_silver_searcher** and **lua**
 
 `$ brew install the_silver_searcher`
 `$ brew install lua`
