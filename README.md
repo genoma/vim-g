@@ -1,6 +1,8 @@
 g-vim (genoma's vim)
 =====
 
+![genoma's vim](screen.jpeg)
+
 Vim custom configuration built for interface web designers, with a small but functional set of plugins.
 
 _This is basically a backup of my own Vim configuration, you can use it, fork it, modify to your own tastes._
