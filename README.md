@@ -1,4 +1,4 @@
-genomA-Vim (genoma's vim)
+genomA-Vim
 =====
 
 ![genoma's vim](screen.png)
@@ -88,7 +88,6 @@ Compile it
 - tpope/vim-unimpaired
 
 - Valloric/YouCompleteMe
-- ervandew/supertab
 
 ####Read carefully the vimrc for shortcuts and configurations.
 
