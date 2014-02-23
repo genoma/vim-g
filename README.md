@@ -34,7 +34,7 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x`
+`./configure --enable-multibyte --with-tlib=ncurses --enable-cscope --with-features=huge --enable-gui=no --without-x`
 
 `$ make && make install`
 
