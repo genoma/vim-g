@@ -30,7 +30,9 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'ervandew/supertab'
+
+" Bundle 'Valloric/YouCompleteMe'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
@@ -149,17 +151,17 @@ set noswapfile
 
 "{{{ Status line
 set statusline=   " clear the statusline for when vimrc is reloaded
-set statusline+=%-3.3n\                      " buffer number
-set statusline+=%f\                          " file name
-set statusline+=%h%m%r%w                     " flags
+set statusline+=%-3.3n\            " buffer number
+set statusline+=%f\              " file name
+set statusline+=%h%m%r%w           " flags
 set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
-set statusline+=%{&fileformat}]              " file format
-set statusline+=%=                           " right align
+set statusline+=%{&fileformat}]        " file format
+set statusline+=%=               " right align
 set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
-set statusline+=%b,0x%-8B\                   " current char
-set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
-set statusline+=%{fugitive#statusline()}     " fugitive
+set statusline+=%b,0x%-8B\           " current char
+set statusline+=%-14.(%l,%c%V%)\ %<%P    " offset
+set statusline+=%{fugitive#statusline()}   " fugitive
 "}}}
 
 "{{{ Editing mappings
@@ -180,15 +182,11 @@ nnoremap gp `[v`]
 
 "}}}
 
-" {{{Remap for faster write and close
-cab W w
-cab Q q
-"}}}
-
 " {{{Force filetype
 au BufRead,BufNewFile *.tpl set filetype=smarty.html
 au BufRead,BufNewFile *.scss set filetype=scss.css
 au BufRead,BufNewFile *.sass set filetype=sass.css
+au BufRead,BufNewFile *.less set filetype=less.css
 "}}}
 
 "{{{ Mixed settings
@@ -205,9 +203,9 @@ set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 set showbreak=↪
 
 " Scroll
-set scrolloff=8         " Number of lines from vertical edge to start scrolling
-set sidescrolloff=15    " Number of cols from horizontal edge to start scrolling
-set sidescroll=1        " Number of cols to scroll at a time
+set scrolloff=8     " Number of lines from vertical edge to start scrolling
+set sidescrolloff=15  " Number of cols from horizontal edge to start scrolling
+set sidescroll=1    " Number of cols to scroll at a time
 
 " Sane Regexes
 nnoremap / /\v
@@ -237,6 +235,14 @@ function! ConvertSpaces()
 endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
 "}}}
+
+set completeopt=longest,menuone
+if has("autocmd") && exists("+omnifunc")
+  autocmd Filetype *
+        \ if &omnifunc == "" |
+        \   setlocal omnifunc=syntaxcomplete#Complete |
+        \ endif
+endif
 
 " {{{NETRW
 map <silent><leader>n :Explore<cr>

@@ -18,8 +18,7 @@ This setup has been tested with Vim compiled from source with **lua**, latest iT
 ### Homebrew
 Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
 
-Install **the_silver_searcher** and **lua**
-_lua is not exactly needed_
+Install **the_silver_searcher**
 
 `$ brew install the_silver_searcher`
 `$ brew install lua`
@@ -35,7 +34,7 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x --with-lua-prefix=/usr/local`
+`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x`
 
 `$ make && make install`
 
@@ -49,16 +48,8 @@ Link the vimrc to ~/.vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
-#### Start vim and launch 
+#### Start vim and launch
 `:BundleInstall`
-
-#### Enter the YouCompleteMe directory inside bundle
-
-`cd ~/.vim/bundle/YouCompleteMe`
-
-Compile it
-
-`./install.sh`
 
 # PLUGINS
 
@@ -87,7 +78,7 @@ Compile it
 - tpope/vim-surround
 - tpope/vim-unimpaired
 
-- Valloric/YouCompleteMe
+- ervandew/supertab
 
 ####Read carefully the vimrc for shortcuts and configurations.
 
