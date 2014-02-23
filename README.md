@@ -3,11 +3,7 @@ genomA-Vim
 
 ![genoma's vim](screen.png)
 
-Vim custom configuration built for interface web developers and web designers, with a small but functional set of plugins.
-
-_This is basically a backup of my own Vim configuration, you can use it, fork it, modify to your own tastes._
-
-The aim of this Vim setup is to be as functional as possible, using the built-in Vim plugin **netrw**.
+**This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sass/coffeescript/html editing.**
 
 # INFORMATIONS
 
