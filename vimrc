@@ -31,7 +31,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'ervandew/supertab'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
@@ -205,10 +204,6 @@ set list
 set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 set showbreak=↪
 
-" Save on FocusLost
-au FocusLost * :silent! wall
-au FocusLost * call feedkeys("\<C-\>\<C-n>")
-
 " Scroll
 set scrolloff=8         " Number of lines from vertical edge to start scrolling
 set sidescrolloff=15    " Number of cols from horizontal edge to start scrolling
@@ -217,20 +212,6 @@ set sidescroll=1        " Number of cols to scroll at a time
 " Sane Regexes
 nnoremap / /\v
 vnoremap / /\v
-
-" Persistent Undo
-if exists("+undofile")
-  " undofile - This allows you to use undos after exiting and restarting
-  " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
-  " :help undo-persistence
-  " This is only present in 7.3+
-  if isdirectory($HOME . '/.vim/undo') == 0
-    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
-  endif
-  set undodir=./.vim-undo//
-  set undodir+=~/.vim/undo//
-  set undofile
-endif
 
 "}}}
 
@@ -268,10 +249,6 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 
 "{{{ Vim Markdown
 let g:vim_markdown_folding_disabled=1
-"}}}
-
-"{{{ SuperTab
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "}}}
 
 "{{{ Tim Pope Sensible.vim
