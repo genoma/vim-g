@@ -17,7 +17,6 @@ Download **Homebrew** from [this link](http://brew.sh/) and follow the instructi
 Install **the_silver_searcher**
 
 `$ brew install the_silver_searcher`
-`$ brew install lua`
 
 ### VIM
 Clone the official repository
