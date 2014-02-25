@@ -77,6 +77,7 @@ Link the vimrc to ~/.vimrc
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
+- tpope/vim-vinegar
 
 # Auto Complete
 - ervandew/supertab

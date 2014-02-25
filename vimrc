@@ -7,6 +7,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'csscomb/csscomb-for-vim'
@@ -30,7 +31,6 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
-
 Bundle 'ervandew/supertab'
 
 " Bundle 'Valloric/YouCompleteMe'
