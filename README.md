@@ -1,7 +1,7 @@
 genomA-Vim
 =====
 
-![genoma's vim](screen.png)
+![genoma's vim](screen.jpg)
 
 **This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sass/coffeescript/html editing.**
 
