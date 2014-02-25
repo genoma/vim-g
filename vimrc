@@ -7,8 +7,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'csscomb/csscomb-for-vim'
 Bundle 'gcmt/wildfire.vim'
@@ -31,9 +30,9 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
-Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
 
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'ervandew/supertab'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
@@ -151,18 +150,22 @@ set noswapfile
 "}}}
 
 "{{{ Status line
-set statusline=   " clear the statusline for when vimrc is reloaded
-set statusline+=%-3.3n\            " buffer number
-set statusline+=%f\              " file name
-set statusline+=%h%m%r%w           " flags
-set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
-set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
-set statusline+=%{&fileformat}]        " file format
-set statusline+=%=               " right align
-set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
-set statusline+=%b,0x%-8B\           " current char
-set statusline+=%-14.(%l,%c%V%)\ %<%P    " offset
-set statusline+=%{fugitive#statusline()}   " fugitive
+set statusline=                                                       " clear the statusline for when vimrc is reloaded
+set statusline+=\ \                                                   " Separator
+set statusline+=\ \                                                   " Separator
+set statusline+=%-3.3n\                                               " buffer number
+set statusline+=%f\                                                   " file name
+set statusline+=%h%m%r%w                                              " flags
+set statusline+=[%{strlen(&ft)?&ft:'none'},                           " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc},                          " encoding
+set statusline+=%{&fileformat}]                                       " file format
+set statusline+=%=                                                    " right align
+set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
+set statusline+=%b,0x%-8B\                                            " current char
+set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
+set statusline+=%{fugitive#statusline()}                              " fugitive
+set statusline+=\ \                                                   " Separator
+set statusline+=\ \                                                   " Separator
 "}}}
 
 "{{{ Editing mappings
@@ -281,3 +284,5 @@ runtime! plugin/sensible.vim
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
 "}}}
+
+hi StatusLine ctermbg=white ctermfg=blue

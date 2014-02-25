@@ -53,7 +53,6 @@ Link the vimrc to ~/.vimrc
 # Plugins support with vundle
 - gmarik/vundle
 
-- bling/vim-airline
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
 - gcmt/wildfire.vim
