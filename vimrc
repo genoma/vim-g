@@ -29,6 +29,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-vinegar'
 
 Bundle 'ervandew/supertab'
 
@@ -211,6 +212,14 @@ set sidescroll=1    " Number of cols to scroll at a time
 nnoremap / /\v
 vnoremap / /\v
 
+" Keep search pattern at the center of the screen.
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+nnoremap <silent> g# g#zz
+
 "}}}
 
 " {{{Indent Guides settings
@@ -236,6 +245,7 @@ endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
 "}}}
 
+"{{{ Autocomplete
 set completeopt=longest,menuone
 if has("autocmd") && exists("+omnifunc")
   autocmd Filetype *
@@ -243,6 +253,7 @@ if has("autocmd") && exists("+omnifunc")
         \   setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
 endif
+"}}}
 
 " {{{NETRW
 map <silent><leader>n :Explore<cr>
