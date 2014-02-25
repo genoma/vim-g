@@ -14,9 +14,11 @@ This setup has been tested with Vim compiled from source with **lua**, latest iT
 ### Homebrew
 Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
 
-Install **the_silver_searcher**
+Install **the_silver_searcher** and **lua**
 
 `$ brew install the_silver_searcher`
+
+`$ brew install lua`
 
 ### VIM
 Clone the official repository
@@ -29,7 +31,7 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --enable-cscope --with-features=huge --enable-gui=no --without-x`
+`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x --with-lua-prefix=/usr/local --disable-netbeans --enable-fail-if-missing --with-mac-arch=intel`
 
 `$ make && make install`
 
@@ -48,6 +50,7 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
+# Plugins support with vundle
 - gmarik/vundle
 
 - bling/vim-airline
@@ -68,11 +71,14 @@ Link the vimrc to ~/.vimrc
 - Raimondi/delimitMate
 - rking/ag.vim
 - tomtom/tcomment_vim
+
+# Tim Pope
 - tpope/vim-fugitive
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
 
+# Auto Complete
 - ervandew/supertab
 
 ####Read carefully the vimrc for shortcuts and configurations.

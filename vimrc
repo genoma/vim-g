@@ -220,6 +220,9 @@ nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 nnoremap <silent> g# g#zz
 
+" Redraw
+map <Leader>,b :redraw!<cr>
+
 "}}}
 
 " {{{Indent Guides settings
