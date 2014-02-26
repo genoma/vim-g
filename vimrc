@@ -7,7 +7,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-" Bundle 'bling/vim-airline'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'csscomb/csscomb-for-vim'
 Bundle 'gcmt/wildfire.vim'
@@ -115,7 +114,7 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
-map <leader>t<leader> :tabnext
+map <leader>t<leader> :tabnext<cr>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -186,7 +185,7 @@ au BufRead,BufNewFile *.less set filetype=less.css
 map <leader>pp :setlocal paste!<cr>
 
 " Fix Syntax Highlight
-autocmd BufEnter * :syntax sync fromstart
+" autocmd BufEnter * :syntax sync fromstart
 
 " gv select the previously selected area, gv select the previously pasted area
 nnoremap gp `[v`]
@@ -232,7 +231,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
 set foldmethod=marker
 "}}}
 
-" {{{Convert Spaces from 4 to 2 <leader>,c
+" {{{Convert Spaces from 4 to 2
 function! ConvertSpaces()
   setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
   %retab! " Convert the 4 space indents to tabs
@@ -260,6 +259,7 @@ if has("autocmd") && exists("+omnifunc")
         \   setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
 endif
+let g:SuperTabDefaultCompletionType = "context"
 "}}}
 
 " {{{NETRW
