@@ -173,18 +173,6 @@ map 0 ^
 map $ g_
 "}}}
 
-"{{{  Misc--> paste is <leader>pp
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
-" Fix Syntax Highlight
-autocmd BufEnter * :syntax sync fromstart
-
-" gv select the previously selected area, gv select the previously pasted area
-nnoremap gp `[v`]
-
-"}}}
-
 " {{{Force filetype
 au BufRead,BufNewFile *.tpl set filetype=smarty.html
 au BufRead,BufNewFile *.scss set filetype=scss.css
@@ -193,6 +181,15 @@ au BufRead,BufNewFile *.less set filetype=less.css
 "}}}
 
 "{{{ Misc settings
+
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
+
+" Fix Syntax Highlight
+autocmd BufEnter * :syntax sync fromstart
+
+" gv select the previously selected area, gv select the previously pasted area
+nnoremap gp `[v`]
 
 " select all
 map <Leader>a ggVG
@@ -219,7 +216,6 @@ set autoread
 
 " Redraw
 map <Leader>,b :redraw!<cr>
-
 
 "}}}
 
