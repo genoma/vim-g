@@ -39,7 +39,6 @@ Bundle 'ervandew/supertab'
 
 "{{{ Leader is ,
 let mapleader = ","
-let g:mapleader = ","
 "}}}
 
 "{{{ VIM user interface
@@ -154,14 +153,14 @@ set statusline=                                                       " clear th
 set statusline+=\ \                                                   " Separator
 set statusline+=\ \                                                   " Separator
 set statusline+=%-3.3n\                                               " buffer number
-set statusline+=%f\                                                   " file name
+set statusline+=%t\                                                   " file name
 set statusline+=%h%m%r%w                                              " flags
 set statusline+=[%{strlen(&ft)?&ft:'none'},                           " filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},                          " encoding
 set statusline+=%{&fileformat}]                                       " file format
 set statusline+=%=                                                    " right align
-set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
-set statusline+=%b,0x%-8B\                                            " current char
+" set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
+" set statusline+=%b,0x%-8B\                                            " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " fugitive
 set statusline+=\ \                                                   " Separator
@@ -193,7 +192,7 @@ au BufRead,BufNewFile *.sass set filetype=sass.css
 au BufRead,BufNewFile *.less set filetype=less.css
 "}}}
 
-"{{{ Mixed settings
+"{{{ Misc settings
 
 " select all
 map <Leader>a ggVG
@@ -215,16 +214,12 @@ set sidescroll=1    " Number of cols to scroll at a time
 nnoremap / /\v
 vnoremap / /\v
 
-" Keep search pattern at the center of the screen.
-nnoremap <silent> n nzz
-nnoremap <silent> N Nzz
-nnoremap <silent> * *zz
-nnoremap <silent> # #zz
-nnoremap <silent> g* g*zz
-nnoremap <silent> g# g#zz
+" Auto reload file if changes detected
+set autoread
 
 " Redraw
 map <Leader>,b :redraw!<cr>
+
 
 "}}}
 
@@ -251,6 +246,16 @@ endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
 "}}}
 
+"{{{ Convert 2 spaces to 4
+function! ConvertFourSpaces()
+  setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+  %retab! " Convert the 2 space indents to tabs
+  setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+  %retab  " Convert all tabs to 4 space indents
+endfunction
+nmap <Leader>,C :call ConvertFourSpaces()<CR>
+"}}}
+
 "{{{ Autocomplete
 set completeopt=longest,menuone
 if has("autocmd") && exists("+omnifunc")
@@ -274,6 +279,10 @@ nnoremap <silent><leader>u  :UndotreeToggle<cr>
 let g:vim_markdown_folding_disabled=1
 "}}}
 
+"{{{ Better Whitespace Settings
+let g:strip_whitespace_on_save = 1
+"}}}
+
 "{{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
@@ -285,4 +294,10 @@ hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
 "}}}
 
+"{{{ StatusLine color
 hi StatusLine ctermbg=white ctermfg=blue
+"}}}
+
+"{{{ Better Whitespace color
+highlight ExtraWhitespace ctermbg = blue
+"}}}
