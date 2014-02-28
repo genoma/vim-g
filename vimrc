@@ -1,5 +1,4 @@
-" Vundle
-" set the runtime path to include Vundle and initialize
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -17,7 +16,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattboehm/vim-accordion'
 Bundle 'mattn/emmet-vim'
 Bundle 'mbbill/undotree'
-Bundle 'mhinz/vim-signify'
+" Bundle 'mhinz/vim-signify'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'plasticboy/vim-markdown'
@@ -150,7 +149,6 @@ set noswapfile
 "{{{ Status line
 set statusline=                                                       " clear the statusline for when vimrc is reloaded
 set statusline+=\ \                                                   " Separator
-set statusline+=\ \                                                   " Separator
 set statusline+=%-3.3n\                                               " buffer number
 set statusline+=%t\                                                   " file name
 set statusline+=%h%m%r%w                                              " flags
@@ -163,7 +161,6 @@ set statusline+=%=                                                    " right al
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " fugitive
 set statusline+=\ \                                                   " Separator
-set statusline+=\ \                                                   " Separator
 "}}}
 
 "{{{ Editing mappings
@@ -173,10 +170,10 @@ map $ g_
 "}}}
 
 " {{{Force filetype
-au BufRead,BufNewFile *.tpl set filetype=smarty.html
-au BufRead,BufNewFile *.scss set filetype=scss.css
-au BufRead,BufNewFile *.sass set filetype=sass.css
-au BufRead,BufNewFile *.less set filetype=less.css
+" au BufRead,BufNewFile *.tpl set filetype=smarty.html
+" au BufRead,BufNewFile *.scss set filetype=scss.css
+" au BufRead,BufNewFile *.sass set filetype=sass.css
+" au BufRead,BufNewFile *.less set filetype=less.css
 "}}}
 
 "{{{ Misc settings
@@ -185,7 +182,7 @@ au BufRead,BufNewFile *.less set filetype=less.css
 map <leader>pp :setlocal paste!<cr>
 
 " Fix Syntax Highlight
-" autocmd BufEnter * :syntax sync fromstart
+autocmd BufEnter * :syntax sync fromstart
 
 " gv select the previously selected area, gv select the previously pasted area
 nnoremap gp `[v`]
@@ -216,6 +213,8 @@ set autoread
 " Redraw
 map <Leader>,b :redraw!<cr>
 
+" Claculator
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 "}}}
 
 " {{{Indent Guides settings
