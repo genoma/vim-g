@@ -270,14 +270,6 @@ map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
 " }}}
 
-"{{{ UndoTree Mapping
-nnoremap <silent><leader>u  :UndotreeToggle<cr>
-"}}}
-
-"{{{ Vim Markdown
-let g:vim_markdown_folding_disabled=1
-"}}}
-
 "{{{ Better Whitespace Settings
 let g:strip_whitespace_on_save = 1
 "}}}
