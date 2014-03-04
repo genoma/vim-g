@@ -50,36 +50,31 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
-# Plugins support with vundle
-- gmarik/vundle
-
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
+- ervandew/supertab
 - gcmt/wildfire.vim
+- gmarik/vundle
+- godlygeek/tabular
 - groenewege/vim-less
 - kchmck/vim-coffee-script
-- kshenoy/vim-signature
 - Lokaltog/vim-easymotion
-- mattboehm/vim-accordion
 - mattn/emmet-vim
-- mbbill/undotree
-- mhinz/vim-signify
+- mintplant/vim-literate-coffeescript
 - nathanaelkane/vim-indent-guides
 - ntpeters/vim-better-whitespace
-- plasticboy/vim-markdown
 - Raimondi/delimitMate
+- rizzatti/dash.vim
+- rizzatti/funcoo.vim
 - rking/ag.vim
 - tomtom/tcomment_vim
-
-# Tim Pope
 - tpope/vim-fugitive
+- tpope/vim-markdown
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
 - tpope/vim-vinegar
-
-# Auto Complete
-- ervandew/supertab
+- wakatime/vim-wakatime
 
 ####Read carefully the vimrc for shortcuts and configurations.
 
