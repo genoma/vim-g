@@ -1,5 +1,5 @@
 genomA-Vim
-=====
+==========
 
 ![genoma's vim](screen.png)
 
@@ -50,11 +50,14 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
+### Packet Manager
+- gmarik/vundle
+
+### Packages
+- airblade/vim-gitgutter
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
-- ervandew/supertab
 - gcmt/wildfire.vim
-- gmarik/vundle
 - godlygeek/tabular
 - groenewege/vim-less
 - kchmck/vim-coffee-script
@@ -64,8 +67,6 @@ Link the vimrc to ~/.vimrc
 - nathanaelkane/vim-indent-guides
 - ntpeters/vim-better-whitespace
 - Raimondi/delimitMate
-- rizzatti/dash.vim
-- rizzatti/funcoo.vim
 - rking/ag.vim
 - tomtom/tcomment_vim
 - tpope/vim-fugitive
@@ -76,7 +77,10 @@ Link the vimrc to ~/.vimrc
 - tpope/vim-vinegar
 - wakatime/vim-wakatime
 
-####Read carefully the vimrc for shortcuts and configurations.
+### Auto Complete
+- ervandew/supertab
+
+#### Read carefully the vimrc for shortcuts and configurations.
 
 # LICENSE
 The MIT License (MIT)
