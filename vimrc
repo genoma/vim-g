@@ -84,7 +84,7 @@ set si "Smart indent
 set nowrap "Don't wrap lines
 " }}}
 
-" {{{  Moving around, tabs, windows and buffers
+" {{{ Moving around, tabs, windows and buffers
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
@@ -161,7 +161,7 @@ map 0 ^
 map $ g_
 " }}}
 
-" {{{Force filetype
+" {{{ Force filetype
 " au BufRead,BufNewFile *.tpl set filetype=smarty.html
 " au BufRead,BufNewFile *.scss set filetype=scss.css
 " au BufRead,BufNewFile *.sass set filetype=sass.css
@@ -208,7 +208,7 @@ map <Leader>,b :redraw!<cr>
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 " }}}
 
-" {{{Indent Guides settings
+" {{{ Indent Guides settings
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
@@ -217,11 +217,11 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
 " }}}
 
-" {{{Fold Method Marker
+" {{{ Fold Method Marker
 set foldmethod=marker
 " }}}
 
-" {{{Convert Spaces from 4 to 2
+" {{{ Convert Spaces from 4 to 2
 function! ConvertSpaces()
   setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
   %retab! " Convert the 4 space indents to tabs
@@ -252,7 +252,7 @@ endif
 let g:SuperTabDefaultCompletionType = "context"
 " }}}
 
-" {{{NETRW
+" {{{ NETRW
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
 " }}}
@@ -272,12 +272,12 @@ runtime! plugin/sensible.vim
 " }}}
 
 " {{{ TabLine and TabLineFill settings
-hi TabLine ctermbg=250 ctermfg=254
-hi TabLineFill ctermbg=255 ctermfg=254
+hi TabLine ctermbg = 250 ctermfg = 254
+hi TabLineFill ctermbg = 255 ctermfg = 254
 " }}}
 
 " {{{ StatusLine color
-hi StatusLine ctermbg=white ctermfg=blue
+hi StatusLine ctermbg = white ctermfg = blue
 " }}}
 
 " {{{ Better Whitespace color
