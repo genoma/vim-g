@@ -14,7 +14,7 @@ This setup has been tested with Vim compiled from source with **lua**, latest iT
 ### Homebrew
 Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
 
-Install **the_silver_searcher** and **lua**
+Install **the_silver_searcher**
 
 `$ brew install the_silver_searcher`
 
@@ -31,9 +31,11 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --enable-luainterp --enable-cscope --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-gui=no --without-x --with-lua-prefix=/usr/local --disable-netbeans --enable-fail-if-missing --with-mac-arch=intel`
+`./configure --enable-multibyte --with-tlib=ncurses --enable-cscope --with-features=huge --enable-rubyinterp --enable-luainterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
 
 `$ make && make install`
+
+This will give you a fully complete vim configuration for Lua and Ruby Vim plugins. 
 
 ### Clone this repository and vundle in your home directory
 

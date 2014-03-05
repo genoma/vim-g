@@ -27,6 +27,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'wakatime/vim-wakatime'
+Bundle 'vim-scripts/ZoomWin'
 
 Bundle 'ervandew/supertab'
 
@@ -259,10 +260,6 @@ map <silent><leader>,n :Vexplore<cr>
 
 " {{{ Better Whitespace Settings
 let g:strip_whitespace_on_save = 1
-" }}}
-
-" {{{ t_comment settings
-let g:tcommentGuessFileType = 1
 " }}}
 
 " {{{ Tim Pope Sensible.vim
