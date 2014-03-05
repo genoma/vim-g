@@ -1,4 +1,3 @@
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -34,12 +33,11 @@ Bundle 'ervandew/supertab'
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
 
-"{{{ Leader is ,
+" {{{ Leader is ,
 let mapleader = ","
-"}}}
+" }}}
 
-"{{{ VIM user interface
-
+" {{{ VIM user interface
 " Set Colorscheme
 set background=light
 colorscheme Tomorrow
@@ -68,11 +66,9 @@ set magic
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+" }}}
 
-"}}}
-
-"{{{ Text, tab and indent related
-
+" {{{ Text, tab and indent related
 " Use spaces instead of tabs
 set expandtab
 
@@ -86,11 +82,9 @@ set tw=500
 
 set si "Smart indent
 set nowrap "Don't wrap lines
+" }}}
 
-"}}}
-
-"{{{  Moving around, tabs, windows and buffers
-
+" {{{  Moving around, tabs, windows and buffers
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
@@ -135,17 +129,16 @@ autocmd BufReadPost *
       \ endif
 " Remember info about open buffers on close
 set viminfo^=%
+" }}}
 
-"}}}
-
-"{{{ Files, backups and undo
+" {{{ Files, backups and undo
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
 set noswapfile
-"}}}
+" }}}
 
-"{{{ Status line
+" {{{ Status line
 set statusline=                                                       " clear the statusline for when vimrc is reloaded
 set statusline+=\ \                                                   " Separator
 set statusline+=%-3.3n\                                               " buffer number
@@ -160,23 +153,22 @@ set statusline+=%=                                                    " right al
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " fugitive
 set statusline+=\ \                                                   " Separator
-"}}}
+" }}}
 
-"{{{ Editing mappings
+" {{{ Editing mappings
 " Remap VIM 0\$ to first non-blank character
 map 0 ^
 map $ g_
-"}}}
+" }}}
 
 " {{{Force filetype
 " au BufRead,BufNewFile *.tpl set filetype=smarty.html
 " au BufRead,BufNewFile *.scss set filetype=scss.css
 " au BufRead,BufNewFile *.sass set filetype=sass.css
 " au BufRead,BufNewFile *.less set filetype=less.css
-"}}}
+" }}}
 
-"{{{ Misc settings
-
+" {{{ Misc settings
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
@@ -214,7 +206,7 @@ map <Leader>,b :redraw!<cr>
 
 " Claculator
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
-"}}}
+" }}}
 
 " {{{Indent Guides settings
 let g:indent_guides_enable_on_vim_startup = 1
@@ -223,11 +215,11 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
-"}}}
+" }}}
 
 " {{{Fold Method Marker
 set foldmethod=marker
-"}}}
+" }}}
 
 " {{{Convert Spaces from 4 to 2
 function! ConvertSpaces()
@@ -237,9 +229,9 @@ function! ConvertSpaces()
   %retab  " Convert all tabs to 2 space indents
 endfunction
 nmap <Leader>,c :call ConvertSpaces()<CR>
-"}}}
+" }}}
 
-"{{{ Convert 2 spaces to 4
+" {{{ Convert 2 spaces to 4
 function! ConvertFourSpaces()
   setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
   %retab! " Convert the 2 space indents to tabs
@@ -247,9 +239,9 @@ function! ConvertFourSpaces()
   %retab  " Convert all tabs to 4 space indents
 endfunction
 nmap <Leader>,C :call ConvertFourSpaces()<CR>
-"}}}
+" }}}
 
-"{{{ Autocomplete
+" {{{ Autocomplete
 set completeopt=longest,menuone
 if has("autocmd") && exists("+omnifunc")
   autocmd Filetype *
@@ -258,36 +250,36 @@ if has("autocmd") && exists("+omnifunc")
         \ endif
 endif
 let g:SuperTabDefaultCompletionType = "context"
-"}}}
+" }}}
 
 " {{{NETRW
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
 " }}}
 
-"{{{ Better Whitespace Settings
+" {{{ Better Whitespace Settings
 let g:strip_whitespace_on_save = 1
-"}}}
+" }}}
 
 " {{{ t_comment settings
 let g:tcommentGuessFileType = 1
 " }}}
 
-"{{{ Tim Pope Sensible.vim
+" {{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
 runtime! plugin/sensible.vim
-"}}}
+" }}}
 
-"{{{ TabLine and TabLineFill settings
+" {{{ TabLine and TabLineFill settings
 hi TabLine ctermbg=250 ctermfg=254
 hi TabLineFill ctermbg=255 ctermfg=254
-"}}}
+" }}}
 
-"{{{ StatusLine color
+" {{{ StatusLine color
 hi StatusLine ctermbg=white ctermfg=blue
-"}}}
+" }}}
 
-"{{{ Better Whitespace color
+" {{{ Better Whitespace color
 highlight ExtraWhitespace ctermbg = blue
-"}}}
+" }}}
