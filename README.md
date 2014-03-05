@@ -31,11 +31,13 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --enable-cscope --with-features=huge --enable-rubyinterp --enable-luainterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
+`./configure --enable-multibyte --with-tlib=ncurses --with-features=huge --enable-rubyinterp --enable-luainterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
 
 `$ make && make install`
 
-This will give you a fully complete vim configuration for Lua and Ruby Vim plugins. 
+> Note: you can use the compile_vim.sh script to compile Vim sources
+
+This will give you a fully complete vim configuration for Lua and Ruby Vim plugins on OSX Mavericks.
 
 ### Clone this repository and vundle in your home directory
 
