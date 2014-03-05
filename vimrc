@@ -269,6 +269,10 @@ map <silent><leader>,n :Vexplore<cr>
 let g:strip_whitespace_on_save = 1
 "}}}
 
+" {{{ t_comment settings
+let g:tcommentGuessFileType = 1
+" }}}
+
 "{{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
