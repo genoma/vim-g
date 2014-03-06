@@ -1,5 +1,5 @@
-genomA-Vim
-==========
+vim-g
+=====
 
 ![genoma's vim](screen.png)
 
