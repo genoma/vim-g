@@ -28,6 +28,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'wakatime/vim-wakatime'
 Bundle 'vim-scripts/ZoomWin'
+Bundle 'editorconfig/editorconfig-vim'
 
 Bundle 'ervandew/supertab'
 
