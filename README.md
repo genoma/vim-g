@@ -7,7 +7,7 @@ vim-g
 
 # INFORMATIONS
 
-This setup has been tested with Vim compiled from source with **lua**, latest iTerm2 nightly build and Homebrew on OSX.
+This setup has been tested with Vim compiled from source with **Lua, Ruby, Python**, latest iTerm2 nightly build and Homebrew on OSX.
 
 ## BASIC STEPS
 
@@ -31,13 +31,13 @@ Clone the official repository
 
 Compile the source
 
-`./configure --enable-multibyte --with-tlib=ncurses --with-features=huge --enable-rubyinterp --enable-luainterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
+`./configure --enable-multibyte --with-tlib=ncurses --with-features=huge --enable-rubyinterp --enable-luainterp --enable-pythoninterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
 
 `$ make && make install`
 
 > Note: you can use the compile_vim.sh script to compile Vim sources
 
-This will give you a fully complete vim configuration for Lua and Ruby Vim plugins on OSX Mavericks.
+This will give you a fully complete vim configuration for Lua, Python and Ruby Vim plugins on OSX Mavericks.
 
 ### Clone this repository and vundle in your home directory
 
@@ -58,11 +58,14 @@ Link the vimrc to ~/.vimrc
 - gmarik/vundle
 
 ### Packages
+
+**Plugin Manager**
+- gmarik/vundle
+
 - airblade/vim-gitgutter
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
 - gcmt/wildfire.vim
-- godlygeek/tabular
 - groenewege/vim-less
 - kchmck/vim-coffee-script
 - Lokaltog/vim-easymotion
@@ -79,7 +82,11 @@ Link the vimrc to ~/.vimrc
 - tpope/vim-surround
 - tpope/vim-unimpaired
 - tpope/vim-vinegar
+- vim-scripts/ZoomWin
 - wakatime/vim-wakatime
+
+**Auto Complete**
+- ervandew/supertab
 
 ### Auto Complete
 - ervandew/supertab
