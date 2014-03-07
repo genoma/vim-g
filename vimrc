@@ -5,31 +5,33 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+
+" Bundle 'editorconfig/editorconfig-vim'
+" Bundle 'godlygeek/tabular'
+" Bundle 'mintplant/vim-literate-coffeescript'
+" Bundle 'tpope/vim-markdown'
+
 Bundle 'airblade/vim-gitgutter'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'csscomb/csscomb-for-vim'
-" Bundle 'editorconfig/editorconfig-vim'
 Bundle 'gcmt/wildfire.vim'
-" Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
-Bundle 'mintplant/vim-literate-coffeescript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'ntpeters/vim-better-whitespace'
+Bundle 'plasticboy/vim-markdown'
 Bundle 'Raimondi/delimitMate'
 Bundle 'rking/ag.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'wakatime/vim-wakatime'
-
 Bundle 'ervandew/supertab'
 
 " SETTINGS
@@ -262,6 +264,8 @@ map <silent><leader>,n :Vexplore<cr>
 " {{{ Better Whitespace Settings
 let g:strip_whitespace_on_save = 1
 " }}}
+
+let g:vim_markdown_folding_disabled=1
 
 " {{{ Tim Pope Sensible.vim
 
