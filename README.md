@@ -54,14 +54,10 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
-### Packet Manager
-- gmarik/vundle
-
-### Packages
-
 **Plugin Manager**
 - gmarik/vundle
 
+**Packages**
 - airblade/vim-gitgutter
 - chriskempson/vim-tomorrow-theme
 - csscomb/csscomb-for-vim
@@ -86,9 +82,6 @@ Link the vimrc to ~/.vimrc
 - wakatime/vim-wakatime
 
 **Auto Complete**
-- ervandew/supertab
-
-### Auto Complete
 - ervandew/supertab
 
 #### Read carefully the vimrc for shortcuts and configurations.
