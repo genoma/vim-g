@@ -33,6 +33,7 @@ Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'wakatime/vim-wakatime'
 Bundle 'ervandew/supertab'
+Bundle 'genoma/vim-literate-coffeescript'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
