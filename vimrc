@@ -5,11 +5,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-
-" Bundle 'editorconfig/editorconfig-vim'
+" Slow loading plugins
+Bundle 'editorconfig/editorconfig-vim'
 " Bundle 'godlygeek/tabular'
-" Bundle 'mintplant/vim-literate-coffeescript'
-" Bundle 'tpope/vim-markdown'
 
 Bundle 'airblade/vim-gitgutter'
 Bundle 'chriskempson/vim-tomorrow-theme'
@@ -207,7 +205,7 @@ vnoremap / /\v
 set autoread
 
 " Redraw
-map <Leader>,b :redraw!<cr>
+map <Leader>,,b :redraw!<cr>
 
 " Claculator
 ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
