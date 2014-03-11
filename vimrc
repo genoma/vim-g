@@ -13,7 +13,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'csscomb/csscomb-for-vim'
 Bundle 'gcmt/wildfire.vim'
-Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
@@ -69,6 +68,10 @@ set magic
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+
+au BufRead,BufNewFile *.less set ft=less
+
 " }}}
 
 " {{{ Text, tab and indent related
