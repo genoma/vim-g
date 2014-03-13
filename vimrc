@@ -22,7 +22,6 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'rking/ag.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
-" Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
@@ -32,6 +31,7 @@ Bundle 'wakatime/vim-wakatime'
 Bundle 'ervandew/supertab'
 Bundle 'genoma/vim-literate-coffeescript'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'less-syntax.vim'
 Bundle 'JulesWang/css.vim'
 
 " SETTINGS
@@ -70,9 +70,6 @@ set magic
 
 " Add a bit extra margin to the left
 set foldcolumn=1
-
-
-au BufRead,BufNewFile *.less set ft=less
 
 " }}}
 
@@ -156,8 +153,8 @@ set statusline+=[%{strlen(&ft)?&ft:'none'},                           " filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},                          " encoding
 set statusline+=%{&fileformat}]                                       " file format
 set statusline+=%=                                                    " right align
-" set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
-" set statusline+=%b,0x%-8B\                                            " current char
+set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
+set statusline+=%b,0x%-8B\                                            " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " fugitive
 set statusline+=\ \                                                   " Separator
