@@ -15,4 +15,4 @@ ehthumbs.db
 Thumbs.db
 
 .netrwhist
-bundle/
+# bundle/
