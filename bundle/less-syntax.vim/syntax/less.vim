@@ -23,7 +23,7 @@ syn match sassProperty "^\s*\zs\s\%(:\=[[:alnum:]-]\+\s*=\)"hs=s+1 contains=css.
 syn match sassCssAttribute +\%("\%([^"]\|\\"\)*"\|'\%([^']\|\\'\)*'\|#{[^{}]*}\|[^{};]\)*+ contained contains=@sassCssAttributes,sassVariable,sassFunction,sassInterpolation
 syn match sassDefault "!default\>" contained
 syn match sassVariable "!\%(important\>\|default\>\)\@![[:alnum:]_-]\+"
-syn match sassVariable "@[[:alnum:]_-]\+"
+syn match sassVariable "@[[:alnum:]_-]\+" nextgroup=sassCssAttribute
 syn match sassVariableAssignment ":" nextgroup=sassCssAttribute skipwhite
 syn match sassVariableAssignment "\%([!$][[:alnum:]_-]\+\s*\)\@<=:" nextgroup=sassCssAttribute skipwhite
 
@@ -63,12 +63,12 @@ syn keyword sassFunction multiply screen overlay softlight hardlight difference 
 " syn match sassFunctionDecl "\%([{};]\s*\|^\s*\)\@<=@function"   nextgroup=sassFunctionName skipwhite
 " syn match sassReturn "\%([{};]\s*\|^\s*\)\@<=@return"
 "
-" syn match sassEscape     "^\s*\zs\\"
-" syn match sassIdChar     "#[[:alnum:]_-]\@=" nextgroup=sassId
-" syn match sassId         "[[:alnum:]_-]\+" contained
-" syn match sassClassChar  "\.[[:alnum:]_-]\@=" nextgroup=sassClass
-" syn match sassClass      "[[:alnum:]_-]\+" contained
-" syn match sassAmpersand  "&"
+syn match sassEscape     "^\s*\zs\\"
+syn match sassIdChar     "#[[:alnum:]_-]\@=" nextgroup=sassId
+syn match sassId         "[[:alnum:]_-]\+" contained
+syn match sassClassChar  "\.[[:alnum:]_-]\@=" nextgroup=sassClass
+syn match sassClass      "[[:alnum:]_-]\+" contained
+syn match sassAmpersand  "&"
 "
 " TODO: Attribute namespaces
 " TODO: Arithmetic (including strings and concatenation)
@@ -111,6 +111,7 @@ hi def link sassId                      Identifier
 hi def link sassClass                   Type
 hi def link sassDefinition              Type
 hi def link sassCssAttribute            PreProc
+hi def link sassProperty                Type
 
 let b:current_syntax = "less"
 
