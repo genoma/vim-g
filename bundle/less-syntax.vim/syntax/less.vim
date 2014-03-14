@@ -1,8 +1,12 @@
 " Vim syntax file
-" Language:	Sass
-" Maintainer:	Tim Pope <vimNOSPAM@tpope.org>
-" Filenames:	*.sass
-" Last Change:	2010 Aug 09
+" Language:	less
+" Maintainer:	Alessandro Vioni <jenoma@gmail.com>
+" Filenames:	*.less
+" Last Change:	2014 March 13
+
+" = Credits
+" From a syntax file from Tim Pope
+" https://github.com/tpope/vim-haml
 
 if exists("b:current_syntax")
   finish
@@ -12,106 +16,106 @@ runtime! syntax/css.vim
 
 syn case ignore
 
-syn cluster sassCssProperties contains=cssFontProp,cssFontDescriptorProp,cssColorProp,cssTextProp,cssBoxProp,cssGeneratedContentProp,cssPagingProp,cssUIProp,cssRenderProp,cssAuralProp,cssTableProp
-syn cluster sassCssAttributes contains=css.*Attr,sassEndOfLineComment,scssComment,cssValue.*,cssColor,cssURL,sassDefault,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,cssRenderProp
+syn cluster lessCssProperties contains=cssFontProp,cssFontDescriptorProp,cssColorProp,cssTextProp,cssBoxProp,cssGeneratedContentProp,cssPagingProp,cssUIProp,cssRenderProp,cssAuralProp,cssTableProp
+syn cluster lessCssAttributes contains=css.*Attr,lessEndOfLineComment,scssComment,cssValue.*,cssColor,cssURL,lessDefault,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,cssRenderProp
 
-syn region sassDefinition matchgroup=cssBraces start="{" end="}" contains=TOP
+syn region lessDefinition matchgroup=cssBraces start="{" end="}" contains=TOP
+"
+syn match lessProperty "\%([{};]\s*\|^\)\@<=\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:" contains=css.*Prop skipwhite nextgroup=lessCssAttribute contained containedin=lessDefinition
+syn match lessProperty "^\s*\zs\s\%(\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:\|:[[:alnum:]-]\+\)"hs=s+1 contains=css.*Prop skipwhite nextgroup=lessCssAttribute
+syn match lessProperty "^\s*\zs\s\%(:\=[[:alnum:]-]\+\s*=\)"hs=s+1 contains=css.*Prop skipwhite nextgroup=lessCssAttribute
+syn match lessCssAttribute +\%("\%([^"]\|\\"\)*"\|'\%([^']\|\\'\)*'\|#{[^{}]*}\|[^{};]\)*+ contained contains=@lessCssAttributes,lessVariable,lessFunction,lessInterpolation
+syn match lessDefault "!default\>" contained
+" syn match lessVariable "!\%(important\>\|default\>\)\@![[:alnum:]_-]\+"
+syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessCssAttribute
+" syn match lessVariableAssignment ":" nextgroup=lessCssAttribute skipwhite
+" syn match lessVariableAssignment "\%([!$][[:alnum:]_-]\+\s*\)\@<=:" nextgroup=lessCssAttribute skipwhite
 
-syn match sassProperty "\%([{};]\s*\|^\)\@<=\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:" contains=css.*Prop skipwhite nextgroup=sassCssAttribute contained containedin=sassDefinition
-syn match sassProperty "^\s*\zs\s\%(\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:\|:[[:alnum:]-]\+\)"hs=s+1 contains=css.*Prop skipwhite nextgroup=sassCssAttribute
-syn match sassProperty "^\s*\zs\s\%(:\=[[:alnum:]-]\+\s*=\)"hs=s+1 contains=css.*Prop skipwhite nextgroup=sassCssAttribute
-syn match sassCssAttribute +\%("\%([^"]\|\\"\)*"\|'\%([^']\|\\'\)*'\|#{[^{}]*}\|[^{};]\)*+ contained contains=@sassCssAttributes,sassVariable,sassFunction,sassInterpolation
-syn match sassDefault "!default\>" contained
-syn match sassVariable "!\%(important\>\|default\>\)\@![[:alnum:]_-]\+"
-syn match sassVariable "@[[:alnum:]_-]\+" nextgroup=sassCssAttribute
-syn match sassVariableAssignment ":" nextgroup=sassCssAttribute skipwhite
-syn match sassVariableAssignment "\%([!$][[:alnum:]_-]\+\s*\)\@<=:" nextgroup=sassCssAttribute skipwhite
-
-" syn match sassFunction "\<\%(rgb\|rgba\|red\|green\|blue\|mix\)\>(\@=" contained
-" syn match sassFunction "\<\%(hsl\|hsla\|hue\|saturation\|lightness\|adjust-hue\|lighten\|darken\|saturate\|desaturate\|grayscale\|complement\)\>(\@=" contained
-" syn match sassFunction "\<\%(alpha\|opacity\|rgba\|opacify\|fade-in\|transparentize\|fade-out\)\>(\@=" contained
-" syn match sassFunction "\<\%(unquote\|quote\)\>(\@=" contained
-" syn match sassFunction "\<\%(percentage\|round\|ceil\|floor\|abs\)\>(\@=" contained
-" syn match sassFunction "\<\%(type-of\|unit\|unitless\|comparable\)\>(\@=" contained
+" syn match lessFunction "\<\%(rgb\|rgba\|red\|green\|blue\|mix\)\>(\@=" contained
+" syn match lessFunction "\<\%(hsl\|hsla\|hue\|saturation\|lightness\|adjust-hue\|lighten\|darken\|saturate\|desaturate\|grayscale\|complement\)\>(\@=" contained
+" syn match lessFunction "\<\%(alpha\|opacity\|rgba\|opacify\|fade-in\|transparentize\|fade-out\)\>(\@=" contained
+" syn match lessFunction "\<\%(unquote\|quote\)\>(\@=" contained
+" syn match lessFunction "\<\%(percentage\|round\|ceil\|floor\|abs\)\>(\@=" contained
+" syn match lessFunction "\<\%(type-of\|unit\|unitless\|comparable\)\>(\@=" contained
 
 
-syn keyword sassFunction escape e % containedin=cssDefinition contained
+syn keyword lessFunction escape e % containedin=cssDefinition contained
 " misc functions
-syn keyword sassFunction unit containedin=cssDefinition contained
+syn keyword lessFunction unit containedin=cssDefinition contained
 " math functions
-syn keyword sassFunction ceil floor percentage round containedin=cssDefinition contained
+syn keyword lessFunction ceil floor percentage round containedin=cssDefinition contained
 " color definition
-syn keyword sassFunction rgb rgba argb hsl hsla hsv hsva containedin=cssDefinition contained
+syn keyword lessFunction rgb rgba argb hsl hsla hsv hsva containedin=cssDefinition contained
 " color channel information
-syn keyword sassFunction hue saturation lightness red green blue alpha luma containedin=cssDefinition contained
+syn keyword lessFunction hue saturation lightness red green blue alpha luma containedin=cssDefinition contained
 " color operations
-syn keyword sassFunction saturate desaturate lighten darken fadein fadeout fade spin mix greyscale contrast containedin=cssDefinition contained
+syn keyword lessFunction saturate desaturate lighten darken fadein fadeout fade spin mix greyscale contrast containedin=cssDefinition contained
 " color blending
-syn keyword sassFunction multiply screen overlay softlight hardlight difference exclusion average negation containedin=cssDefinition contained
+syn keyword lessFunction multiply screen overlay softlight hardlight difference exclusion average negation containedin=cssDefinition contained
 
-" syn region sassInterpolation matchgroup=sassInterpolationDelimiter start="#{" end="}" contains=@sassCssAttributes,sassVariable,sassFunction containedin=cssStringQ,cssStringQQ,cssPseudoClass,sassProperty
+" syn region lessInterpolation matchgroup=lessInterpolationDelimiter start="#{" end="}" contains=@lessCssAttributes,lessVariable,lessFunction containedin=cssStringQ,cssStringQQ,cssPseudoClass,lessProperty
 
-" syn match sassMixinName "[[:alnum:]_-]\+" contained nextgroup=sassCssAttribute
-" syn match sassMixin  "^="               nextgroup=sassMixinName skipwhite
-" syn match sassMixin  "\%([{};]\s*\|^\s*\)\@<=@mixin"   nextgroup=sassMixinName skipwhite
-" syn match sassMixing "^\s\+\zs+"        nextgroup=sassMixinName
-" syn match sassMixing "\%([{};]\s*\|^\s*\)\@<=@include" nextgroup=sassMixinName skipwhite
-" syn match sassExtend "\%([{};]\s*\|^\s*\)\@<=@extend"
-" syn match sassPlaceholder "\%([{};]\s*\|^\s*\)\@<=%"   nextgroup=sassMixinName skipwhite
+" syn match lessMixinName "[[:alnum:]_-]\+" contained nextgroup=lessCssAttribute
+" syn match lessMixin  "^="               nextgroup=lessMixinName skipwhite
+" syn match lessMixin  "\%([{};]\s*\|^\s*\)\@<=@mixin"   nextgroup=lessMixinName skipwhite
+" syn match lessMixing "^\s\+\zs+"        nextgroup=lessMixinName
+" syn match lessMixing "\%([{};]\s*\|^\s*\)\@<=@include" nextgroup=lessMixinName skipwhite
+" syn match lessExtend "\%([{};]\s*\|^\s*\)\@<=@extend"
+" syn match lessPlaceholder "\%([{};]\s*\|^\s*\)\@<=%"   nextgroup=lessMixinName skipwhite
 "
-" syn match sassFunctionName "[[:alnum:]_-]\+" contained nextgroup=sassCssAttribute
-" syn match sassFunctionDecl "\%([{};]\s*\|^\s*\)\@<=@function"   nextgroup=sassFunctionName skipwhite
-" syn match sassReturn "\%([{};]\s*\|^\s*\)\@<=@return"
+" syn match lessFunctionName "[[:alnum:]_-]\+" contained nextgroup=lessCssAttribute
+" syn match lessFunctionDecl "\%([{};]\s*\|^\s*\)\@<=@function"   nextgroup=lessFunctionName skipwhite
+" syn match lessReturn "\%([{};]\s*\|^\s*\)\@<=@return"
 "
-syn match sassEscape     "^\s*\zs\\"
-syn match sassIdChar     "#[[:alnum:]_-]\@=" nextgroup=sassId
-syn match sassId         "[[:alnum:]_-]\+" contained
-syn match sassClassChar  "\.[[:alnum:]_-]\@=" nextgroup=sassClass
-syn match sassClass      "[[:alnum:]_-]\+" contained
-syn match sassAmpersand  "&"
+syn match lessEscape     "^\s*\zs\\"
+syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId
+syn match lessId         "[[:alnum:]_-]\+" contained
+syn match lessClassChar  "\.[[:alnum:]_-]\@=" nextgroup=lessClass
+syn match lessClass      "[[:alnum:]_-]\+" contained
+syn match lessAmpersand  "&"
 "
 " TODO: Attribute namespaces
 " TODO: Arithmetic (including strings and concatenation)
 
-syn region sassInclude start="@import" end=";\|$" contains=scssComment,cssStringQ,cssStringQQ,cssURL,cssUnicodeEscape,cssMediaType
-syn region sassDebugLine end=";\|$" matchgroup=sassDebug start="@debug\>" contains=@sassCssAttributes,sassVariable,sassFunction
-syn region sassWarnLine end=";\|$" matchgroup=sassWarn start="@warn\>" contains=@sassCssAttributes,sassVariable,sassFunction
-syn region sassControlLine matchgroup=sassControl start="@\%(if\|else\%(\s\+if\)\=\|while\|for\|each\)\>" end="[{};]\@=\|$" contains=sassFor,@sassCssAttributes,sassVariable,sassFunction
-syn keyword sassFor from to through in contained
+syn region lessInclude start="@import" end=";\|$" contains=scssComment,cssStringQ,cssStringQQ,cssURL,cssUnicodeEscape,cssMediaType
+syn region lessDebugLine end=";\|$" matchgroup=lessDebug start="@debug\>" contains=@lessCssAttributes,lessVariable,lessFunction
+syn region lessWarnLine end=";\|$" matchgroup=lessWarn start="@warn\>" contains=@lessCssAttributes,lessVariable,lessFunction
+syn region lessControlLine matchgroup=lessControl start="@\%(if\|else\%(\s\+if\)\=\|while\|for\|each\)\>" end="[{};]\@=\|$" contains=lessFor,@lessCssAttributes,lessVariable,lessFunction
+syn keyword lessFor from to through in contained
 
-syn keyword sassTodo        FIXME NOTE TODO OPTIMIZE XXX contained
-syn region  sassComment     start="^\z(\s*\)//"  end="^\%(\z1 \)\@!" contains=sassTodo,@Spell
-syn region  sassCssComment  start="^\z(\s*\)/\*" end="^\%(\z1 \)\@!" contains=sassTodo,@Spell
-syn match   sassEndOfLineComment "//.*" contains=sassComment,sassTodo,@Spell
+syn keyword lessTodo        FIXME NOTE TODO OPTIMIZE XXX contained
+syn region  lessComment     start="^\z(\s*\)//"  end="^\%(\z1 \)\@!" contains=lessTodo,@Spell
+syn region  lessCssComment  start="^\z(\s*\)/\*" end="^\%(\z1 \)\@!" contains=lessTodo,@Spell
+syn match   lessEndOfLineComment "//.*" contains=lessComment,lessTodo,@Spell
 
-hi def link sassEndOfLineComment        sassComment
-hi def link sassCssComment              sassComment
-hi def link sassComment                 Comment
-hi def link sassDefault                 cssImportant
-hi def link sassVariable                Identifier
-hi def link sassFunction                Function
-hi def link sassMixing                  PreProc
-hi def link sassMixin                   PreProc
-hi def link sassPlaceholder             PreProc
-hi def link sassExtend                  PreProc
-hi def link sassFunctionDecl            PreProc
-hi def link sassReturn                  PreProc
-hi def link sassTodo                    Todo
-hi def link sassInclude                 Include
-hi def link sassDebug                   sassControl
-hi def link sassWarn                    sassControl
-hi def link sassControl                 PreProc
-hi def link sassFor                     PreProc
-hi def link sassEscape                  Special
-hi def link sassIdChar                  Special
-hi def link sassClassChar               Special
-hi def link sassInterpolationDelimiter  Delimiter
-hi def link sassAmpersand               Character
-hi def link sassId                      Identifier
-hi def link sassClass                   Type
-hi def link sassDefinition              Type
-hi def link sassCssAttribute            PreProc
-hi def link sassProperty                Type
+hi def link lessEndOfLineComment        lessComment
+hi def link lessCssComment              lessComment
+hi def link lessComment                 Comment
+hi def link lessDefault                 cssImportant
+hi def link lessVariable                Identifier
+hi def link lessFunction                Function
+hi def link lessMixing                  PreProc
+hi def link lessMixin                   PreProc
+hi def link lessPlaceholder             PreProc
+hi def link lessExtend                  PreProc
+hi def link lessFunctionDecl            PreProc
+hi def link lessReturn                  PreProc
+hi def link lessTodo                    Todo
+hi def link lessInclude                 Include
+hi def link lessDebug                   lessControl
+hi def link lessWarn                    lessControl
+hi def link lessControl                 PreProc
+hi def link lessFor                     PreProc
+hi def link lessEscape                  Special
+hi def link lessIdChar                  Special
+hi def link lessClassChar               Special
+hi def link lessInterpolationDelimiter  Delimiter
+hi def link lessAmpersand               Character
+hi def link lessId                      Identifier
+hi def link lessClass                   Type
+hi def link lessDefinition              Type
+hi def link lessCssAttribute            PreProc
+hi def link lessProperty                Type
 
 let b:current_syntax = "less"
 
