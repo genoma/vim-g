@@ -28,11 +28,12 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'wakatime/vim-wakatime'
-Bundle 'ervandew/supertab'
 Bundle 'genoma/vim-literate-coffeescript'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'JulesWang/css.vim'
-Bundle 'genoma/vim-less.git'
+Bundle 'genoma/vim-less'
+
+Bundle 'ervandew/supertab'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides

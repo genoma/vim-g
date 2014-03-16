@@ -3,11 +3,11 @@ vim-g
 
 ![genoma's vim](screen.png)
 
-**This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sass/coffeescript/html editing.**
+**This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sass/less/coffeescript/html editing.**
 
 # INFORMATIONS
 
-This setup has been tested with Vim compiled from source with **Lua, Ruby, Python**, latest iTerm2 nightly build and Homebrew on OSX.
+This setup has been tested with Vim compiled from source with **Lua, Ruby, Python**, latest iTerm2 test release and Homebrew on OSX Mavericks.
 
 ## BASIC STEPS
 
@@ -59,21 +59,24 @@ Link the vimrc to ~/.vimrc
 
 **Packages**
 - airblade/vim-gitgutter
+- cakebaker/scss-syntax.vim
 - chriskempson/vim-tomorrow-theme
-- csscomb/csscomb-for-vim
+- editorconfig/editorconfig-vim
+- ervandew/supertab
 - gcmt/wildfire.vim
-- groenewege/vim-less
+- genoma/vim-less
+- genoma/vim-literate-coffeescript
+- JulesWang/css.vim
 - kchmck/vim-coffee-script
 - Lokaltog/vim-easymotion
 - mattn/emmet-vim
-- mintplant/vim-literate-coffeescript
 - nathanaelkane/vim-indent-guides
 - ntpeters/vim-better-whitespace
+- plasticboy/vim-markdown
 - Raimondi/delimitMate
 - rking/ag.vim
 - tomtom/tcomment_vim
 - tpope/vim-fugitive
-- tpope/vim-markdown
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
