@@ -31,8 +31,8 @@ Bundle 'wakatime/vim-wakatime'
 Bundle 'ervandew/supertab'
 Bundle 'genoma/vim-literate-coffeescript'
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'less-syntax.vim'
 Bundle 'JulesWang/css.vim'
+Bundle 'genoma/vim-less.git'
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
