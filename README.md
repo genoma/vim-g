@@ -43,49 +43,41 @@ This will give you a fully complete vim configuration for Lua, Python and Ruby V
 
 `git clone https://github.com/genoma/g-vim.git .vim`
 
-`$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
-
 Link the vimrc to ~/.vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
 #### Start vim and launch
-`:BundleInstall`
 
 # PLUGINS
 
-**Plugin Manager**
-- gmarik/vundle
-
-**Packages**
-- airblade/vim-gitgutter
-- cakebaker/scss-syntax.vim
-- chriskempson/vim-tomorrow-theme
-- gcmt/wildfire.vim
-- genoma/vim-less
-- genoma/vim-literate-coffeescript
-- JulesWang/css.vim
-- kchmck/vim-coffee-script
-- Lokaltog/vim-easymotion
-- mattn/emmet-vim
-- nathanaelkane/vim-indent-guides
-- ntpeters/vim-better-whitespace
-- plasticboy/vim-markdown
-- Raimondi/delimitMate
-- rking/ag.vim
-- tpope/vim-commentary
-- tpope/vim-fugitive
-- tpope/vim-git
-- tpope/vim-repeat
-- tpope/vim-sensible
-- tpope/vim-surround
-- tpope/vim-unimpaired
-- tpope/vim-vinegar
-- vim-scripts/ZoomWin
-- wakatime/vim-wakatime
-
-**Auto Complete**
-- ervandew/supertab
+bundle/
+├── ag.vim
+├── css.vim
+├── delimitMate
+├── editorconfig-vim
+├── emmet-vim
+├── scss-syntax.vim
+├── supertab
+├── vim-better-whitespace
+├── vim-coffee-script
+├── vim-commentary
+├── vim-easymotion
+├── vim-fugitive
+├── vim-git
+├── vim-gitgutter
+├── vim-indent-guides
+├── vim-less
+├── vim-literate-coffeescript
+├── vim-markdown
+├── vim-repeat
+├── vim-sensible
+├── vim-surround
+├── vim-tomorrow-theme
+├── vim-unimpaired
+├── vim-vinegar
+├── vim-wakatime
+└── wildfire.vim
 
 #### Read carefully the vimrc for shortcuts and configurations.
 
