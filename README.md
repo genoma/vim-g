@@ -47,7 +47,9 @@ Link the vimrc to ~/.vimrc
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
-#### Start vim and launch
+### Download Submodules
+
+`git submodule foreach git pull`
 
 # PLUGINS
 bundle/
