@@ -50,8 +50,8 @@ Link the vimrc to ~/.vimrc
 #### Start vim and launch
 
 # PLUGINS
-
-`bundle/
+<div>
+bundle/
 ├── ag.vim
 ├── css.vim
 ├── delimitMate
@@ -77,7 +77,8 @@ Link the vimrc to ~/.vimrc
 ├── vim-unimpaired
 ├── vim-vinegar
 ├── vim-wakatime
-└── wildfire.vim`
+└── wildfire.vim
+</div>
 
 #### Read carefully the vimrc for shortcuts and configurations.
 
