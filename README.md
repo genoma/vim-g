@@ -50,7 +50,6 @@ Link the vimrc to ~/.vimrc
 #### Start vim and launch
 
 # PLUGINS
-<div>
 bundle/
 - ag.vim
 - css.vim
@@ -78,7 +77,6 @@ bundle/
 - vim-vinegar
 - vim-wakatime
 - wildfire.vim
-</div>
 
 #### Read carefully the vimrc for shortcuts and configurations.
 
