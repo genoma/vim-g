@@ -1,3 +1,4 @@
+" Pathogen
 execute pathogen#infect()
 
 " SETTINGS
