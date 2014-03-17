@@ -58,6 +58,7 @@ bundle/
 - delimitMate
 - editorconfig-vim
 - emmet-vim
+- netrw
 - scss-syntax.vim
 - supertab
 - vim-better-whitespace
