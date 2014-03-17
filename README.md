@@ -51,7 +51,7 @@ Link the vimrc to ~/.vimrc
 
 # PLUGINS
 
-bundle/
+`bundle/
 ├── ag.vim
 ├── css.vim
 ├── delimitMate
@@ -77,7 +77,7 @@ bundle/
 ├── vim-unimpaired
 ├── vim-vinegar
 ├── vim-wakatime
-└── wildfire.vim
+└── wildfire.vim`
 
 #### Read carefully the vimrc for shortcuts and configurations.
 
