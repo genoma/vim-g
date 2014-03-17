@@ -1,0 +1,78 @@
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/vim-scripts/ag.vim.git
+[submodule "bundle/css.vim"]
+	path = bundle/css.vim
+	url = https://github.com/JulesWang/css.vim.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/scss-syntax.vim"]
+	path = bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/vim-better-whitespace"]
+	path = bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/genoma/vim-less.git
+[submodule "bundle/vim-literate-coffeescript"]
+	path = bundle/vim-literate-coffeescript
+	url = https://github.com/genoma/vim-literate-coffeescript.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
+[submodule "bundle/vim-wakatime"]
+	path = bundle/vim-wakatime
+	url = https://github.com/wakatime/vim-wakatime.git
+[submodule "bundle/wildfire.vim"]
+	path = bundle/wildfire.vim
+	url = https://github.com/gcmt/wildfire.vim.git

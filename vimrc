@@ -1,41 +1,4 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Bundles:
-
-Bundle 'gmarik/vundle'
-
-" Slow loading plugins
-Bundle 'editorconfig/editorconfig-vim'
-" Bundle 'godlygeek/tabular'
-
-Bundle 'airblade/vim-gitgutter'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'gcmt/wildfire.vim'
-Bundle 'genoma/vim-less'
-Bundle 'genoma/vim-literate-coffeescript'
-Bundle 'JulesWang/css.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mattn/emmet-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'ntpeters/vim-better-whitespace'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'Raimondi/delimitMate'
-Bundle 'rking/ag.vim'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-vinegar'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'wakatime/vim-wakatime'
-
-Bundle 'ervandew/supertab'
+execute pathogen#infect()
 
 " SETTINGS
 " Mixed settings with Tim Pope Sensible.vim overrides
