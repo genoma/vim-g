@@ -61,8 +61,6 @@ Link the vimrc to ~/.vimrc
 - airblade/vim-gitgutter
 - cakebaker/scss-syntax.vim
 - chriskempson/vim-tomorrow-theme
-- editorconfig/editorconfig-vim
-- ervandew/supertab
 - gcmt/wildfire.vim
 - genoma/vim-less
 - genoma/vim-literate-coffeescript
@@ -75,8 +73,10 @@ Link the vimrc to ~/.vimrc
 - plasticboy/vim-markdown
 - Raimondi/delimitMate
 - rking/ag.vim
-- tomtom/tcomment_vim
+- tpope/vim-commentary
 - tpope/vim-fugitive
+- tpope/vim-git
+- tpope/vim-repeat
 - tpope/vim-sensible
 - tpope/vim-surround
 - tpope/vim-unimpaired
