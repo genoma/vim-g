@@ -52,32 +52,32 @@ Link the vimrc to ~/.vimrc
 # PLUGINS
 <div>
 bundle/
-├── ag.vim
-├── css.vim
-├── delimitMate
-├── editorconfig-vim
-├── emmet-vim
-├── scss-syntax.vim
-├── supertab
-├── vim-better-whitespace
-├── vim-coffee-script
-├── vim-commentary
-├── vim-easymotion
-├── vim-fugitive
-├── vim-git
-├── vim-gitgutter
-├── vim-indent-guides
-├── vim-less
-├── vim-literate-coffeescript
-├── vim-markdown
-├── vim-repeat
-├── vim-sensible
-├── vim-surround
-├── vim-tomorrow-theme
-├── vim-unimpaired
-├── vim-vinegar
-├── vim-wakatime
-└── wildfire.vim
+- ag.vim
+- css.vim
+- delimitMate
+- editorconfig-vim
+- emmet-vim
+- scss-syntax.vim
+- supertab
+- vim-better-whitespace
+- vim-coffee-script
+- vim-commentary
+- vim-easymotion
+- vim-fugitive
+- vim-git
+- vim-gitgutter
+- vim-indent-guides
+- vim-less
+- vim-literate-coffeescript
+- vim-markdown
+- vim-repeat
+- vim-sensible
+- vim-surround
+- vim-tomorrow-theme
+- vim-unimpaired
+- vim-vinegar
+- vim-wakatime
+- wildfire.vim
 </div>
 
 #### Read carefully the vimrc for shortcuts and configurations.
