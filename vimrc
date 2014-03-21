@@ -10,6 +10,7 @@ let mapleader = ","
 
 " {{{ VIM user interface
 " Set Colorscheme
+set t_Co=256
 set background=light
 colorscheme Tomorrow
 
