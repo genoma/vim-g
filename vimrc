@@ -148,12 +148,6 @@ map <leader>pp :setlocal paste!<cr>
 " Fix Syntax Highlight
 autocmd BufEnter * :syntax sync fromstart
 
-" gv select the previously selected area, gv select the previously pasted area
-nnoremap gp `[v`]
-
-" select all
-map <Leader>a ggVG
-
 " Disable paste mode when leaving Insert Mode
 au InsertLeave * set nopaste
 
@@ -238,38 +232,8 @@ let g:strip_whitespace_on_save = 1
 let g:vim_markdown_folding_disabled=1
 "}}}
 
-"{{{ wipeout.vim - Destroy all buffers that are not open in any tabs or windows.
-"
-" Adapted from the following StackOverflow answer:
-" http://stackoverflow.com/questions/1534835
-"
-" Author: Artem Nezvigin <artem@artnez.com>
 
-command! -bang Wipeout :call Wipeout(<bang>0)
-
-function! Wipeout(bang)
-  " figure out which buffers are visible in any tab
-  let visible = {}
-  for t in range(1, tabpagenr('$'))
-    for b in tabpagebuflist(t)
-      let visible[b] = 1
-    endfor
-  endfor
-  " close any buffer that are loaded and not visible
-  let l:tally = 0
-  let l:cmd = 'bw'
-  if a:bang
-    let l:cmd .= '!'
-  endif
-  for b in range(1, bufnr('$'))
-    if buflisted(b) && !has_key(visible, b)
-      let l:tally += 1
-      exe l:cmd . ' ' . b
-    endif
-  endfor
-  echon "Deleted " . l:tally . " buffers"
-endfun
-"}}}
+map <leader>f :FufFile<cr>
 
 " {{{ Tim Pope Sensible.vim
 
