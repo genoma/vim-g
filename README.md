@@ -39,7 +39,7 @@ Compile the source
 
 This will give you a fully complete vim configuration for Lua, Python and Ruby Vim plugins on OSX Mavericks.
 
-### Clone this repository and vundle in your home directory
+### Clone this repository
 
 `git clone https://github.com/genoma/g-vim.git .vim`
 
@@ -52,26 +52,29 @@ Link the vimrc to ~/.vimrc
 `git submodule foreach git pull`
 
 # PLUGINS
-bundle/
+- Align
+- YouCompleteMe
+- ZoomWin
 - ag.vim
 - css.vim
 - delimitMate
 - editorconfig-vim
 - emmet-vim
-- netrw
 - scss-syntax.vim
-- supertab
+- tcomment_vim
 - vim-better-whitespace
 - vim-coffee-script
-- vim-commentary
 - vim-easymotion
 - vim-fugitive
+- vim-fuzzyfinder
 - vim-git
 - vim-gitgutter
 - vim-indent-guides
+- vim-l9
 - vim-less
 - vim-literate-coffeescript
 - vim-markdown
+- vim-netrw
 - vim-repeat
 - vim-sensible
 - vim-surround
