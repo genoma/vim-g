@@ -224,6 +224,19 @@ let g:ycm_semantic_triggers =  {
   \   'erlang' : [':'],
   \ }
 
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar' : 1,
+      \ 'qf' : 1,
+      \ 'notes' : 1,
+      \ 'markdown' : 1,
+      \ 'unite' : 1,
+      \ 'text' : 1,
+      \ 'vimwiki' : 1,
+      \ 'pandoc' : 1,
+      \ 'mail' : 1,
+      \ 'mkd' : 1
+      \}
+
 " }}}
 
 " {{{ NETRW
