@@ -209,14 +209,22 @@ nmap <Leader>,C :call ConvertFourSpaces()<CR>
 " }}}
 
 " {{{ Autocomplete
-" set completeopt=longest,menuone
-" if has("autocmd") && exists("+omnifunc")
-"   autocmd Filetype *
-"         \ if &omnifunc == "" |
-"         \   setlocal omnifunc=syntaxcomplete#Complete |
-"         \ endif
-" endif
-let g:SuperTabDefaultCompletionType = "context"
+" let g:SuperTabDefaultCompletionType = "context"
+
+let g:ycm_semantic_triggers =  {
+  \   'c' : ['->', '.'],
+  \   'objc' : ['->', '.'],
+  \   'ocaml' : ['.', '#'],
+  \   'cpp,objcpp' : ['->', '.', '::'],
+  \   'perl' : ['->'],
+  \   'php' : ['->', '::'],
+  \   'cs,java,javascript,coffee,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+  \   'css,sass,scss,less' : ['.', '#'],
+  \   'ruby' : ['.', '::'],
+  \   'lua' : ['.', ':'],
+  \   'erlang' : [':'],
+  \ }
+
 " }}}
 
 " {{{ NETRW
@@ -231,7 +239,6 @@ let g:strip_whitespace_on_save = 1
 "{{{ Markdown plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled=1
 "}}}
-
 
 map <leader>f :FufFile<cr>
 
