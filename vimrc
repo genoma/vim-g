@@ -49,12 +49,11 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
+"Don't wrap lines
+set nowrap
 
-set si "Smart indent
-set nowrap "Don't wrap lines
+"Smart indent
+set si
 " }}}
 
 " {{{ Moving around, tabs, windows and buffers
