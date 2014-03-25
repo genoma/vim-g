@@ -135,10 +135,6 @@ map $ g_
 
 " {{{ Misc settings
 
-" YouCompleteMe fix for
-" disappearing cursor
-set lazyredraw
-
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
