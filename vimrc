@@ -251,7 +251,9 @@ let g:strip_whitespace_on_save = 1
 let g:vim_markdown_folding_disabled=1
 "}}}
 
-map <leader>f :FufFile<cr>
+"{{{ CommandT
+map <leader>f :CommandT<cr>
+"}}}
 
 " {{{ Tim Pope Sensible.vim
 
