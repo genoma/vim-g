@@ -133,22 +133,17 @@ map 0 ^
 map $ g_
 " }}}
 
-" {{{ Force filetype
-" au BufRead,BufNewFile *.tpl set filetype=smarty.html
-" au BufRead,BufNewFile *.scss set filetype=scss.css
-" au BufRead,BufNewFile *.sass set filetype=sass.css
-" au BufRead,BufNewFile *.less set filetype=less.css
-" }}}
-
 " {{{ Misc settings
+
+" YouCompleteMe fix for
+" disappearing cursor
+set lazyredraw
+
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
 " Fix Syntax Highlight
 autocmd BufEnter * :syntax sync fromstart
-
-" Disable paste mode when leaving Insert Mode
-au InsertLeave * set nopaste
 
 " Custom Invisibles
 set list
@@ -170,8 +165,6 @@ set autoread
 " Redraw
 map <Leader>,,b :redraw!<cr>
 
-" Claculator
-ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
 " }}}
 
 " {{{ Indent Guides settings
@@ -236,7 +229,7 @@ let g:ycm_filetype_blacklist = {
       \ 'mkd' : 1
       \}
 
-" }}}
+"}}}
 
 " {{{ NETRW
 map <silent><leader>n :Explore<cr>
@@ -252,7 +245,8 @@ let g:vim_markdown_folding_disabled=1
 "}}}
 
 "{{{ CommandT
-map <leader>f :CommandT<cr>
+nnoremap <Leader>,t :CommandT<CR>
+nnoremap <Leader>,b :CommandTBuffer<CR>
 "}}}
 
 " {{{ Tim Pope Sensible.vim
