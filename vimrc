@@ -198,35 +198,7 @@ nmap <Leader>,C :call ConvertFourSpaces()<CR>
 " }}}
 
 " {{{ Autocomplete
-" let g:SuperTabDefaultCompletionType = "context"
-
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'objc' : ['->', '.'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,coffee,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
-
-let g:ycm_filetype_blacklist = {
-      \ 'tagbar' : 1,
-      \ 'qf' : 1,
-      \ 'notes' : 1,
-      \ 'markdown' : 1,
-      \ 'unite' : 1,
-      \ 'text' : 1,
-      \ 'vimwiki' : 1,
-      \ 'pandoc' : 1,
-      \ 'mail' : 1,
-      \ 'mkd' : 1,
-      \ 'netrw' : 1
-      \}
-
+let g:SuperTabDefaultCompletionType = "context"
 "}}}
 
 " {{{ NETRW
