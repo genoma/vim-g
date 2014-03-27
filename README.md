@@ -52,8 +52,6 @@ Link the vimrc to ~/.vimrc
 `git submodule foreach git pull`
 
 # PLUGINS
-- Align
-- YouCompleteMe
 - ZoomWin
 - ag.vim
 - css.vim
@@ -61,16 +59,16 @@ Link the vimrc to ~/.vimrc
 - editorconfig-vim
 - emmet-vim
 - scss-syntax.vim
+- supertab
 - tcomment_vim
 - vim-better-whitespace
 - vim-coffee-script
+- vim-easy-align
 - vim-easymotion
 - vim-fugitive
-- vim-fuzzyfinder
 - vim-git
 - vim-gitgutter
 - vim-indent-guides
-- vim-l9
 - vim-less
 - vim-literate-coffeescript
 - vim-markdown
