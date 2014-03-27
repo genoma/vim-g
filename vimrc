@@ -78,7 +78,7 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
-" map <leader>t<leader> :tabnext<cr>
+map <leader>t<leader> :tabnext<cr>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -170,6 +170,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'startify']
 " }}}
 
 " {{{ Fold Method Marker
@@ -241,8 +242,8 @@ let g:vim_markdown_folding_disabled=1
 "}}}
 
 "{{{ CommandT
-nnoremap <Leader>,t :CommandT<CR>
-nnoremap <Leader>,b :CommandTBuffer<CR>
+nnoremap <Leader>t :CommandT<CR>
+nnoremap <Leader>b :CommandTBuffer<CR>
 "}}}
 
 " {{{ Tim Pope Sensible.vim
