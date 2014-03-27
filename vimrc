@@ -224,7 +224,6 @@ let g:ycm_filetype_blacklist = {
       \ 'pandoc' : 1,
       \ 'mail' : 1,
       \ 'mkd' : 1,
-      \ 'startify' : 1,
       \ 'netrw' : 1
       \}
 
