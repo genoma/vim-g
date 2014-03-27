@@ -246,6 +246,8 @@ nnoremap <Leader>t :CommandT<CR>
 nnoremap <Leader>b :CommandTBuffer<CR>
 "}}}
 
+let g:bookmark_highlight_lines = 1
+
 " {{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
@@ -264,3 +266,5 @@ hi StatusLine ctermbg = white ctermfg = blue
 " {{{ Better Whitespace color
 highlight ExtraWhitespace ctermbg = blue
 " }}}
+
+highlight BookmarkLine ctermbg=254
