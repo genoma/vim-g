@@ -123,7 +123,7 @@ set statusline+=%=                                                    " right al
 set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
 set statusline+=%b,0x%-8B\                                            " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
-set statusline+=%{fugitive#statusline()}                              " fugitive
+set statusline+=%{fugitive#statusline()}                              " Fugitive Statusline
 set statusline+=\ \                                                   " Separator
 " }}}
 
@@ -199,6 +199,14 @@ nmap <Leader>,C :call ConvertFourSpaces()<CR>
 
 " {{{ Autocomplete
 let g:SuperTabDefaultCompletionType = "context"
+
+" set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+" set wildignore+=*sass-cache*
+" set wildignore+=*DS_Store*
+" set wildignore+=*.png,*.jpg,*.gif
+" set wildignore+=node_modules/**
+" set wildignore+=bower_components/**
+
 "}}}
 
 " {{{ NETRW

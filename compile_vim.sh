@@ -11,4 +11,4 @@ make distclean
 # minimal compilation with huge no lua/ruby/python
 # ./configure --enable-multibyte --with-tlib=ncurses --with-features=huge --enable-gui=no --without-x --disable-netbeans --with-compiledby=jenoma@gmail.com --enable-fail-if-missing
 
-# make && make install
+make && make install
