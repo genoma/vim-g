@@ -11,35 +11,19 @@ This setup has been tested with Vim compiled from source with **Lua, Ruby, Pytho
 
 ## BASIC STEPS
 
-### Homebrew
-Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
+### MacPorts
+Download **MacPorts** from [this link](http://www.macports.org/) and follow the instructions.
 
-Install **the_silver_searcher**
-
-`$ brew install the_silver_searcher`
-
-`$ brew install lua`
+Install **the_silver_searcher, Python, Ruby, Lua, Perl**
 
 ### VIM
 Clone the official repository
 
-`$ hg clone https://vim.googlecode.com/hg/ vim`
+`$ hg clone https://vim.googlecode.com/hg/ ~/vim`
 
-`$ hg pull`
+Launch the `./compile_vim.sh` that basically will compile, patch for the _ported_ Python 2.7.6, Lua, Ruby and Perl.
 
-`$ hg update`
-
-Compile the source
-
-`./configure --enable-multibyte --with-tlib=ncurses --with-features=huge --enable-rubyinterp --enable-luainterp --enable-pythoninterp --with-lua-prefix=/usr/local --enable-gui=no --without-x --disable-netbeans --enable-fail-if-missing`
-
-`$ make && make install`
-
-> Note: you can use the compile_vim.sh script to compile Vim sources
-
-This will give you a fully complete vim configuration for Lua, Python and Ruby Vim plugins on OSX Mavericks.
-
-### Clone this repository
+## Clone this repository
 
 `git clone https://github.com/genoma/g-vim.git .vim`
 
@@ -52,37 +36,8 @@ Link the vimrc to ~/.vimrc
 `git submodule foreach git pull`
 
 # PLUGINS
-- ZoomWin
-- ag.vim
-- css.vim
-- delimitMate
-- editorconfig-vim
-- emmet-vim
-- scss-syntax.vim
-- supertab
-- tcomment_vim
-- vim-better-whitespace
-- vim-coffee-script
-- vim-easy-align
-- vim-easymotion
-- vim-fugitive
-- vim-git
-- vim-gitgutter
-- vim-indent-guides
-- vim-less
-- vim-literate-coffeescript
-- vim-markdown
-- vim-netrw
-- vim-repeat
-- vim-sensible
-- vim-surround
-- vim-tomorrow-theme
-- vim-unimpaired
-- vim-vinegar
-- vim-wakatime
-- wildfire.vim
 
-#### Read carefully the vimrc for shortcuts and configurations.
+The `bundles.txt` file contains all the plugins installed
 
 # LICENSE
 The MIT License (MIT)
