@@ -222,11 +222,6 @@ let g:strip_whitespace_on_save = 1
 let g:vim_markdown_folding_disabled=1
 "}}}
 
-"{{{ CommandT
-nnoremap <Leader>t :CommandT<CR>
-nnoremap <Leader>b :CommandTBuffer<CR>
-"}}}
-
 " {{{ Tim Pope Sensible.vim
 
 " Load Tim Pope Sensible before Tabline settings
