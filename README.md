@@ -11,25 +11,25 @@ This setup has been tested with Vim compiled from source with **Lua, Ruby, Pytho
 
 ## BASIC STEPS
 
-### MacPorts
-Download **MacPorts** from [this link](http://www.macports.org/) and follow the instructions.
+### HomeBrew
+Download **Homebrew** from [this link](http://brew.sh/) and follow the instructions.
 
-Install **the_silver_searcher, Python, Ruby, Lua, Perl**
+Install **the_silver_searcher, Python, Ruby, Lua, Perl, Mercurial**
 
 ### VIM
-Clone the official repository
+Clone the **Vim** official repository
 
 `$ hg clone https://vim.googlecode.com/hg/ ~/vim`
 
-Launch the `./compile_vim.sh` that basically will compile, patch for the _ported_ Python 2.7.6, Lua, Ruby and Perl.
+Launch the `./compile_vim.sh` that basically will compile, patch for the _brewed_ Python 2.7.6
+
+### A word on compile_vim.sh
+
+The file comprehends 3 configurations that can be used for different settings, while the one used by default is just enough to be used with the provided plugins. Comment/uncomment the one you'd like to use.
 
 ## Clone this repository
 
 `git clone https://github.com/genoma/g-vim.git .vim`
-
-Link the vimrc to ~/.vimrc
-
-`ln -s ~/.vim/vimrc ~/.vimrc`
 
 ### Download Submodules
 
