@@ -8,9 +8,6 @@ hg update
 
 patch ~/vim/src/auto/configure < ~/.vim/brew-python.patch
 
-# && patch still not included with official release
-patch ~/vim/src/ex_cmds.c < ~/.vim/substitute.patch
-
 make clean
 make distclean
 
