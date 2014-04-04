@@ -1,0 +1,12 @@
+diff -r 43fc7ea915db src/ex_cmds.c
+--- a/src/ex_cmds.c	Wed Apr 02 23:09:26 2014 +0200
++++ b/src/ex_cmds.c	Thu Apr 03 10:42:10 2014 +0200
+@@ -4425,7 +4425,7 @@
+      * TODO: find a generic solution to make line-joining operations more
+      * efficient, avoid allocating a string that grows in size.
+      */
+-    if (STRCMP(pat, "\\n") == 0 && STRLEN(pat) == 2
++    if (pat != NULL && STRCMP(pat, "\\n") == 0
+ 	    && *sub == NUL
+ 	    && (*cmd == NUL || (cmd[1] == NUL && (*cmd == 'g' || *cmd == 'l'
+ 					     || *cmd == 'p' || *cmd == '#'))))
