@@ -1,116 +1,91 @@
-" Pathogen
+" Starting from https://github.com/skwp/dotfiles/blob/master/vimrc and
+" Tim Pope Vim Sensiblei https://github.com/tpope/vim-sensible the new
+" setting file is more readable and more usable.
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+set number                      "Line numbers are good
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set showmode                    "Show current mode down the bottom
+set autoread                    "Reload files changed outside vim
+
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
+"turn on syntax highlighting
+syntax on
+
+" Change leader to a comma because the backslash is too far away
+" That means all \x commands turn into ,x
+" The mapleader has to be set before vundle starts loading all
+" the plugins.
+let mapleader=","
+
+" =============== Pathogen ==========================
+" This loads all the plugin downloaded as
+" git submodules into the bundle directory
+
 execute pathogen#infect()
 
-" SETTINGS
-" Mixed settings with Tim Pope Sensible.vim overrides
+" ================ Turn Off Swap Files ==============
 
-" {{{ Leader is ,
-let mapleader = ","
-" }}}
+set noswapfile
+set nobackup
+set nowb
 
-" {{{ VIM user interface
-" Set Colorscheme
-set t_Co=256
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+if has('persistent_undo')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
+endif
+
+" ================ Indentation ======================
+
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+
+filetype plugin on
+filetype indent on
+
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+
+set nowrap       "Don't wrap lines
+set linebreak    "Wrap lines at convenient points
+
+" ================ Folds ============================
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=3       "deepest fold is 3 levels
+set nofoldenable        "dont fold by default
+
+" ================ Scrolling ========================
+
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1
+
+" ================ Colorscheme ======================
+
 set background=light
 colorscheme Tomorrow
 
-" Relative Numbers
-set relativenumber
-set number
+" ================ Status Line ======================
 
-" Height of the command bar
-set cmdheight=2
-
-" A buffer becomes hidden when it is abandoned
-set hid
-
-" Ignore case when searching
-set ignorecase
-
-" When searching try to be smart about cases
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-" For regular expressions turn magic on
-set magic
-
-" Add a bit extra margin to the left
-set foldcolumn=1
-
-" }}}
-
-" {{{ Text, tab and indent related
-" Use spaces instead of tabs
-set expandtab
-
-" 1 tab == 2 spaces
-set shiftwidth=2
-set tabstop=2
-
-"Don't wrap lines
-set nowrap
-
-"Smart indent
-set si
-" }}}
-
-" {{{ Moving around, tabs, windows and buffers
-" Treat long lines as break lines (useful when moving around in them)
-map j gj
-map k gk
-
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
-
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Close all the buffers
-map <leader>ba :1,1000 bd!<cr>
-
-" Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext<cr>
-
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-
-" Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
-
-" Specify the behavior when switching between buffers
-try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
-catch
-endtry
-
-" Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-      \ if line("'\"") > 0 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-" Remember info about open buffers on close
-set viminfo^=%
-" }}}
-
-" {{{ Files, backups and undo
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
-set nowb
-set noswapfile
-" }}}
-
-" {{{ Status line
 set statusline=                                                       " clear the statusline for when vimrc is reloaded
 set statusline+=\ \                                                   " Separator
 set statusline+=%-3.3n\                                               " buffer number
@@ -120,50 +95,14 @@ set statusline+=[%{strlen(&ft)?&ft:'none'},                           " filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},                          " encoding
 set statusline+=%{&fileformat}]                                       " file format
 set statusline+=%=                                                    " right align
-set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
+" set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
 set statusline+=%b,0x%-8B\                                            " current char
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " Fugitive Statusline
 set statusline+=\ \                                                   " Separator
-" }}}
 
-" {{{ Editing mappings
-" Remap VIM 0\$ to first non-blank character
-map 0 ^
-map $ g_
-" }}}
+" ================ Indent Guides settings ===========
 
-" {{{ Misc settings
-
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
-" Fix Syntax Highlight
-autocmd BufEnter * :syntax sync fromstart
-
-" Custom Invisibles
-set list
-set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
-set showbreak=↪
-
-" Scroll
-set scrolloff=8     " Number of lines from vertical edge to start scrolling
-set sidescrolloff=15  " Number of cols from horizontal edge to start scrolling
-set sidescroll=1    " Number of cols to scroll at a time
-
-" Sane Regexes
-nnoremap / /\v
-vnoremap / /\v
-
-" Auto reload file if changes detected
-set autoread
-
-" Redraw
-map <Leader>,,b :redraw!<cr>
-
-" }}}
-
-" {{{ Indent Guides settings
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
@@ -171,72 +110,36 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'startify']
-" }}}
 
-" {{{ Fold Method Marker
-set foldmethod=marker
-" }}}
+" ================ Supertab ==========================
 
-" {{{ Convert Spaces from 4 to 2
-function! ConvertSpaces()
-  setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
-  %retab! " Convert the 4 space indents to tabs
-  setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-  %retab  " Convert all tabs to 2 space indents
-endfunction
-nmap <Leader>,c :call ConvertSpaces()<CR>
-" }}}
-
-" {{{ Convert 2 spaces to 4
-function! ConvertFourSpaces()
-  setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
-  %retab! " Convert the 2 space indents to tabs
-  setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-  %retab  " Convert all tabs to 4 space indents
-endfunction
-nmap <Leader>,C :call ConvertFourSpaces()<CR>
-" }}}
-
-" {{{ Autocomplete
 let g:SuperTabDefaultCompletionType = "context"
 
-" set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
-" set wildignore+=*sass-cache*
-" set wildignore+=*DS_Store*
-" set wildignore+=*.png,*.jpg,*.gif
-" set wildignore+=node_modules/**
-" set wildignore+=bower_components/**
+" ================ NETRW =============================
 
-"}}}
-
-" {{{ NETRW
 map <silent><leader>n :Explore<cr>
 map <silent><leader>,n :Vexplore<cr>
-" }}}
 
-" {{{ Better Whitespace Settings
+" ================ Better Whitespace =================
+
 let g:strip_whitespace_on_save = 1
-" }}}
 
-"{{{ Markdown plasticboy/vim-markdown
+" ================ Markdown plasticboy ===============
+
 let g:vim_markdown_folding_disabled=1
-"}}}
 
-" {{{ Tim Pope Sensible.vim
+" ================ Tim Pope sensible.vim =============
 
-" Load Tim Pope Sensible before Tabline settings
 runtime! plugin/sensible.vim
-" }}}
 
-" {{{ TabLine and TabLineFill settings
-hi TabLine ctermbg = 250 ctermfg = 254
-hi TabLineFill ctermbg = 255 ctermfg = 254
-" }}}
+" ================ Color Settings ====================
 
-" {{{ StatusLine color
-hi StatusLine ctermbg = white ctermfg = blue
-" }}}
+" Tabline and Tablinefill colors
+hi tabline ctermbg = 250 ctermfg = 254
+hi tablinefill ctermbg = 255 ctermfg = 254
 
-" {{{ Better Whitespace color
-highlight ExtraWhitespace ctermbg = blue
-" }}}
+" Statusline color
+hi statusline ctermbg = white ctermfg = blue
+
+" Better Whitespace color
+highlight extrawhitespace ctermbg = blue
