@@ -1,8 +1,6 @@
 vim-g
 =====
 
-![genoma's vim](screen.png)
-
 **This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sass/less/coffeescript/html editing.**
 
 # INFORMATIONS
