@@ -128,10 +128,6 @@ let g:strip_whitespace_on_save = 1
 
 let g:vim_markdown_folding_disabled=1
 
-" ================ Tim Pope sensible.vim =============
-
-runtime! plugin/sensible.vim
-
 " ================ Color Settings ====================
 
 " Tabline and Tablinefill colors
