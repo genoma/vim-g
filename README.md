@@ -21,10 +21,6 @@ You need at last Vim compiled with Python support to use [editorconfig-vim](http
 
 `git submodule foreach git pull`
 
-# PLUGINS
-
-The `bundles.txt` file contains all the plugins installed
-
 # LICENSE
 The MIT License (MIT)
 
