@@ -23,7 +23,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all
+" The mapleader has to be set before pathogen starts loading all
 " the plugins.
 let mapleader=","
 
@@ -100,6 +100,14 @@ set statusline+=%b,0x%-8B\                                            " current 
 set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
 set statusline+=%{fugitive#statusline()}                              " Fugitive Statusline
 set statusline+=\ \                                                   " Separator
+
+" ================ Tab managing keyboard shortcuts ===
+
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+map <leader>t<leader> :tabnext<cr>
 
 " ================ Indent Guides settings ===========
 
