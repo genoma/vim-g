@@ -79,71 +79,7 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-" ================ Colorscheme ======================
-
-set background=light
-colorscheme Tomorrow
-
-" ================ Status Line ======================
-
-set statusline=                                                       " clear the statusline for when vimrc is reloaded
-set statusline+=\ \                                                   " Separator
-set statusline+=%-3.3n\                                               " buffer number
-set statusline+=%t\                                                   " file name
-set statusline+=%h%m%r%w                                              " flags
-set statusline+=[%{strlen(&ft)?&ft:'none'},                           " filetype
-set statusline+=%{strlen(&fenc)?&fenc:&enc},                          " encoding
-set statusline+=%{&fileformat}]                                       " file format
-set statusline+=%=                                                    " right align
-" set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\     " highlight
-set statusline+=%b,0x%-8B\                                            " current char
-set statusline+=%-14.(%l,%c%V%)\ %<%P                                 " offset
-set statusline+=%{fugitive#statusline()}                              " Fugitive Statusline
-set statusline+=\ \                                                   " Separator
-
-" ================ Tab managing keyboard shortcuts ===
-
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext<cr>
-
-" ================ Indent Guides settings ===========
-
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'startify']
-
-" ================ Supertab ==========================
-
-let g:SuperTabDefaultCompletionType = "context"
-
-" ================ NETRW =============================
-
-map <silent><leader>n :Explore<cr>
-map <silent><leader>,n :Vexplore<cr>
-
-" ================ Better Whitespace =================
-
-let g:strip_whitespace_on_save = 1
-
-" ================ Markdown plasticboy ===============
-
-let g:vim_markdown_folding_disabled=1
-
-" ================ Color Settings ====================
-
-" Tabline and Tablinefill colors
-hi tabline ctermbg = 250 ctermfg = 254
-hi tablinefill ctermbg = 255 ctermfg = 254
-
-" Statusline color
-hi statusline ctermbg = white ctermfg = blue
-
-" Better Whitespace color
-highlight extrawhitespace ctermbg = blue
+" =============== Personalized Settings =============
+for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
