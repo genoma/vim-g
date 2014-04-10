@@ -15,11 +15,11 @@ You need at last Vim compiled with Python support to use [editorconfig-vim](http
 
 ## Clone this repository
 
-`git clone https://github.com/genoma/g-vim.git .vim`
+`git clone https://github.com/genoma/g-vim.git ~/.vim`
 
 ### Download Submodules
 
-`git submodule foreach git pull`
+`git submodule update --init --recursive`
 
 # LICENSE
 The MIT License (MIT)
