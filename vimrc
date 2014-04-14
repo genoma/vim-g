@@ -79,10 +79,6 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-
-let g:signify_vcs_list = [ 'svn', 'git' ]
-
-
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
   exe 'source' fpath
