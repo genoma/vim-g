@@ -67,9 +67,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "bundle/vim-netrw"]
-	path = bundle/vim-netrw
-	url = https://github.com/genoma/vim-netrw.git
 [submodule "bundle/vim-easy-align"]
 	path = bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
@@ -82,3 +79,6 @@
 [submodule "bundle/vim-signify"]
 	path = bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
+[submodule "bundle/vim-netrw"]
+	path = bundle/vim-netrw
+	url = https://github.com/genoma/vim-netrw
