@@ -80,7 +80,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Fix Syntax highlighting ==========
-set lazyredraw
+
 autocmd BufEnter * :syntax sync fromstart
 
 " =============== Personalized Settings =============

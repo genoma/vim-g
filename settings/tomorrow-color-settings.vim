@@ -5,7 +5,7 @@ hi tabline ctermbg = 250 ctermfg = 254
 hi tablinefill ctermbg = 255 ctermfg = 254
 
 " Statusline color
-hi statusline ctermbg = white ctermfg = blue
+hi statusline ctermbg = 245 ctermfg = 254
 
 " Better Whitespace color
-highlight extrawhitespace ctermbg = blue
+highlight extrawhitespace ctermbg = 254
