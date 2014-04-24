@@ -1,6 +1,7 @@
 " ================ Vim Signify Settings ===========
 " This is the configuration file for vim-signify
-" colors adapted to Tomorrow theme with iTerm 2
+" colors adapted to Tomorrow theme with iTerm 2 and
+" terminal
 let g:signify_vcs_list = [ 'svn', 'git' ]
 
 " highlight lines in Sy and vimdiff etc.)
