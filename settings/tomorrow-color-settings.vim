@@ -8,4 +8,4 @@ hi tablinefill ctermbg = 255 ctermfg = 254
 hi statusline ctermbg = 245 ctermfg = 254 guibg = #8a8a8a guifg = #e4e4e4
 
 " Better Whitespace color
-highlight extrawhitespace ctermbg = 254
+highlight extrawhitespace ctermbg = 254 ctermfc = #e4e4e4
