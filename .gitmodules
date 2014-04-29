@@ -79,3 +79,6 @@
 [submodule "bundle/vim-netrw"]
 	path = bundle/vim-netrw
 	url = https://github.com/genoma/vim-netrw
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
