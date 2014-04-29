@@ -1,4 +1,7 @@
 " ================ MacVim Settings ==============
 " Remove the scrollbars
-:set guioptions-=r
-:set guioptions-=L
+if has ('gui_running')
+  set guioptions-=r
+  set guioptions-=L
+  set guioptions-=e
+endif
