@@ -5,7 +5,7 @@ vim-g
 
 # INFORMATIONS
 
-This setup has been tested with Vim compiled from source with **Python** support, latest iTerm2 nigtly build and standard OS X Maveriks Terminal app.
+This setup has been tested with Vim compiled from source with **Python** support, latest iTerm2 nigtly build  or standard OS X Maveriks Terminal app, and MacVim.
 
 ## BASIC STEPS
 
