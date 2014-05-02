@@ -11,7 +11,7 @@ This setup has been tested with Vim compiled from source with **Python** support
 
 ### Vim configuration
 
-You need at last Vim compiled with Python support to use [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
+You need at last Vim compiled with Python support to use [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) and [YCM](https://github.com/Valloric/YouCompleteMe)
 
 ## Clone this repository
 
@@ -20,6 +20,11 @@ You need at last Vim compiled with Python support to use [editorconfig-vim](http
 ### Download Submodules
 
 `git submodule update --init --recursive`
+
+### Compile YCM
+
+From terminal `$ cd ~/.vim/bundle/YouCompleteMe` and compile with `$ ./install.sh`
+
 
 # LICENSE
 The MIT License (MIT)
