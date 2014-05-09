@@ -11,7 +11,7 @@ This setup has been tested with Vim compiled from source with **Python** support
 
 ### Vim configuration
 
-You need at last Vim compiled with Python support to use [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) and [YCM](https://github.com/Valloric/YouCompleteMe)
+You need at last Vim compiled with Python support to use [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim).
 
 ## Clone this repository
 
