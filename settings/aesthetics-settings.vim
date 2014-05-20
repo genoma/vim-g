@@ -1,10 +1,14 @@
 " ================ Colorscheme ======================
-" Tomorrow light theme
-set background=light
-colorscheme Tomorrow
+" Tomorrow light theme for Terminal, Tomorrow-Night
+" for MacVim
 
 if has ('gui_running')
+  set background=dark
+  colorscheme Tomorrow-Night
   set guifont=Source\ Code\ Pro:h12
+else
+  set background=light
+  colorscheme Tomorrow
 endif
 
 
