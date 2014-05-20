@@ -4,7 +4,7 @@
 
 if has ('gui_running')
   set background=dark
-  colorscheme Tomorrow-Night
+  colorscheme Tomorrow-Night-Eighties
   set guifont=Source\ Code\ Pro:h12
 else
   set background=light
