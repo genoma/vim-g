@@ -100,3 +100,6 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = git@github.com:gregsexton/gitv.git
+[submodule "bundle/vim-markology"]
+	path = bundle/vim-markology
+	url = git@github.com:jeetsukumaran/vim-markology.git
