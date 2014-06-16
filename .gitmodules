@@ -4,9 +4,6 @@
 [submodule "bundle/css.vim"]
 	path = bundle/css.vim
 	url = https://github.com/JulesWang/css.vim.git
-[submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
@@ -103,3 +100,6 @@
 [submodule "bundle/vim-markology"]
 	path = bundle/vim-markology
 	url = git@github.com:jeetsukumaran/vim-markology.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
