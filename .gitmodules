@@ -103,6 +103,3 @@
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git@github.com:rstacruz/sparkup.git
-[submodule "bundle/vim-niji"]
-	path = bundle/vim-niji
-	url = git@github.com:amdt/vim-niji.git
