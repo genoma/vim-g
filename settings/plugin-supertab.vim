@@ -1,6 +1,8 @@
 " =================== SuperTab ==================
-  let g:SuperTabDefaultCompletionType = 'context'
-  autocmd FileType *
+let g:SuperTabCrMapping = 0
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabContextDefaultCompletionType = '<c-x><c-u>'
+autocmd FileType *
     \ if &omnifunc != '' |
-    \   call SuperTabChain(&omnifunc, "<c-p>") |
+    \     call SuperTabChain(&omnifunc, '<c-p>') |
     \ endif
