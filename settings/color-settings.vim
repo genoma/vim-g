@@ -10,6 +10,7 @@ if !has ('gui_running')
   highlight extrawhitespace ctermbg = 254 guibg = #e4e4e4
 else
   " Tabline and Tablinefill colors
-  hi tabline guifg = #4d5057 guibg = #f0c477
-  hi tablinefill guifg = #4d5057 guibg = #f0c477
+  hi tabline guifg = #1e1b1b guibg = #9d9081
+  hi tablinefill guifg = #1e1b1b guibg = #9d9081
+  highlight extrawhitespace guibg = #1e1b1b
 endif

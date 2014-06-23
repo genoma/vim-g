@@ -3,12 +3,16 @@
 " for MacVim
 
 if has ('gui_running')
-  set background=dark
-  colorscheme Tomorrow-Night-Eighties
+  " set background=dark
+  colorscheme nefertiti
   set guifont=Source\ Code\ Pro:h12
 else
   set background=light
   colorscheme Tomorrow
+endif
+
+if has("gui_macvim")
+    set macmeta
 endif
 
 
