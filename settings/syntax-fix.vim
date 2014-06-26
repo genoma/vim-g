@@ -1,6 +1,7 @@
 " ================ Fix Syntax highlighting ==========
 " Fix large files syntax highlighting.
 autocmd BufEnter * :syntax sync fromstart
+set breakindent
 
 " HTML Entities for accented characters
 command Entities :call Entities()
