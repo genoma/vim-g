@@ -108,4 +108,4 @@
 	url = git@github.com:mbbill/undotree.git
 [submodule "bundle/vim-nefertiti"]
 	path = bundle/vim-nefertiti
-	url = git@github.com:genoma/vim-nefertiti.git
+	url = git@github.com:jeetsukumaran/vim-nefertiti.git

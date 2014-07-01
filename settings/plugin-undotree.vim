@@ -1,3 +1,3 @@
 " ============ Undotree shortcut =============
 " Toggle UndoTree with U.
-map <silent>U :UndotreeToggle<cr>
+map <silent><leader><leader>u :UndotreeToggle<cr>
