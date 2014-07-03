@@ -21,11 +21,6 @@ You need at last Vim compiled with Python support to use [editorconfig-vim](http
 
 `git submodule update --init --recursive`
 
-### Compile YCM
-
-From terminal `$ cd ~/.vim/bundle/YouCompleteMe` and compile with `$ ./install.sh`
-
-
 # LICENSE
 The MIT License (MIT)
 
