@@ -25,7 +25,7 @@ You need at last Vim compiled with Python support or the [Brewed](http:brew.sh) 
 
 ## Update Submodules
 
-`git pull --recurse-submodules`
+`git submodule foreach git pull`
 
 ## Packages
 * vim-pathogen
