@@ -17,7 +17,7 @@ You need at last Vim compiled with Python support or the [Brewed](http:brew.sh) 
 
 ## Clone this repository
 
-`git clone https://github.com/genoma/vim-g ~.vim`
+`git clone https://github.com/genoma/vim-g ~/.vim`
 
 ### Download Submodules
 
