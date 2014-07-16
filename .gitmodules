@@ -79,9 +79,6 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = git@github.com:gregsexton/gitv.git
-[submodule "bundle/vim-markology"]
-	path = bundle/vim-markology
-	url = git@github.com:jeetsukumaran/vim-markology.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
@@ -118,3 +115,9 @@
 [submodule "bundle/yajs.vim"]
 	path = bundle/yajs.vim
 	url = git@github.com:othree/yajs.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "bundle/vim-js2coffee"]
+	path = bundle/vim-js2coffee
+	url = git@github.com:JarrodCTaylor/vim-js2coffee.git
