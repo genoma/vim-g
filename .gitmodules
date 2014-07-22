@@ -1,9 +1,6 @@
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = https://github.com/vim-scripts/ag.vim.git
-[submodule "bundle/vim-better-whitespace"]
-	path = bundle/vim-better-whitespace
-	url = https://github.com/ntpeters/vim-better-whitespace.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
