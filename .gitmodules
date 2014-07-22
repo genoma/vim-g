@@ -115,3 +115,6 @@
 [submodule "bundle/vim-js2coffee"]
 	path = bundle/vim-js2coffee
 	url = git@github.com:JarrodCTaylor/vim-js2coffee.git
+[submodule "bundle/vim-textobj-delimited"]
+	path = bundle/vim-textobj-delimited
+	url = git@github.com:machakann/vim-textobj-delimited.git
