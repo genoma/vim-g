@@ -118,3 +118,9 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "bundle/vim-textobj-punctuation"]
+	path = bundle/vim-textobj-punctuation
+	url = git@github.com:beloglazov/vim-textobj-punctuation.git
+[submodule "bundle/vim-textobj-user"]
+	path = bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git
