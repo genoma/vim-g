@@ -124,3 +124,6 @@
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
+[submodule "bundle/vim-minimap"]
+	path = bundle/vim-minimap
+	url = git@github.com:severin-lemaignan/vim-minimap.git
