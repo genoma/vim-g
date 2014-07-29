@@ -130,3 +130,6 @@
 [submodule "bundle/glowshi-ft.vim"]
 	path = bundle/glowshi-ft.vim
 	url = git@github.com:saihoooooooo/glowshi-ft.vim.git
+[submodule "bundle/vim-easyclip"]
+	path = bundle/vim-easyclip
+	url = git@github.com:svermeulen/vim-easyclip.git
