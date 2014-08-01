@@ -133,3 +133,9 @@
 [submodule "bundle/vim-easyclip"]
 	path = bundle/vim-easyclip
 	url = git@github.com:svermeulen/vim-easyclip.git
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
+[submodule "bundle/rainbow_parentheses.vim"]
+	path = bundle/rainbow_parentheses.vim
+	url = git@github.com:kien/rainbow_parentheses.vim.git
