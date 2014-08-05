@@ -27,50 +27,6 @@ You need at last Vim compiled with Python support or the [Brewed](http:brew.sh) 
 
 `git submodule foreach git pull`
 
-## Packages
-
-* vim-pathogen
-* ag.vim
-* ctrlp.vim
-* delimitMate
-* editorconfig-vim
-* gitv
-* html5.vim
-* javascript-libraries-syntax.vim
-* limelight.vim
-* sparkup
-* supertab
-* syntastic
-* tcomment_vim
-* undotree
-* vim-airline
-* vim-better-whitespace
-* vim-characterize
-* vim-coffee-script
-* vim-css3-syntax
-* vim-easy-align
-* vim-easymotion
-* vim-fugitive
-* vim-git
-* vim-haml
-* vim-indent-guides
-* vim-js2coffee
-* vim-less
-* vim-literate-coffeescript
-* vim-markdown
-* vim-mustache-handlebars
-* vim-nefertiti
-* vim-netrw
-* vim-repeat
-* vim-sensible
-* vim-signify
-* vim-surround
-* vim-tomorrow-theme
-* vim-unimpaired
-* vim-vinegar
-* wildfire.vim
-* yajs.vim
-
 <br>
 
 # LICENSE
