@@ -115,9 +115,6 @@
 [submodule "bundle/gruvbox"]
 	path = bundle/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule "bundle/indentLine"]
-	path = bundle/indentLine
-	url = git@github.com:Yggdroot/indentLine.git
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = git@github.com:kshenoy/vim-signature.git
