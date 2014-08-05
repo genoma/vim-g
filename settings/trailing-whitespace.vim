@@ -1,3 +1,4 @@
+" Remove trailing witespace on save
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
