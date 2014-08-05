@@ -3,7 +3,7 @@
 " for MacVim
 
 if has ('gui_running')
-  set background=dark
+  set background=light
   colorscheme gruvbox
   set guifont=Source\ Code\ Pro:h12
 else
