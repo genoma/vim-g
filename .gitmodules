@@ -88,9 +88,6 @@
 [submodule "bundle/vim-nefertiti"]
 	path = bundle/vim-nefertiti
 	url = git@github.com:jeetsukumaran/vim-nefertiti.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = git@github.com:othree/javascript-libraries-syntax.vim.git
