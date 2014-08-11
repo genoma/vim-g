@@ -8,10 +8,10 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
 " On terminal decides the colors of the guides.
-if !has ('gui_running')
-  let g:indent_guides_auto_colors = 0
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
-endif
+" if !has ('gui_running')
+"   let g:indent_guides_auto_colors = 0
+"   autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=254 ctermbg=254
+"   autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=253 ctermbg=253
+" endif
 
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'startify']

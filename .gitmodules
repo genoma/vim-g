@@ -121,3 +121,15 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "bundle/ctrlpsimilar"]
+	path = bundle/ctrlpsimilar
+	url = git@github.com:FriedSock/ctrlpsimilar.git
+[submodule "bundle/vim-csharp"]
+	path = bundle/vim-csharp
+	url = git@github.com:OrangeT/vim-csharp.git
+[submodule "bundle/seoul256.vim"]
+	path = bundle/seoul256.vim
+	url = git@github.com:junegunn/seoul256.vim.git
