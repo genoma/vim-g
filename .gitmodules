@@ -133,3 +133,6 @@
 [submodule "bundle/seoul256.vim"]
 	path = bundle/seoul256.vim
 	url = git@github.com:junegunn/seoul256.vim.git
+[submodule "bundle/GoldenView.Vim"]
+	path = bundle/GoldenView.Vim
+	url = git@github.com:zhaocai/GoldenView.Vim.git
