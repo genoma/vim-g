@@ -94,18 +94,9 @@
 [submodule "bundle/yajs.vim"]
 	path = bundle/yajs.vim
 	url = git@github.com:othree/yajs.vim.git
-[submodule "bundle/vim-textobj-delimited"]
-	path = bundle/vim-textobj-delimited
-	url = git@github.com:machakann/vim-textobj-delimited.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
-[submodule "bundle/vim-textobj-punctuation"]
-	path = bundle/vim-textobj-punctuation
-	url = git@github.com:beloglazov/vim-textobj-punctuation.git
-[submodule "bundle/vim-textobj-user"]
-	path = bundle/vim-textobj-user
-	url = git@github.com:kana/vim-textobj-user.git
 [submodule "bundle/vim-minimap"]
 	path = bundle/vim-minimap
 	url = git@github.com:severin-lemaignan/vim-minimap.git
@@ -121,18 +112,9 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim.git
-[submodule "bundle/ctrlpsimilar"]
-	path = bundle/ctrlpsimilar
-	url = git@github.com:FriedSock/ctrlpsimilar.git
 [submodule "bundle/vim-csharp"]
 	path = bundle/vim-csharp
 	url = git@github.com:OrangeT/vim-csharp.git
 [submodule "bundle/seoul256.vim"]
 	path = bundle/seoul256.vim
 	url = git@github.com:junegunn/seoul256.vim.git
-[submodule "bundle/GoldenView.Vim"]
-	path = bundle/GoldenView.Vim
-	url = git@github.com:zhaocai/GoldenView.Vim.git

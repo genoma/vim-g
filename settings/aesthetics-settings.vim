@@ -13,15 +13,6 @@ if has("gui_macvim")
     set macmeta
 endif
 
-
-" ================ cmdheight ========================
-" Setting the height of the command line on terminal
-" to use with Tmux.
-
-if !has ('gui_running')
-  set cmdheight=2
-endif
-
 " ================ Sounds ===========================
 " No bells and whistles on gui
 if has ('gui_running')
