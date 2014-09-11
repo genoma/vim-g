@@ -58,9 +58,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/vim-characterize"]
 	path = bundle/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
@@ -118,3 +115,9 @@
 [submodule "bundle/seoul256.vim"]
 	path = bundle/seoul256.vim
 	url = git@github.com:junegunn/seoul256.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/accelerated-smooth-scroll"]
+	path = bundle/accelerated-smooth-scroll
+	url = git@github.com:yonchu/accelerated-smooth-scroll.git
