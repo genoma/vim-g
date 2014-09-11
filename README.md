@@ -15,6 +15,21 @@ vim-g
 
 You need at last Vim compiled with Python support or the [Brewed](http:brew.sh) version of [editorconfig-core-c](https:github.comeditorconfigeditorconfig-core-c) to use [editorconfig-vim](https:github.comeditorconfigeditorconfig-vim).
 
+
+## [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+
+**Supertab** has been substituted with [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) that basically means that you have to compile it:
+
+**Compiling YCM with semantic support for C-family languages:**
+
+`cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer`
+
+**Compiling YCM without semantic support for C-family languages:**
+
+`cd ~/.vim/bundle/YouCompleteMe
+./install.sh`
+
 ## Clone this repository
 
 `git clone https://github.com/genoma/vim-g ~/.vim`
