@@ -1,3 +1,5 @@
+" v3.0.0
+"
 " Starting from https://github.com/skwp/dotfiles/blob/master/vimrc and
 " Tim Pope Vim Sensible https://github.com/tpope/vim-sensible the new
 " setting file is more readable and more usable.
