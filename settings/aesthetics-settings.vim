@@ -1,6 +1,6 @@
 " ================ Colorscheme ======================
 
-let g:airline_powerline_fonts = 1
+set cursorline
 
 if has ('gui_running')
   colorscheme gotham
