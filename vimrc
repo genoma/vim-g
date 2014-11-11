@@ -1,4 +1,4 @@
-" v3.0.0
+" v3.0.1
 "
 " Starting from https://github.com/skwp/dotfiles/blob/master/vimrc and
 " Tim Pope Vim Sensible https://github.com/tpope/vim-sensible the new
