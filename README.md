@@ -1,48 +1,19 @@
 vim-g
 =====
 
-**This Vim configuration is basically a backup of my setup, it comprehends a carefully chosen selection of plugins and settings that are used mainly for sasslesscoffeescripthtml editing.**
+My personal Vim backup configuration with lots of plugins for frontend development. A constant WIP updated regularly.
+<br><br><br>
 
-# INFORMATIONS
+# Install
 
+`$ git clone https://github.com/genoma/vim-g.git ~/.vim`
+<br><br><br>
 
-#### To run this Vim distribution i strongly advise you to download this personalised [MacVim](https:github.comgenomamacvimreleases) version kept in sync with the official [Vim](http:www.vim.orgmercurial.php) Mercurial repository.
+# Dependencies
 
+Vim must be compiled with Lua support.
+<br><br><br>
 
-## BASIC STEPS
-
-### Vim configuration
-
-You need at last Vim compiled with Python support or the [Brewed](http:brew.sh) version of [editorconfig-core-c](https:github.comeditorconfigeditorconfig-core-c) to use [editorconfig-vim](https:github.comeditorconfigeditorconfig-vim).
-
-
-## [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
-
-**Supertab** has been substituted with [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) that basically means you have to compile it:
-
-**Compiling YCM with semantic support for C-family languages:**
-
-`cd ~/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer`
-
-**Compiling YCM without semantic support for C-family languages:**
-
-`cd ~/.vim/bundle/YouCompleteMe
-./install.sh`
-
-## Clone this repository
-
-`git clone https://github.com/genoma/vim-g ~/.vim`
-
-### Download Submodules
-
-`git submodule update --init --recursive`
-
-## Update Submodules
-
-`git submodule foreach git pull`
-
-<br>
 
 # LICENSE
 The MIT License (MIT)

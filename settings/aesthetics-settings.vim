@@ -1,12 +1,12 @@
 " ================ Colorscheme ======================
-" Tomorrow light theme for Terminal, Tomorrow-Night
-" for MacVim
+
+let g:airline_powerline_fonts = 1
 
 if has ('gui_running')
-  colorscheme seoul256
+  colorscheme gotham
   set guifont=Source\ Code\ Pro:h12
 else
-  colorscheme seoul256
+  colorscheme gotham
 endif
 
 if has("gui_macvim")

@@ -1,1 +1,0 @@
-/Users/jenoma/.vim/autoload/vim-pathogen/autoload/pathogen.vim
