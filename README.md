@@ -11,7 +11,7 @@ My personal Vim backup configuration with lots of plugins for frontend developme
 
 # Dependencies
 
-Vim must be compiled with Lua support.
+Vim must be compiled with Lua and Python support.
 <br><br><br>
 
 
