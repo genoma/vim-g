@@ -79,6 +79,13 @@ let mapleader=","
 " Omnifunc enabled by default
 set omnifunc=syntaxcomplete#Complete
 
+" Prepare sensible/opinion overrides
+runtime! plugin/sensible.vim
+runtime! plugin/opinion.vim
+
+" set nohlsearch
+set nohlsearch
+
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
   exe 'source' fpath
