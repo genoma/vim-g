@@ -11,9 +11,9 @@ My personal Vim backup configuration with lots of plugins for frontend developme
 
 # Dependencies
 
-Vim must be compiled with Lua and Python support.
-<br><br><br>
+Vim must be compiled with Lua and Python support. If you are on **Mac OS X** you can just download [source-vim](https://github.com/genoma/source-vim) to easily compile your own updated **Vim** sources downloaded from the official *Mercurial* repository.
 
+<br><br><br>
 
 # LICENSE
 The MIT License (MIT)
