@@ -68,6 +68,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'whatyouhide/vim-gotham'
+NeoBundle 'maxbrunsfeld/vim-yankstack'
 
 call neobundle#end()
 
