@@ -77,7 +77,14 @@ NeoBundleCheck
 let mapleader=","
 
 " Omnifunc enabled by default
-set omnifunc=syntaxcomplete#Complete
+if has("autocmd") && exists("+omnifunc")
+  autocmd Filetype *
+        \ if &omnifunc == "" |
+        \ setlocal omnifunc=syntaxcomplete#Complete |
+        \ endif
+endif
+
+" set omnifunc=syntaxcomplete#Complete
 
 " Prepare sensible/opinion overrides
 runtime! plugin/sensible.vim
