@@ -1,5 +1,3 @@
-" v3.1.0
-"
 " Starting from https://github.com/skwp/dotfiles/blob/master/vimrc and
 " Tim Pope Vim Sensible https://github.com/tpope/vim-sensible the new
 " setting file is more readable and more usable.
@@ -68,7 +66,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'whatyouhide/vim-gotham'
-NeoBundle 'maxbrunsfeld/vim-yankstack'
 
 call neobundle#end()
 
