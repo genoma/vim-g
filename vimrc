@@ -68,6 +68,7 @@ NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'whatyouhide/vim-gotham'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'shime/vim-livedown'
 
 call neobundle#end()
 
