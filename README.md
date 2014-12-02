@@ -36,6 +36,7 @@ Vim must be compiled with Lua and Python support. If you are on **Mac OS X** you
 - honza/vim-snippets
 - junegunn/vim-easy-align
 - kchmck/vim-coffee-script
+- luochen1990/rainbow
 - mattn/emmet-vim
 - morhetz/gruvbox
 - othree/html5.vim
