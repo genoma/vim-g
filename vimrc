@@ -34,7 +34,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'SirVer/ultisnips'
-NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'https://github.com/Valloric/YouCompleteMe.git'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'burnettk/vim-angular'
@@ -71,6 +71,7 @@ NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'whatyouhide/vim-gotham'
 NeoBundle 'miyakogi/conoline.vim'
 NeoBundle 'wakatime/vim-wakatime'
+NeoBundle 'moll/vim-node'
 
 call neobundle#end()
 
