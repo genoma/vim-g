@@ -48,7 +48,6 @@ NeoBundle 'genoma/vim-netrw'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'luochen1990/rainbow'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'othree/html5.vim'
@@ -70,6 +69,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'whatyouhide/vim-gotham'
+NeoBundle 'miyakogi/conoline.vim'
+NeoBundle 'wakatime/vim-wakatime'
 
 call neobundle#end()
 
