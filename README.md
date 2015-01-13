@@ -7,37 +7,27 @@ My personal Vim backup configuration with lots of plugins for frontend developme
 
 `$ git clone https://github.com/genoma/vim-g.git ~/.vim`
 
-Once you've cloned the repository launch `$ vim` and install all plugins.
-
-Enter `$ ~/.vim/bundle/YouCompleteMe` and run `$ ./install.sh`.
-
-# Dependencies
-
-Vim must be compiled with Lua and Python support. If you are on **Mac OS X** you can just download [source-vim](https://github.com/genoma/source-vim) to easily compile your own updated **Vim** sources downloaded from the official *Mercurial* repository.
-
 # Plugins
 
-- JulesWang/css.vim
-- Lokaltog/vim-easymotion
-- Raimondi/delimitMate
-- Shougo/unite.vim
-- SirVer/ultisnips
-- Valloric/YouCompleteMe
 - airblade/vim-gitgutter
 - bling/vim-airline
 - burnettk/vim-angular
 - chrisbra/csv.vim
+- dsawardekar/wordpress.vim
 - editorconfig/editorconfig-vim
-- enthooz/vim-razor
 - gcmt/wildfire.vim
 - genoma/vim-less
 - genoma/vim-literate-coffeescript
 - genoma/vim-netrw
-- honza/vim-snippets
+- Valloric/YouCompleteMe, { do: ./install.sh }
+- JulesWang/css.vim
 - junegunn/vim-easy-align
+- Lokaltog/vim-easymotion
+- Raimondi/delimitMate
 - kchmck/vim-coffee-script
-- luochen1990/rainbow
 - mattn/emmet-vim
+- miyakogi/conoline.vim
+- moll/vim-node
 - morhetz/gruvbox
 - othree/html5.vim
 - othree/javascript-libraries-syntax.vim
@@ -46,6 +36,7 @@ Vim must be compiled with Lua and Python support. If you are on **Mac OS X** you
 - rking/ag.vim
 - rstacruz/vim-opinion
 - scrooloose/syntastic
+- shawncplus/phpcomplete.vim
 - shime/vim-livedown
 - sodapopcan/vim-twiggy
 - tomtom/tcomment_vim
@@ -57,7 +48,9 @@ Vim must be compiled with Lua and Python support. If you are on **Mac OS X** you
 - tpope/vim-surround
 - tpope/vim-unimpaired
 - tpope/vim-vinegar
+- wakatime/vim-wakatime
 - whatyouhide/vim-gotham
+
 
 # LICENSE
 The MIT License (MIT)

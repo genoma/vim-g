@@ -2,84 +2,55 @@
 " Tim Pope Vim Sensible https://github.com/tpope/vim-sensible the new
 " setting file is more readable and more usable.
 
-" Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
-
-if has('vim_starting')
-  set nocompatible               " Be iMproved
-
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" NeoBundle configuration
-NeoBundleFetch 'Shougo/neobundle.vim'
-" VimProc!
-NeoBundle 'Shougo/vimproc.vim', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
+call plug#begin('~/.vim/plugged')
 
 " Main packages
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'burnettk/vim-angular'
+Plug 'chrisbra/csv.vim'
+Plug 'dsawardekar/wordpress.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'gcmt/wildfire.vim'
+Plug 'genoma/vim-less'
+Plug 'genoma/vim-literate-coffeescript'
+Plug 'genoma/vim-netrw'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'JulesWang/css.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'Raimondi/delimitMate'
+Plug 'kchmck/vim-coffee-script'
+Plug 'mattn/emmet-vim'
+Plug 'miyakogi/conoline.vim'
+Plug 'moll/vim-node'
+Plug 'morhetz/gruvbox'
+Plug 'othree/html5.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/yajs.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'rking/ag.vim'
+Plug 'rstacruz/vim-opinion'
+Plug 'scrooloose/syntastic'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'shime/vim-livedown'
+Plug 'sodapopcan/vim-twiggy'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+Plug 'wakatime/vim-wakatime'
+Plug 'whatyouhide/vim-gotham'
 
-NeoBundle 'JulesWang/css.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'https://github.com/Valloric/YouCompleteMe.git'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'burnettk/vim-angular'
-NeoBundle 'chrisbra/csv.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'enthooz/vim-razor'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'genoma/vim-less'
-NeoBundle 'genoma/vim-literate-coffeescript'
-NeoBundle 'genoma/vim-netrw'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'morhetz/gruvbox'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'othree/yajs.vim'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'rstacruz/vim-opinion'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'shime/vim-livedown'
-NeoBundle 'sodapopcan/vim-twiggy'
-NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-sensible'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-vinegar'
-NeoBundle 'whatyouhide/vim-gotham'
-NeoBundle 'miyakogi/conoline.vim'
-NeoBundle 'wakatime/vim-wakatime'
-NeoBundle 'moll/vim-node'
-
-call neobundle#end()
-
-filetype plugin indent on
-
-NeoBundleCheck
+call plug#end()
 
 " mapleader is comma instead of backslash
+
 let mapleader=","
 
 " Omnifunc enabled by default
