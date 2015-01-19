@@ -14,7 +14,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'gcmt/wildfire.vim'
 Plug 'genoma/vim-less'
 Plug 'genoma/vim-literate-coffeescript'
-Plug 'genoma/vim-netrw'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'JulesWang/css.vim'
 Plug 'junegunn/vim-easy-align'
