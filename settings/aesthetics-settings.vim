@@ -4,7 +4,7 @@ set cursorline
 
 if has ('gui_running')
   colorscheme gotham
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 else
   colorscheme gotham
 endif
