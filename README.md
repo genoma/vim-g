@@ -1,56 +1,11 @@
 vim-g
 =====
 
-My personal Vim backup configuration with lots of plugins for frontend development. A constant WIP updated regularly.
+My personal Vim backup configuration with lots of plugins for Front End development. A constant WIP updated regularly.
 
 # Install
 
 `$ git clone https://github.com/genoma/vim-g.git ~/.vim`
-
-# Plugins
-
-- airblade/vim-gitgutter
-- bling/vim-airline
-- burnettk/vim-angular
-- chrisbra/csv.vim
-- dsawardekar/wordpress.vim
-- editorconfig/editorconfig-vim
-- gcmt/wildfire.vim
-- genoma/vim-less
-- genoma/vim-literate-coffeescript
-- genoma/vim-netrw
-- Valloric/YouCompleteMe, { do: ./install.sh }
-- JulesWang/css.vim
-- junegunn/vim-easy-align
-- Lokaltog/vim-easymotion
-- Raimondi/delimitMate
-- kchmck/vim-coffee-script
-- mattn/emmet-vim
-- miyakogi/conoline.vim
-- moll/vim-node
-- morhetz/gruvbox
-- othree/html5.vim
-- othree/javascript-libraries-syntax.vim
-- othree/yajs.vim
-- plasticboy/vim-markdown
-- rking/ag.vim
-- rstacruz/vim-opinion
-- scrooloose/syntastic
-- shawncplus/phpcomplete.vim
-- shime/vim-livedown
-- sodapopcan/vim-twiggy
-- tomtom/tcomment_vim
-- tpope/vim-fugitive
-- tpope/vim-git
-- tpope/vim-haml
-- tpope/vim-repeat
-- tpope/vim-sensible
-- tpope/vim-surround
-- tpope/vim-unimpaired
-- tpope/vim-vinegar
-- wakatime/vim-wakatime
-- whatyouhide/vim-gotham
-
 
 # LICENSE
 The MIT License (MIT)
