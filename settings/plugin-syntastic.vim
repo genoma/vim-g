@@ -7,5 +7,5 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_mode_map = {
       \ "mode": "active",
-      \ "active_filetypes": ["cofee", "javascript", "html"],
-      \ "passive_filetypes": ["less"] }
+      \ "active_filetypes": ["cofee", "javascript"],
+      \ "passive_filetypes": ["less", "html"] }

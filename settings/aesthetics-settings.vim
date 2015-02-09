@@ -3,10 +3,12 @@
 set cursorline
 
 if has ('gui_running')
-  colorscheme gotham
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  set background=dark
+  colorscheme gruvbox
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 else
-  colorscheme gotham
+  set background=dark
+  colorscheme gruvbox
 endif
 
 if has("gui_macvim")
