@@ -1,13 +1,16 @@
-" ================ Colorscheme ======================
+" ================ Colorscheme & Settings ======================
 
+" set cursor line
 set cursorline
 
+" Define themes
 if has ('gui_running')
   set background=dark
   colorscheme gruvbox
   set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 else
   set background=dark
+  let g:gruvbox_italic = 1
   colorscheme gruvbox
 endif
 
