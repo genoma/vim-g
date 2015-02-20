@@ -5,6 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Main packages
+
 Plug 'JulesWang/css.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Raimondi/delimitMate'
@@ -21,14 +22,12 @@ Plug 'genoma/vim-literate-coffeescript'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-gtfo'
 Plug 'kchmck/vim-coffee-script'
+Plug 'kopischke/vim-stay'
 Plug 'mattn/emmet-vim'
-Plug 'miyakogi/conoline.vim'
 Plug 'moll/vim-node'
-Plug 'morhetz/gruvbox'
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'othree/yajs.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
 Plug 'rstacruz/vim-opinion'
@@ -47,6 +46,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'wakatime/vim-wakatime'
 Plug 'whatyouhide/vim-gotham'
+Plug 'svermeulen/vim-easyclip'
+Plug 'vim-scripts/PreserveNoEOL'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+Plug 'Yggdroot/indentLine'
 Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
 
 call plug#end()
