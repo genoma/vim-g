@@ -15,8 +15,11 @@ ehthumbs.db
 Thumbs.db
 
 .netrwhist
+sessions
 session
 backups
 spell
 bundle
 plugged
+view
+plug.vim.old
