@@ -49,8 +49,6 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/PreserveNoEOL'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
 Plug 'Yggdroot/indentLine'
 Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
 
@@ -67,8 +65,6 @@ if has("autocmd") && exists("+omnifunc")
         \ setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
 endif
-
-" set omnifunc=syntaxcomplete#Complete
 
 " Prepare sensible/opinion overrides
 runtime! plugin/sensible.vim
