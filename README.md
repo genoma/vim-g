@@ -18,49 +18,51 @@ Vim compiled with
 
 # Pugins
 
-- JulesWang/css.vim
-- Lokaltog/vim-easymotion
-- Raimondi/delimitMate
-- Valloric/YouCompleteMe
-- airblade/vim-gitgutter
-- bling/vim-airline
-- burnettk/vim-angular
-- chrisbra/csv.vim
-- dsawardekar/wordpress.vim
-- editorconfig/editorconfig-vim
-- gcmt/wildfire.vim
-- genoma/vim-less
-- genoma/vim-literate-coffeescript
-- junegunn/vim-easy-align
-- justinmk/vim-gtfo
-- kchmck/vim-coffee-script
-- mattn/emmet-vim
-- miyakogi/conoline.vim
-- moll/vim-node
-- morhetz/gruvbox
-- morhetz/gruvbox
-- othree/html5.vim
-- othree/javascript-libraries-syntax.vim
-- othree/yajs.vim
-- plasticboy/vim-markdown
-- rking/ag.vim
-- rstacruz/vim-opinion
-- ryanss/vim-hackernews
-- scrooloose/syntastic
-- shawncplus/phpcomplete.vim
-- tomtom/tcomment_vim
-- tpope/vim-fugitive
-- tpope/vim-git
-- tpope/vim-haml
-- tpope/vim-liquid
-- tpope/vim-repeat
-- tpope/vim-sensible
-- tpope/vim-surround
-- tpope/vim-unimpaired
-- tpope/vim-vinegar
-- wakatime/vim-wakatime
-- whatyouhide/vim-gotham
-- wincent/command-t
+airblade/vim-gitgutter
+bling/vim-airline
+burnettk/vim-angular
+chrisbra/csv.vim
+dsawardekar/wordpress.vim
+editorconfig/editorconfig-vim
+gcmt/wildfire.vim
+genoma/vim-less
+genoma/vim-literate-coffeescript
+JulesWang/css.vim
+junegunn/vim-easy-align
+justinmk/vim-gtfo
+kchmck/vim-coffee-script
+Lokaltog/vim-easymotion
+mattn/emmet-vim
+moll/vim-node
+morhetz/gruvbox
+ntpeters/vim-better-whitespace
+othree/html5.vim
+othree/javascript-libraries-syntax.vim
+plasticboy/vim-markdown
+Raimondi/delimitMate
+rking/ag.vim
+rstacruz/vim-opinion
+ryanss/vim-hackernews
+scrooloose/syntastic
+shawncplus/phpcomplete.vim
+Shougo/unite.vim
+Shougo/vimproc.vim
+svermeulen/vim-easyclip
+tomtom/tcomment_vim
+tpope/vim-fugitive
+tpope/vim-git
+tpope/vim-haml
+tpope/vim-liquid
+tpope/vim-repeat
+tpope/vim-sensible
+tpope/vim-surround
+tpope/vim-unimpaired
+tpope/vim-vinegar
+Valloric/YouCompleteMe
+vim-scripts/PreserveNoEOL
+wakatime/vim-wakatime
+whatyouhide/vim-gotham
+Yggdroot/indentLine
 
 # LICENSE
 The MIT License (MIT)
