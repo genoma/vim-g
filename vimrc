@@ -22,7 +22,6 @@ Plug 'genoma/vim-literate-coffeescript'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-gtfo'
 Plug 'kchmck/vim-coffee-script'
-" Plug 'kopischke/vim-stay'
 Plug 'mattn/emmet-vim'
 Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
@@ -50,9 +49,11 @@ Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/PreserveNoEOL'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'Yggdroot/indentLine'
-" Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
+" Keep it as a reminder if Unite is not exactly malleable and too slow
+" Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
 
 call plug#end()
 
