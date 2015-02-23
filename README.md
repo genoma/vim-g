@@ -10,10 +10,8 @@ My personal Vim backup configuration with lots of plugins for Front End developm
 # Dependencies
 
 Vim compiled with
-- Ruby
-  - YouCompleteMe
-  - Command-T
 - Python
+  - YouCompleteMe
   - Editorconfig
 
 # Pugins
