@@ -22,7 +22,7 @@ Plug 'genoma/vim-literate-coffeescript'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-gtfo'
 Plug 'kchmck/vim-coffee-script'
-Plug 'kopischke/vim-stay'
+" Plug 'kopischke/vim-stay'
 Plug 'mattn/emmet-vim'
 Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
@@ -50,13 +50,15 @@ Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/PreserveNoEOL'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'Yggdroot/indentLine'
-Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
+" Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 call plug#end()
 
 " mapleader is comma instead of backslash
-
 let mapleader=","
+
 
 " Omnifunc enabled by default
 if has("autocmd") && exists("+omnifunc")
@@ -64,6 +66,13 @@ if has("autocmd") && exists("+omnifunc")
         \ if &omnifunc == "" |
         \ setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
+endif
+
+
+" Jump to the last edited line
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+        \| exe "normal! g'\"" | endif
 endif
 
 " Prepare sensible/opinion overrides
