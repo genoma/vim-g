@@ -51,6 +51,8 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'Shougo/neomru.vim'
+
 
 " Keep it as a reminder if Unite is not exactly malleable and too slow
 " Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
@@ -68,7 +70,6 @@ if has("autocmd") && exists("+omnifunc")
         \ setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
 endif
-
 
 " Jump to the last edited line
 if has("autocmd")
