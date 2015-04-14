@@ -6,15 +6,20 @@ call plug#begin('~/.vim/plugged')
 
 " Main packages
 
+Plug 'Chiel92/vim-autoformat'
 Plug 'JulesWang/css.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Raimondi/delimitMate'
+Plug 'Shougo/neomru.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'StanAngeloff/php.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'burnettk/vim-angular'
 Plug 'chrisbra/csv.vim'
-Plug 'dsawardekar/wordpress.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'gcmt/wildfire.vim'
 Plug 'genoma/vim-less'
@@ -25,14 +30,17 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'mattn/emmet-vim'
 Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
-Plug 'rstacruz/vim-opinion'
 Plug 'ryanss/vim-hackernews'
 Plug 'scrooloose/syntastic'
 Plug 'shawncplus/phpcomplete.vim'
+Plug '2072/PHP-Indenting-for-VIm'
+Plug 'svermeulen/vim-easyclip'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
@@ -43,16 +51,13 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-Plug 'wakatime/vim-wakatime'
-Plug 'whatyouhide/vim-gotham'
-Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/PreserveNoEOL'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'Yggdroot/indentLine'
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/neomru.vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'AndrewRadev/inline_edit.vim'
+Plug 'rstacruz/vim-opinion'
 
+" Slowing down a bit too much
+" Plug 'wakatime/vim-wakatime'
 
 " Keep it as a reminder if Unite is not exactly malleable and too slow
 " Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
@@ -81,8 +86,14 @@ endif
 runtime! plugin/sensible.vim
 runtime! plugin/opinion.vim
 
-" set nohlsearch
+" Set nohlsearch
 set nohlsearch
+
+" Override Opinion fold method
+set foldmethod=manual
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
 
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
