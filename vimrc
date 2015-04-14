@@ -55,6 +55,7 @@ Plug 'vim-scripts/PreserveNoEOL'
 Plug 'whatyouhide/vim-gotham'
 Plug 'AndrewRadev/inline_edit.vim'
 Plug 'rstacruz/vim-opinion'
+Plug 'digitaltoad/vim-jade'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
