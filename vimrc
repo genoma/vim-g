@@ -14,7 +14,11 @@ Plug 'Shougo/neomru.vim'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'StanAngeloff/php.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+
+Plug 'Shougo/neocomplete.vim'
+
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
@@ -53,9 +57,13 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/PreserveNoEOL'
 Plug 'whatyouhide/vim-gotham'
-Plug 'AndrewRadev/inline_edit.vim'
 Plug 'rstacruz/vim-opinion'
 Plug 'digitaltoad/vim-jade'
+Plug 'romainl/Apprentice'
+Plug 'junegunn/seoul256.vim'
+
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
@@ -95,6 +103,9 @@ set foldmethod=manual
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+
+" Override numberwidth
+set numberwidth=1
 
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')

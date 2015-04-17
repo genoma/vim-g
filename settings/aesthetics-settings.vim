@@ -5,13 +5,11 @@ set cursorline
 
 " Define themes
 if has ('gui_running')
-  set background=dark
-  colorscheme gruvbox
+  colorscheme apprentice
   set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 else
   set background=dark
-  let g:gruvbox_italic = 1
-  colorscheme gruvbox
+  colorscheme seoul256
 endif
 
 if has("gui_macvim")

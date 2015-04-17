@@ -4,4 +4,4 @@
 nnoremap gm m
 
 " easy clip settings
-let g:EasyClipAutoFormat = 1
+" let g:EasyClipAutoFormat = 1

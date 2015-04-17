@@ -7,3 +7,5 @@
 
 " Show just the filename
 " let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:airline_theme = 'bubblegum'
