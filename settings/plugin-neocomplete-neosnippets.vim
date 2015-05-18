@@ -29,7 +29,7 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 " Enable omni completion.
 autocmd FileType css,less,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript,coffeescript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript,coffeescript,jade setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
@@ -42,7 +42,9 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
-
+" Disable and enable NeoComplete with keybindings
+nmap <Leader>nd :NeoCompleteDisable<CR>
+nmap <Leader>ne :NeoCompleteEnable<CR>
 
 " NEOSNIPPET
 " Plugin key-mappings.
@@ -63,5 +65,5 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 " marker is and you can even save a file with
 " lot of markers around... not funny!
 " if has('conceal')
-"   set conceallevel=2 concealcursor=niv
+"   set conceallevel=1 concealcursor=niv
 " endif

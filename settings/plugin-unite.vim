@@ -8,7 +8,7 @@ nnoremap <leader>b :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buff
 nnoremap <leader>s :<C-u>Unite -buffer-name=grep grep<cr>
 
 " Ignore
-call unite#custom#source('file_rec/async,file', 'ignore_pattern', 'bower_components\|dist\|fonts\|node_modules\|maps\|.sass-cache\|\.png$\|\.jpg$\|\.svg$\|\.gif$')
+call unite#custom#source('file_rec/async,file', 'ignore_pattern', 'bower_components\|dist\|node_modules\|maps\|.sass-cache\|\.png$\|\.jpg$\|\.svg$\|\.gif$')
 
 " Configure Ag and use it instead of grep
 let g:unite_source_grep_command = 'ag'

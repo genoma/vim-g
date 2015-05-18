@@ -19,7 +19,6 @@ Plug 'StanAngeloff/php.vim'
 
 Plug 'Shougo/neocomplete.vim'
 
-Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'burnettk/vim-angular'
@@ -64,6 +63,8 @@ Plug 'junegunn/seoul256.vim'
 
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'terryma/vim-multiple-cursors'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
