@@ -10,16 +10,24 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'JulesWang/css.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/neomru.vim'
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
+" Plug 'Shougo/neomru.vim'
+" Plug 'Shougo/unite.vim'
+" Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
 Plug 'StanAngeloff/php.vim'
 
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 
-Plug 'Shougo/neocomplete.vim'
+" Too slow
+" Plug 'Shougo/neocomplete.vim'
 
-Plug 'airblade/vim-gitgutter'
+" Keept as a reference
+" Plug 'ervandew/supertab'
+
+" Not used since 90% is on Mercurial
+" Plug 'airblade/vim-gitgutter'
+
 Plug 'bling/vim-airline'
 Plug 'burnettk/vim-angular'
 Plug 'chrisbra/csv.vim'
@@ -35,14 +43,21 @@ Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
+
+" Too slow with Jade
+" Plug 'pangloss/vim-javascript'
+
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
-Plug 'ryanss/vim-hackernews'
-Plug 'scrooloose/syntastic'
-Plug 'shawncplus/phpcomplete.vim'
-Plug '2072/PHP-Indenting-for-VIm'
+
+" At the moment seldomly used
+" Plug 'scrooloose/syntastic'
+
+" PHP not used anymore
+" Plug 'shawncplus/phpcomplete.vim'
+" Plug '2072/PHP-Indenting-for-VIm'
+
 Plug 'svermeulen/vim-easyclip'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
@@ -54,17 +69,17 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-Plug 'vim-scripts/PreserveNoEOL'
-Plug 'whatyouhide/vim-gotham'
 Plug 'rstacruz/vim-opinion'
 Plug 'digitaltoad/vim-jade'
 Plug 'romainl/Apprentice'
 Plug 'junegunn/seoul256.vim'
 
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
+" Not used but keept for reference
+" Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet-snippets'
+
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'leafgarland/typescript-vim'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
