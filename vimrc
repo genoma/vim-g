@@ -6,16 +6,9 @@ call plug#begin('~/.vim/plugged')
 
 " Main packages
 
-Plug 'Chiel92/vim-autoformat'
 Plug 'JulesWang/css.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Raimondi/delimitMate'
-
-" Plug 'Shougo/neomru.vim'
-" Plug 'Shougo/unite.vim'
-" Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-
-Plug 'StanAngeloff/php.vim'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 
@@ -25,9 +18,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 " Keept as a reference
 " Plug 'ervandew/supertab'
 
-" Not used since 90% is on Mercurial
-" Plug 'airblade/vim-gitgutter'
-
+Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'burnettk/vim-angular'
 Plug 'chrisbra/csv.vim'
@@ -43,6 +34,7 @@ Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
+Plug 'leafgarland/typescript-vim'
 
 " Too slow with Jade
 " Plug 'pangloss/vim-javascript'
@@ -54,9 +46,10 @@ Plug 'rking/ag.vim'
 " At the moment seldomly used
 " Plug 'scrooloose/syntastic'
 
-" PHP not used anymore
+" PHP
 " Plug 'shawncplus/phpcomplete.vim'
 " Plug '2072/PHP-Indenting-for-VIm'
+" Plug 'StanAngeloff/php.vim'
 
 Plug 'svermeulen/vim-easyclip'
 Plug 'tomtom/tcomment_vim'
@@ -68,24 +61,21 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vinegar'
+" Plug 'tpope/vim-vinegar'
 Plug 'rstacruz/vim-opinion'
 Plug 'digitaltoad/vim-jade'
 Plug 'romainl/Apprentice'
 Plug 'junegunn/seoul256.vim'
 
-" Not used but keept for reference
-" Plug 'Shougo/neosnippet.vim'
-" Plug 'Shougo/neosnippet-snippets'
-
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'leafgarland/typescript-vim'
+
+Plug 'scrooloose/nerdtree'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
 
 " Keep it as a reminder if Unite is not exactly malleable and too slow
-" Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
+Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
 
 call plug#end()
 
