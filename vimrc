@@ -44,7 +44,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
 
 " At the moment seldomly used
-" Plug 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " PHP
 " Plug 'shawncplus/phpcomplete.vim'
@@ -70,6 +70,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
