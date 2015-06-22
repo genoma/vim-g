@@ -36,8 +36,8 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
 Plug 'leafgarland/typescript-vim'
 
-" Too slow with Jade
-" Plug 'pangloss/vim-javascript'
+Plug 'othree/yajs.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'plasticboy/vim-markdown'
@@ -46,12 +46,16 @@ Plug 'rking/ag.vim'
 " At the moment seldomly used
 Plug 'scrooloose/syntastic'
 
+Plug 'cakebaker/scss-syntax.vim'
+
 " PHP
 " Plug 'shawncplus/phpcomplete.vim'
 " Plug '2072/PHP-Indenting-for-VIm'
 " Plug 'StanAngeloff/php.vim'
 
-Plug 'svermeulen/vim-easyclip'
+" Bugged
+" Plug 'svermeulen/vim-easyclip'
+
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
