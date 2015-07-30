@@ -36,7 +36,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
 Plug 'leafgarland/typescript-vim'
 
-Plug 'othree/yajs.vim'
+" Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
@@ -47,6 +47,7 @@ Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
 
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'hail2u/vim-css3-syntax'
 
 " PHP
 " Plug 'shawncplus/phpcomplete.vim'
