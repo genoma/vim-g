@@ -10,7 +10,7 @@ Plug 'JulesWang/css.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Raimondi/delimitMate'
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
 
 " Too slow
 " Plug 'Shougo/neocomplete.vim'
@@ -18,7 +18,9 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 " Keept as a reference
 " Plug 'ervandew/supertab'
 
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
+
+Plug 'mhinz/vim-signify'
 Plug 'bling/vim-airline'
 Plug 'burnettk/vim-angular'
 Plug 'chrisbra/csv.vim'
@@ -30,16 +32,20 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-gtfo'
 Plug 'kchmck/vim-coffee-script'
 Plug 'mattn/emmet-vim'
-Plug 'moll/vim-node'
+" Plug 'moll/vim-node'
 Plug 'morhetz/gruvbox'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/html5.vim'
 Plug 'leafgarland/typescript-vim'
 
-" Plug 'othree/yajs.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'Chiel92/vim-autoformat'
 
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+" Plug 'othree/yajs.vim'
+" Plug 'othree/javascript-libraries-syntax.vim'
+
+Plug 'pangloss/vim-javascript'
+
+" Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
 
@@ -49,15 +55,16 @@ Plug 'scrooloose/syntastic'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
 
+" Plug 'wincent/terminus'
+
+
 " PHP
 " Plug 'shawncplus/phpcomplete.vim'
 " Plug '2072/PHP-Indenting-for-VIm'
 " Plug 'StanAngeloff/php.vim'
 
-" Bugged
-" Plug 'svermeulen/vim-easyclip'
-
-Plug 'tomtom/tcomment_vim'
+" Plug 'tomtom/tcomment_vim'
+Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-haml'
@@ -81,7 +88,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'wakatime/vim-wakatime'
 
 " Keep it as a reminder if Unite is not exactly malleable and too slow
-Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
+" Plug 'wincent/command-t', { 'do': 'cd ruby/command-t && ruby extconf.rb && make' }
+
+Plug 'Shougo/neomru.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 
 call plug#end()
 
@@ -118,6 +129,12 @@ set foldlevel=1
 
 " Override numberwidth
 set numberwidth=1
+
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=~/.vimundo/
 
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
