@@ -73,6 +73,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-obsession'
 " Plug 'tpope/vim-vinegar'
 Plug 'rstacruz/vim-opinion'
 Plug 'digitaltoad/vim-jade'
@@ -83,6 +84,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Plug 'terryma/vim-multiple-cursors'
 
 " Slowing down a bit too much
 " Plug 'wakatime/vim-wakatime'
@@ -127,9 +130,16 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
+" Autoread changed files
+set autoread
+
 " Override numberwidth
 set numberwidth=1
 
+" Syntax sync Vim wiki
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
+autocmd BufEnter * :syntax sync fromstart
 
 " tell it to use an undo file
 set undofile
