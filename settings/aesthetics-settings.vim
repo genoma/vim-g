@@ -6,11 +6,11 @@
 " Define themes
 if has ('gui_running')
   set background=dark
-  colorscheme gruvbox
+  colorscheme apprentice
   set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 else
   set background=dark
-  colorscheme gruvbox
+  colorscheme apprentice
 endif
 
 if has("gui_macvim")

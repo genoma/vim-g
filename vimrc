@@ -22,7 +22,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
 
 Plug 'mhinz/vim-signify'
 Plug 'bling/vim-airline'
-Plug 'burnettk/vim-angular'
+" Plug 'burnettk/vim-angular'
 Plug 'chrisbra/csv.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'gcmt/wildfire.vim'
@@ -49,14 +49,11 @@ Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
 Plug 'rking/ag.vim'
 
-" At the moment seldomly used
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake'
 
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
-
-" Plug 'wincent/terminus'
-
 
 " PHP
 " Plug 'shawncplus/phpcomplete.vim'
@@ -80,6 +77,8 @@ Plug 'digitaltoad/vim-jade'
 Plug 'romainl/Apprentice'
 Plug 'junegunn/seoul256.vim'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+
 Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'scrooloose/nerdtree'
@@ -95,13 +94,15 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'Shougo/neomru.vim'
 Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
+
+" Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
+
+" Plug 'dkprice/vim-easygrep'
 
 call plug#end()
 
 " mapleader is comma instead of backslash
 let mapleader=","
-
 
 " Omnifunc enabled by default
 if has("autocmd") && exists("+omnifunc")
@@ -111,15 +112,30 @@ if has("autocmd") && exists("+omnifunc")
         \ endif
 endif
 
-" Jump to the last edited line
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-        \| exe "normal! g'\"" | endif
+" Remove white endlines
+function TrimEndLines()
+    let save_cursor = getpos(".")
+    :silent! %s#\($\n\s*\)\+\%$##
+    call setpos('.', save_cursor)
+endfunction
+
+au BufWritePre *.* call TrimEndLines()
+
+" Terminal bindings for NeoVim
+" terminal emulation
+if has("nvim")
+  tnoremap <Esc> <C-\><C-n>
+  noremap <leader>t :term zsh<CR>
 endif
+
+" ========================================
 
 " Prepare sensible/opinion overrides
 runtime! plugin/sensible.vim
 runtime! plugin/opinion.vim
+
+" Cursorline
+set cursorline
 
 " Set nohlsearch
 set nohlsearch
@@ -141,9 +157,9 @@ noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 autocmd BufEnter * :syntax sync fromstart
 
-" tell it to use an undo file
+" Use an undo file
 set undofile
-" set a directory to store the undo history
+" Set a directory to store the undo history
 set undodir=~/.vimundo/
 
 " =============== Personalized Settings =============
