@@ -101,7 +101,7 @@ Plug 'Shougo/unite.vim'
 
 call plug#end()
 
-" mapleader is comma instead of backslash
+" Mapleader is comma instead of backslash
 let mapleader=","
 
 " Omnifunc enabled by default
@@ -120,6 +120,17 @@ function TrimEndLines()
 endfunction
 
 au BufWritePre *.* call TrimEndLines()
+
+" jump to the last edited line of the file
+function! SetCursorPosition()
+  if &filetype !~ 'svn\|commit\c'
+    if line("'\"") > 0 && line("'\"") <= line("$") |
+      execute 'normal! g`"zvzz' |
+    endif
+  end
+endfunction
+
+autocmd BufReadPost * call SetCursorPosition()
 
 " Terminal bindings for NeoVim
 " terminal emulation
