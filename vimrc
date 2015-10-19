@@ -139,14 +139,27 @@ if has("nvim")
   noremap <leader>t :term zsh<CR>
 endif
 
+" Syntax sync Vim wiki
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
+autocmd BufEnter * :syntax sync fromstart
+
+" Use an undo file
+set undofile
+" Set a directory to store the undo history
+set undodir=~/.vimundo/
+
+" Autoread changed files
+set autoread
+
+" Cursorline
+set cursorline
+
 " ========================================
 
 " Prepare sensible/opinion overrides
 runtime! plugin/sensible.vim
 runtime! plugin/opinion.vim
-
-" Cursorline
-set cursorline
 
 " Set nohlsearch
 set nohlsearch
@@ -157,21 +170,8 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-" Autoread changed files
-set autoread
-
 " Override numberwidth
 set numberwidth=1
-
-" Syntax sync Vim wiki
-noremap <F12> <Esc>:syntax sync fromstart<CR>
-inoremap <F12> <C-o>:syntax sync fromstart<CR>
-autocmd BufEnter * :syntax sync fromstart
-
-" Use an undo file
-set undofile
-" Set a directory to store the undo history
-set undodir=~/.vimundo/
 
 " =============== Personalized Settings =============
 for fpath in split(globpath('~/.vim/settings', '*.vim'), '\n')
