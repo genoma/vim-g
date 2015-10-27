@@ -3,65 +3,6 @@ vim-g
 
 My personal Vim backup configuration with lots of plugins for Front End development. A constant WIP updated regularly.
 
-# Install
-
-`$ git clone https://github.com/genoma/vim-g.git ~/.vim`
-
-# Dependencies
-
-Vim compiled with
-- Python
-  - YouCompleteMe
-  - Editorconfig
-
-# Pugins
-
-- airblade/vim-gitgutter
-- bling/vim-airline
-- burnettk/vim-angular
-- chrisbra/csv.vim
-- dsawardekar/wordpress.vim
-- editorconfig/editorconfig-vim
-- gcmt/wildfire.vim
-- genoma/vim-less
-- genoma/vim-literate-coffeescript
-- JulesWang/css.vim
-- junegunn/vim-easy-align
-- justinmk/vim-gtfo
-- kchmck/vim-coffee-script
-- Lokaltog/vim-easymotion
-- mattn/emmet-vim
-- moll/vim-node
-- morhetz/gruvbox
-- ntpeters/vim-better-whitespace
-- othree/html5.vim
-- othree/javascript-libraries-syntax.vim
-- plasticboy/vim-markdown
-- Raimondi/delimitMate
-- rking/ag.vim
-- rstacruz/vim-opinion
-- ryanss/vim-hackernews
-- scrooloose/syntastic
-- shawncplus/phpcomplete.vim
-- Shougo/unite.vim
-- Shougo/vimproc.vim
-- svermeulen/vim-easyclip
-- tomtom/tcomment_vim
-- tpope/vim-fugitive
-- tpope/vim-git
-- tpope/vim-haml
-- tpope/vim-liquid
-- tpope/vim-repeat
-- tpope/vim-sensible
-- tpope/vim-surround
-- tpope/vim-unimpaired
-- tpope/vim-vinegar
-- Valloric/YouCompleteMe
-- vim-scripts/PreserveNoEOL
-- wakatime/vim-wakatime
-- whatyouhide/vim-gotham
-- Yggdroot/indentLine
-
 # LICENSE
 The MIT License (MIT)
 
