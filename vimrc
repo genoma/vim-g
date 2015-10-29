@@ -84,6 +84,9 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+Plug 'vim-utils/vim-troll-stopper'
+Plug 'vim-utils/vim-interruptless'
+
 " Plug 'terryma/vim-multiple-cursors'
 
 " Slowing down a bit too much
